@@ -5,7 +5,7 @@ from PIL import Image,ImageTk
 
 
 
-def create_log_list(parent, items):
+def create_log_list(parent, items, callback):
     frame = ttk.Frame(parent)
 
     listbox = tk.Listbox(frame)
@@ -14,6 +14,14 @@ def create_log_list(parent, items):
 
     for item in items:
         listbox.insert(tk.END, item)
+
+    def double_click_handler(event):
+        selected_indices = listbox.curselection()
+        if selected_indices:
+            index = selected_indices[0] - 1
+            callback(index)
+            # print(f"Double-clicked on item at index {index}: {value}")
+    listbox.bind("<Double-Button-1>", double_click_handler)
 
     listbox.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
@@ -26,3 +34,4 @@ def set_log_list(listbox, items):
         listbox.insert(tk.END, item)
 
     listbox.pack(side="left", fill="both", expand=True)
+

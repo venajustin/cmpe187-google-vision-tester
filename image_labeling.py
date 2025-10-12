@@ -5,16 +5,20 @@ import matplotlib.image as mpimg
 from io import BytesIO
 from PIL import Image
 
-def label_img(objects, img):
+def label_img(objects, img, highlight_index = -1):
 
     fig, ax = setup_plot()
     w, h = show_image(ax, img)
 
-    for object_ in objects:
+    for index, object_ in enumerate(objects):
         coords = []
         for vertex in object_.bounding_poly.normalized_vertices:
             coords.append((vertex.x,vertex.y))
-        draw_polygon(ax,coords,(w,h))
+        if index == highlight_index:
+            highlight = True
+        else:
+            highlight = False
+        draw_polygon(ax,coords,(w,h), highlight)
 
     bio = BytesIO()
     plt.savefig(bio, dpi=250, format="png",
@@ -41,10 +45,15 @@ def show_image(ax, img):
     ax.imshow(img)
     return img.width, img.height
 
-def draw_polygon(ax, coords, img_size):
+def draw_polygon(ax, coords, img_size, highlight):
     w, h = img_size
     scaled = [(x * w, y * h) for x, y in coords]
-    poly = patches.Polygon(scaled, fill=False, edgecolor='red', linewidth=2)
+    edgecolor = 'red'
+    order = 1
+    if highlight:
+        edgecolor = 'blue'
+        order = 2.5
+    poly = patches.Polygon(scaled, fill=False, edgecolor=edgecolor, linewidth=2, zorder=order)
     ax.add_patch(poly)
 
 

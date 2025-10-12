@@ -53,8 +53,12 @@ canvas = tk.Canvas(middle_frame, width=35, bg="white")
 canvas.grid(row=0, column=0, sticky="nsew")
 canvas.create_line(5, 100, 30, 100, arrow=tk.LAST, width=5, fill="black")
 
+objects_cache = {
+        'objects':[]
+        }
 def send_button_press():
    objects, text = localize_objects(input_img_frame.orig_img)
+   objects_cache['objects'] = objects
    image = label_img(objects,input_img_frame.orig_img)
    set_photo(output_img_frame, image)
    set_log_list(output_listbox, text)
@@ -76,12 +80,15 @@ file_list = get_files("./input");
 
 def change_input_callback(val):
     set_photo_by_path(input_img_frame, "./input/" + val)
+def highlight_image_callback(val):
+    image = label_img(objects_cache['objects'],input_img_frame.orig_img, val)
+    set_photo(output_img_frame, image)
 
 bottom_left = create_file_list(bottom_frame, file_list, change_input_callback)
 bottom_left.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
 # Output list
-bottom_right, output_listbox = create_log_list(bottom_frame, [] )
+bottom_right, output_listbox = create_log_list(bottom_frame, [], highlight_image_callback)
 bottom_right.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
 
 root.mainloop()

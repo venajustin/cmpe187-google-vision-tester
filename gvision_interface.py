@@ -17,12 +17,13 @@ def localize_objects(img):
         text_arr.append(f"{object_.name} ({object_.score})")
 
 
-    return objects, text_arr
     print(f"Number of objects found: {len(objects)}")
-    for object_ in objects:
-        print(f"\n{object_.name} (confidence: {object_.score})")
+    for i, object_ in enumerate(objects):
+        print(f"\n{i} : {object_.name} (confidence: {object_.score})")
         print("Normalized bounding polygon vertices: ")
         coords = []
         for vertex in object_.bounding_poly.normalized_vertices:
             coords.append((vertex.x,vertex.y))
             print(f" - ({vertex.x}, {vertex.y})")
+    
+    return objects, text_arr
