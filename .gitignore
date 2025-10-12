@@ -2,6 +2,10 @@
 input/
 output/
 
+# Test results - generated output from People_Tests
+People_Tests/results/
+results/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
