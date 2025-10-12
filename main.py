@@ -4,6 +4,7 @@ from PIL import Image,ImageTk
 from get_files import *
 from img_display import *
 from file_list import * 
+from log_list import *
 from gvision_interface import *
 from image_labeling import *
 
@@ -53,9 +54,10 @@ canvas.grid(row=0, column=0, sticky="nsew")
 canvas.create_line(5, 100, 30, 100, arrow=tk.LAST, width=5, fill="black")
 
 def send_button_press():
-   objects = localize_objects(input_img_frame.orig_img)
+   objects, text = localize_objects(input_img_frame.orig_img)
    image = label_img(objects,input_img_frame.orig_img)
    set_photo(output_img_frame, image)
+   set_log_list(output_listbox, text)
 
 
 send_button = tk.Button(middle_frame, text="Send", command=send_button_press)
@@ -72,8 +74,6 @@ bottom_frame.rowconfigure(0, weight=1);
 # Input list
 file_list = get_files("./input");
 
-def test_callback(val):
-    print(f"test callback called with {val}")
 def change_input_callback(val):
     set_photo_by_path(input_img_frame, "./input/" + val)
 
@@ -81,7 +81,7 @@ bottom_left = create_file_list(bottom_frame, file_list, change_input_callback)
 bottom_left.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
 # Output list
-bottom_right = create_file_list(bottom_frame, [f"Entry {i}" for i in range(1, 51)], test_callback)
+bottom_right, output_listbox = create_log_list(bottom_frame, [] )
 bottom_right.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
 
 root.mainloop()
