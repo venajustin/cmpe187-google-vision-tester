@@ -46,9 +46,10 @@ def draw_polygon(ax, coords, img_size):
     ax.add_patch(poly)
 
 
-path = sys.argv[1]
-output = sys.argv[2]
-fig, ax = setup_plot()
-w, h = show_image(ax, path)
-localize_objects(path, ax, (w,h))
-plt.savefig(output)
+if __name__ == "__main__":
+    path = sys.argv[1]
+    output = sys.argv[2]
+    fig, ax = setup_plot()
+    w, h = show_image(ax, path)
+    localize_objects(path, ax, (w,h))
+    plt.savefig(output)
