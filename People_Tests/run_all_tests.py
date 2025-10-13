@@ -146,7 +146,7 @@ def main():
 
     print()
 
-    # Generate report (OPTIONAL - uncomment if generate_report.py is available)
+    # Generate report 
     # print("Generating comprehensive report...")
     # generator = ReportGenerator(runner.test_results, json_results, total_duration)
     #
