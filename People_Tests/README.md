@@ -45,7 +45,7 @@ For each test (e.g., BVA-001):
 
 **Total Tests**: 39
 - **BVA (Boundary Value Analysis)**: 21 tests
-  - Count boundaries (0-25 people)
+  - Count boundaries (0-21 people)
   - Special conditions (distance, occlusion, night)
 
 - **EP (Equivalence Partition)**: 11 tests
@@ -107,12 +107,6 @@ People_Tests/
 - Pattern analysis in failures
 - Condition-based performance metrics
 
-### Detailed Reporting
-- Answers all testing questions
-- Quantitative metrics with percentages
-- Qualitative analysis with root causes
-- Actionable recommendations
-- Suitability assessment for autonomous vehicles
 
 ## Requirements
 
@@ -162,24 +156,6 @@ pip install google-cloud-vision matplotlib
 - **Issue**: Tests taking too long
 - **Solution**: Check internet connection and Google Cloud API status
 
-## Usage Example
-
-```bash
-# 1. Navigate to project directory
-cd "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester"
-
-# 2. Make sure you have images in People_Tests/images/
-ls People_Tests/images/*.jpg | wc -l
-# Should show: 39
-
-# 3. Run all tests
-python3 People_Tests/run_all_tests.py
-
-# 4. View specific test results
-open People_Tests/results/BVA-001_result.jpg  # View annotated image
-cat People_Tests/results/BVA-001_output.json | jq  # View JSON data
-```
-
 ## Test Timing
 
 All tests now include timing information:
@@ -196,10 +172,3 @@ For issues or questions:
 2. Ensure test images are present and correctly named (.jpg, .jpeg, or .png)
 3. Review individual test outputs in `results/` folder
 
-## License
-
-This testing framework is for educational purposes as part of CMPE 187 coursework.
-
----
-
-**Ready to test?** Just add your images and run: `python3 People_Tests/run_all_tests.py`
