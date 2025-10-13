@@ -57,7 +57,7 @@ objects_cache = {
         'objects':[]
         }
 def send_button_press():
-   objects, text = localize_objects(input_img_frame.orig_img)
+   objects, text = localize_objects(input_img_frame.orig_img, get_filter_input())
    objects_cache['objects'] = objects
    image = label_img(objects,input_img_frame.orig_img)
    set_photo(output_img_frame, image)
@@ -73,7 +73,8 @@ bottom_frame = ttk.Frame(root)
 bottom_frame.grid(row=1, column=0, sticky="nsew")
 bottom_frame.columnconfigure(0, weight=1);
 bottom_frame.columnconfigure(1, weight=1);
-bottom_frame.rowconfigure(0, weight=1);
+bottom_frame.rowconfigure(0, weight=0);
+bottom_frame.rowconfigure(1, weight=1);
 
 # Input list
 file_list = get_files("./input");
@@ -85,11 +86,28 @@ def highlight_image_callback(val):
     set_photo(output_img_frame, image)
 
 bottom_left = create_file_list(bottom_frame, file_list, change_input_callback)
-bottom_left.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
+bottom_left.grid(row=0, column=0, sticky="nsew", rowspan=2, padx=5, pady=5)
 
 # Output list
 bottom_right, output_listbox = create_log_list(bottom_frame, [], highlight_image_callback)
-bottom_right.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
+bottom_right.grid(row=1, column=1, sticky="nsew", padx=5, pady=5)
+
+
+def get_filter_input():
+    input_val = filter_input.get()
+    return input_val
+
+# search input
+filter_frame = ttk.Frame(bottom_frame)
+filter_frame.grid(row=0, column=1, sticky="nsew")
+filter_frame.rowconfigure(0, weight=1)
+filter_frame.columnconfigure(0, weight=0)
+filter_frame.columnconfigure(1, weight=3)
+filter_label = tk.Label(filter_frame, text="Filter: ")
+filter_label.grid(row=0,column=0,sticky="nsew")
+filter_input = tk.Entry(filter_frame )
+filter_input.grid(row=0,column=1,sticky="nsew")
+
 
 root.mainloop()
 

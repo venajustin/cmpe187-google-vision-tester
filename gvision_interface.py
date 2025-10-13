@@ -1,5 +1,5 @@
 from io import BytesIO
-def localize_objects(img): 
+def localize_objects(img, text_filter=None): 
 
     from google.cloud import vision
 
@@ -10,6 +10,12 @@ def localize_objects(img):
     image = vision.Image(content=buffer.getvalue())
 
     objects = client.object_localization(image=image).localized_object_annotations
+
+    def apply_filter(obj):
+        return text_filter in obj.name
+
+    if text_filter is not None:
+        objects = list(filter(apply_filter, objects))
 
     text_arr = []
     text_arr.append(f"Number of objects found: {len(objects)}")

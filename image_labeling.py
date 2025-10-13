@@ -26,6 +26,7 @@ def label_img(objects, img, highlight_index = -1):
                         pad_inches=0,
                         transparent=True)
     plt.close(plt.gcf())
+    plt.close()
     plt.clf()
     return Image.open(bio)
     
