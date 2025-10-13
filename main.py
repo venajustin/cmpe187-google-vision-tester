@@ -1,3 +1,24 @@
+"""
+
+Google Cloud Vision testing application
+
+Prerequisites:
+    install dependencies from requirements.txt
+    configure google cloud account and project
+        ensure the Google Cloud Vision API is enabled
+    Install gcloud cli and authenticate to google account
+    Ensure tkinter works on your machine with `python -m tkinter`
+
+Run with: 
+    windows:
+        py main.py
+    unix:
+        python3 main.py
+
+"""
+
+
+
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image,ImageTk
