@@ -2,7 +2,7 @@
   "test_case_id": "DT-003",
   "test_name": "Night + Separated Path + Traffic",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:51.878901",
+  "timestamp": "2025-10-12T21:07:04.774531",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 60,
@@ -93,9 +93,9 @@
   },
   "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (nighttime + traffic), HIGH alert for complex scenario",
   "timing": {
-    "start_time": "2025-10-12 18:13:50",
-    "end_time": "2025-10-12 18:13:51",
-    "duration_seconds": 1.053,
-    "duration_formatted": "1.05s"
+    "start_time": "2025-10-12 21:07:03",
+    "end_time": "2025-10-12 21:07:04",
+    "duration_seconds": 0.994,
+    "duration_formatted": "993.56ms"
   }
 }

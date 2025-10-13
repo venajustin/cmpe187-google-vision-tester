@@ -2,7 +2,7 @@
   "test_case_id": "EP-008",
   "test_name": "Dense Crowd Class (Golden Hour)",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:14.437153",
+  "timestamp": "2025-10-12T21:07:27.641446",
   "test_configuration": {
     "expected_people_count": 12,
     "detection_threshold": 85,
@@ -297,9 +297,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:12",
-    "end_time": "2025-10-12 18:14:14",
-    "duration_seconds": 2.022,
-    "duration_formatted": "2.02s"
+    "start_time": "2025-10-12 21:07:25",
+    "end_time": "2025-10-12 21:07:27",
+    "duration_seconds": 2.035,
+    "duration_formatted": "2.04s"
   }
 }

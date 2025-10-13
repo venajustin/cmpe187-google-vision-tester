@@ -2,7 +2,7 @@
   "test_case_id": "BVA-016",
   "test_name": "Maximum Distance Detection (100+ meters)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:39.385047",
+  "timestamp": "2025-10-12T21:06:52.183905",
   "test_configuration": {
     "expected_people_count": 4,
     "detection_threshold": 85,
@@ -71,9 +71,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:37",
-    "end_time": "2025-10-12 18:13:39",
-    "duration_seconds": 2.364,
-    "duration_formatted": "2.36s"
+    "start_time": "2025-10-12 21:06:50",
+    "end_time": "2025-10-12 21:06:52",
+    "duration_seconds": 2.086,
+    "duration_formatted": "2.09s"
   }
 }

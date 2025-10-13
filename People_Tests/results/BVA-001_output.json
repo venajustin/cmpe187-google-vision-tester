@@ -2,7 +2,7 @@
   "test_case_id": "BVA-001",
   "test_name": "Zero Pedestrians (Empty Road)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:03.653110",
+  "timestamp": "2025-10-12T21:06:17.279011",
   "test_configuration": {
     "expected_people_count": 0,
     "detection_threshold": 85,
@@ -55,9 +55,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:02",
-    "end_time": "2025-10-12 18:13:03",
-    "duration_seconds": 1.506,
-    "duration_formatted": "1.51s"
+    "start_time": "2025-10-12 21:06:16",
+    "end_time": "2025-10-12 21:06:17",
+    "duration_seconds": 1.216,
+    "duration_formatted": "1.22s"
   }
 }

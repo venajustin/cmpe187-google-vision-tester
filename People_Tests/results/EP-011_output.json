@@ -2,7 +2,7 @@
   "test_case_id": "EP-011",
   "test_name": "Ideal Conditions Baseline",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:21.089539",
+  "timestamp": "2025-10-12T21:07:34.621647",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -94,9 +94,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:18",
-    "end_time": "2025-10-12 18:14:21",
-    "duration_seconds": 2.749,
-    "duration_formatted": "2.75s"
+    "start_time": "2025-10-12 21:07:31",
+    "end_time": "2025-10-12 21:07:34",
+    "duration_seconds": 3.256,
+    "duration_formatted": "3.26s"
   }
 }

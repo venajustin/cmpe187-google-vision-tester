@@ -2,7 +2,7 @@
   "test_case_id": "DT-006",
   "test_name": "Dense Crosswalk + Multiple Groups (22 people)",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:56.663727",
+  "timestamp": "2025-10-12T21:07:09.557485",
   "test_configuration": {
     "expected_people_count": 22,
     "detection_threshold": 85,
@@ -221,9 +221,9 @@
   },
   "pass_criteria": "Detect 22 people (\u00b120% tolerance for crowd), detection rate \u226585%, CROWD detection mode for dense crosswalk",
   "timing": {
-    "start_time": "2025-10-12 18:13:55",
-    "end_time": "2025-10-12 18:13:56",
-    "duration_seconds": 0.925,
-    "duration_formatted": "924.73ms"
+    "start_time": "2025-10-12 21:07:08",
+    "end_time": "2025-10-12 21:07:09",
+    "duration_seconds": 0.9,
+    "duration_formatted": "900.15ms"
   }
 }

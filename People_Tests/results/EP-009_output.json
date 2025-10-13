@@ -2,7 +2,7 @@
   "test_case_id": "EP-009",
   "test_name": "Adverse Weather Conditions (Heavy Snow)",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:15.915856",
+  "timestamp": "2025-10-12T21:07:28.892514",
   "test_configuration": {
     "expected_people_count": 3,
     "detection_threshold": 85,
@@ -144,9 +144,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:14",
-    "end_time": "2025-10-12 18:14:15",
-    "duration_seconds": 1.176,
-    "duration_formatted": "1.18s"
+    "start_time": "2025-10-12 21:07:27",
+    "end_time": "2025-10-12 21:07:28",
+    "duration_seconds": 0.953,
+    "duration_formatted": "952.69ms"
   }
 }

@@ -2,7 +2,7 @@
   "test_case_id": "BVA-017",
   "test_name": "25% Occlusion (Minor Obstruction)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:41.639601",
+  "timestamp": "2025-10-12T21:06:54.452745",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -94,9 +94,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:39",
-    "end_time": "2025-10-12 18:13:41",
-    "duration_seconds": 1.947,
-    "duration_formatted": "1.95s"
+    "start_time": "2025-10-12 21:06:52",
+    "end_time": "2025-10-12 21:06:54",
+    "duration_seconds": 1.963,
+    "duration_formatted": "1.96s"
   }
 }

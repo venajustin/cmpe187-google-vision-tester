@@ -2,7 +2,7 @@
   "test_case_id": "BVA-021",
   "test_name": "Group at Night (4-5 people boundary in low light)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:48.094348",
+  "timestamp": "2025-10-12T21:07:00.697172",
   "test_configuration": {
     "expected_people_count": 4,
     "detection_threshold": 85,
@@ -169,9 +169,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:47",
-    "end_time": "2025-10-12 18:13:48",
-    "duration_seconds": 0.858,
-    "duration_formatted": "858.05ms"
+    "start_time": "2025-10-12 21:06:59",
+    "end_time": "2025-10-12 21:07:00",
+    "duration_seconds": 0.953,
+    "duration_formatted": "953.07ms"
   }
 }

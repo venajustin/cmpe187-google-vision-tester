@@ -2,7 +2,7 @@
   "test_case_id": "DT-002",
   "test_name": "Post-Accident Scene + Multiple Pedestrians",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:50.516542",
+  "timestamp": "2025-10-12T21:07:03.322963",
   "test_configuration": {
     "expected_people_count": 2,
     "detection_threshold": 85,
@@ -93,9 +93,9 @@
   },
   "pass_criteria": "Detect 2 people (\u00b11 tolerance), detection rate \u226585%, MEDIUM PRIORITY alert for emergency scene",
   "timing": {
-    "start_time": "2025-10-12 18:13:49",
-    "end_time": "2025-10-12 18:13:50",
-    "duration_seconds": 0.898,
-    "duration_formatted": "898.14ms"
+    "start_time": "2025-10-12 21:07:02",
+    "end_time": "2025-10-12 21:07:03",
+    "duration_seconds": 0.957,
+    "duration_formatted": "956.53ms"
   }
 }

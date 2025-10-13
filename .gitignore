@@ -4,6 +4,7 @@ output/
 
 # Test results - generated output from People_Tests
 People_Tests/TEST_REPORT.txt
+People_Tests/generate_report.py
 
 
 # Byte-compiled / optimized / DLL files

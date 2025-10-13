@@ -2,7 +2,7 @@
   "test_case_id": "DT-004",
   "test_name": "Pedestrian Crossing + Vehicle Moving",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:54.279282",
+  "timestamp": "2025-10-12T21:07:07.209212",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -93,9 +93,9 @@
   },
   "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226585%, CRITICAL priority for active crossing with approaching vehicle",
   "timing": {
-    "start_time": "2025-10-12 18:13:52",
-    "end_time": "2025-10-12 18:13:54",
-    "duration_seconds": 2.093,
-    "duration_formatted": "2.09s"
+    "start_time": "2025-10-12 21:07:05",
+    "end_time": "2025-10-12 21:07:07",
+    "duration_seconds": 2.137,
+    "duration_formatted": "2.14s"
   }
 }

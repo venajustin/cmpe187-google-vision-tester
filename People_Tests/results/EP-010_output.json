@@ -2,7 +2,7 @@
   "test_case_id": "EP-010",
   "test_name": "Different Poses/Positions (Sitting)",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:18.032908",
+  "timestamp": "2025-10-12T21:07:31.055726",
   "test_configuration": {
     "expected_people_count": 4,
     "detection_threshold": 85,
@@ -221,9 +221,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:16",
-    "end_time": "2025-10-12 18:14:18",
-    "duration_seconds": 1.813,
-    "duration_formatted": "1.81s"
+    "start_time": "2025-10-12 21:07:29",
+    "end_time": "2025-10-12 21:07:31",
+    "duration_seconds": 1.864,
+    "duration_formatted": "1.86s"
   }
 }

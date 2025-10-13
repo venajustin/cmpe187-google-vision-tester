@@ -2,7 +2,7 @@
   "test_case_id": "DT-005",
   "test_name": "Empty Street + Urban + Wet + Night Conditions",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:55.437513",
+  "timestamp": "2025-10-12T21:07:08.351909",
   "test_configuration": {
     "expected_people_count": 0,
     "detection_threshold": 100,
@@ -42,9 +42,9 @@
   },
   "pass_criteria": "Detect 0 people, no false positives from wet reflections or shadows",
   "timing": {
-    "start_time": "2025-10-12 18:13:54",
-    "end_time": "2025-10-12 18:13:55",
-    "duration_seconds": 0.857,
-    "duration_formatted": "857.07ms"
+    "start_time": "2025-10-12 21:07:07",
+    "end_time": "2025-10-12 21:07:08",
+    "duration_seconds": 0.843,
+    "duration_formatted": "843.00ms"
   }
 }

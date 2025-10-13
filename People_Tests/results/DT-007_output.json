@@ -2,7 +2,7 @@
   "test_case_id": "DT-007",
   "test_name": "Weather + Visibility + Pedestrian Detection",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:58.231564",
+  "timestamp": "2025-10-12T21:07:11.029672",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 60,
@@ -68,9 +68,9 @@
   },
   "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (weather conditions), HIGH alert with ENHANCED SENSITIVITY mode",
   "timing": {
-    "start_time": "2025-10-12 18:13:56",
-    "end_time": "2025-10-12 18:13:58",
-    "duration_seconds": 1.266,
-    "duration_formatted": "1.27s"
+    "start_time": "2025-10-12 21:07:09",
+    "end_time": "2025-10-12 21:07:11",
+    "duration_seconds": 1.172,
+    "duration_formatted": "1.17s"
   }
 }

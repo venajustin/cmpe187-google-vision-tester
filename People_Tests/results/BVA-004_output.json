@@ -2,7 +2,7 @@
   "test_case_id": "BVA-004",
   "test_name": "Exact Count of 3 Pedestrians (Small Group Min+1)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:12.877526",
+  "timestamp": "2025-10-12T21:06:26.495141",
   "test_configuration": {
     "expected_people_count": 3,
     "detection_threshold": 85,
@@ -169,9 +169,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:12",
-    "end_time": "2025-10-12 18:13:12",
-    "duration_seconds": 0.876,
-    "duration_formatted": "875.54ms"
+    "start_time": "2025-10-12 21:06:25",
+    "end_time": "2025-10-12 21:06:26",
+    "duration_seconds": 1.033,
+    "duration_formatted": "1.03s"
   }
 }

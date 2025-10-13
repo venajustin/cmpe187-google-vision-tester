@@ -2,7 +2,7 @@
   "test_case_id": "BVA-019",
   "test_name": "75% Occlusion (Mostly Hidden)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:45.326513",
+  "timestamp": "2025-10-12T21:06:57.699287",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -70,9 +70,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:43",
-    "end_time": "2025-10-12 18:13:45",
-    "duration_seconds": 2.156,
-    "duration_formatted": "2.16s"
+    "start_time": "2025-10-12 21:06:55",
+    "end_time": "2025-10-12 21:06:57",
+    "duration_seconds": 1.796,
+    "duration_formatted": "1.80s"
   }
 }

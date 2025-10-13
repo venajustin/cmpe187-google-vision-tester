@@ -2,7 +2,7 @@
   "test_case_id": "EP-001",
   "test_name": "Severe Backlighting/Silhouette Class",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:00.035938",
+  "timestamp": "2025-10-12T21:07:13.163920",
   "test_configuration": {
     "expected_people_count": 2,
     "detection_threshold": 85,
@@ -144,9 +144,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:58",
-    "end_time": "2025-10-12 18:14:00",
-    "duration_seconds": 1.497,
-    "duration_formatted": "1.50s"
+    "start_time": "2025-10-12 21:07:11",
+    "end_time": "2025-10-12 21:07:13",
+    "duration_seconds": 1.833,
+    "duration_formatted": "1.83s"
   }
 }

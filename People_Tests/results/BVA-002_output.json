@@ -2,7 +2,7 @@
   "test_case_id": "BVA-002",
   "test_name": "Single Person Detection (1 vs 0 boundary)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:09.118467",
+  "timestamp": "2025-10-12T21:06:22.637164",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -119,9 +119,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:04",
-    "end_time": "2025-10-12 18:13:09",
-    "duration_seconds": 5.049,
+    "start_time": "2025-10-12 21:06:17",
+    "end_time": "2025-10-12 21:06:22",
+    "duration_seconds": 5.046,
     "duration_formatted": "5.05s"
   }
 }

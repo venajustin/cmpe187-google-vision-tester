@@ -2,7 +2,7 @@
   "test_case_id": "BVA-014",
   "test_name": "Count of 20 Pedestrians (Large Group Maximum)",
   "category": "Boundary Value Analysis",
-  "timestamp": "2025-10-12T18:13:35.399637",
+  "timestamp": "2025-10-12T21:06:48.484395",
   "test_configuration": {
     "expected_people_count": 20,
     "detection_threshold": 85,
@@ -247,9 +247,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:13:33",
-    "end_time": "2025-10-12 18:13:35",
-    "duration_seconds": 2.026,
-    "duration_formatted": "2.03s"
+    "start_time": "2025-10-12 21:06:46",
+    "end_time": "2025-10-12 21:06:48",
+    "duration_seconds": 2.16,
+    "duration_formatted": "2.16s"
   }
 }

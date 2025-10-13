@@ -2,7 +2,7 @@
   "test_case_id": "EP-006",
   "test_name": "False Positive Prevention - Billboard with Human Image",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:11.007577",
+  "timestamp": "2025-10-12T21:07:24.168489",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -171,9 +171,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:09",
-    "end_time": "2025-10-12 18:14:11",
-    "duration_seconds": 1.135,
-    "duration_formatted": "1.13s"
+    "start_time": "2025-10-12 21:07:23",
+    "end_time": "2025-10-12 21:07:24",
+    "duration_seconds": 1.016,
+    "duration_formatted": "1.02s"
   }
 }

@@ -2,7 +2,7 @@
   "test_case_id": "EP-007",
   "test_name": "False Positive Prevention - Billboard Only",
   "category": "Equivalence Partition",
-  "timestamp": "2025-10-12T18:14:12.110423",
+  "timestamp": "2025-10-12T21:07:25.305629",
   "test_configuration": {
     "expected_people_count": 0,
     "detection_threshold": 85,
@@ -122,9 +122,9 @@
     }
   },
   "timing": {
-    "start_time": "2025-10-12 18:14:11",
-    "end_time": "2025-10-12 18:14:12",
-    "duration_seconds": 0.791,
-    "duration_formatted": "790.79ms"
+    "start_time": "2025-10-12 21:07:24",
+    "end_time": "2025-10-12 21:07:25",
+    "duration_seconds": 0.839,
+    "duration_formatted": "838.81ms"
   }
 }

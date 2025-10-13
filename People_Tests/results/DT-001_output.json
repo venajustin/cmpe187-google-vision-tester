@@ -2,7 +2,7 @@
   "test_case_id": "DT-001",
   "test_name": "Pedestrian Crossing + Vehicle Yielding",
   "category": "Decision Table",
-  "timestamp": "2025-10-12T18:13:49.318735",
+  "timestamp": "2025-10-12T21:07:02.064057",
   "test_configuration": {
     "expected_people_count": 1,
     "detection_threshold": 85,
@@ -93,9 +93,9 @@
   },
   "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226585%, HIGH PRIORITY alert for safety-critical crosswalk scenario",
   "timing": {
-    "start_time": "2025-10-12 18:13:48",
-    "end_time": "2025-10-12 18:13:49",
-    "duration_seconds": 0.925,
-    "duration_formatted": "924.52ms"
+    "start_time": "2025-10-12 21:07:00",
+    "end_time": "2025-10-12 21:07:02",
+    "duration_seconds": 1.069,
+    "duration_formatted": "1.07s"
   }
 }
