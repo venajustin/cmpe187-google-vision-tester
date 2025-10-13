@@ -1,19 +1,19 @@
 """
 Test Case ID: BVA-016
 Category: Boundary Value Analysis
-Description: Maximum Distance Detection (100+ meters). People visible at extreme distance (>100m from camera) with clear visibility.
+Description: Maximum Distance Detection (100+ meters). People visible at extreme distance (>100m from camera) with clear visibility. 4 clearly visible people with additional faint figures in background.
 
 Test Input:
-[IMAGE: Wide street view with people visible in far distance]
+[IMAGE: Wide street view with 4 clearly visible people in far distance]
 
 Input Categories:
 - Environmental Conditions: Daylight
 - Distance Range: Far (>100m)
 - Occlusion Level: None (100% visible)
-- Group Size: Small Group (1-3 people)
+- Group Size: Small Group (4 people)
 
 Expected Result:
-- Detection count = 2
+- Detection count = 4 (clearly visible people)
 - Detection rate: ≥60% (distance challenge)
 - Count accuracy: Within ±1 tolerance for small group
 - Detection if person >10 pixels tall
@@ -86,7 +86,7 @@ def test_bva_016():
     people_detected = filter_people(objects)
 
     # Calculate metrics
-    actual_people = 2  # Ground truth
+    actual_people = 4  # Ground truth: 4 clearly visible people (more faint in background but uncountable)
     detected_people = len(people_detected)
 
     metrics = calculate_metrics(actual_people, detected_people, 'small')
@@ -129,10 +129,10 @@ def test_bva_016():
             'environmental_conditions': 'Daylight',
             'distance_range': 'Far (>100m)',
             'occlusion_level': 'None (100% visible)',
-            'group_size': 'Small Group (1-3 people)'
+            'group_size': 'Small Group (4 people)'
         },
         'expected_results': {
-            'actual_people_in_scene': 2,
+            'actual_people_in_scene': 4,
             'detection_rate_threshold': 85,
             'count_tolerance': metrics['count_tolerance']
         },
@@ -140,10 +140,10 @@ def test_bva_016():
             'detection_rate_met': metrics['detection_rate'] >= 85,
             'count_within_tolerance': metrics['count_within_tolerance'],
             'expected_vs_actual_count': {
-                'expected': 2,
+                'expected': 4,
                 'actual': detected_people,
                 'difference': metrics['count_error'],
-                'exact_match': detected_people == 2
+                'exact_match': detected_people == 4
             },
             'criteria_checks': {
                 'detection_rate': {
@@ -159,12 +159,12 @@ def test_bva_016():
             }
         },
         'test_reason': (
-            f"Test PASSED: Expected 2 people, detected {detected_people} people. "
+            f"Test PASSED: Expected 4 people, detected {detected_people} people. "
             f"Detection rate: {metrics['detection_rate']:.1f}% (≥85% required). "
             f"Count error: {metrics['count_error']} (within ±{metrics['count_tolerance']} tolerance for small groups). "
             f"Meets functional requirements."
             if test_passed else
-            f"Test FAILED: Expected 2 people, detected {detected_people} people. "
+            f"Test FAILED: Expected 4 people, detected {detected_people} people. "
             + (f"Detection rate: {metrics['detection_rate']:.1f}% (<85% threshold). " if metrics['detection_rate'] < 85 else "")
             + (f"Count error: {metrics['count_error']} (exceeds ±{metrics['count_tolerance']} tolerance). " if not metrics['count_within_tolerance'] else "")
             + "Does not meet functional requirements."

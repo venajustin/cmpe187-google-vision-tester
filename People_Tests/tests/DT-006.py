@@ -1,22 +1,22 @@
 """
 Test Case ID: DT-006
 Category: Decision Table
-Description: Dense Crosswalk + Multiple Groups
-Detailed Description: Several groups of people are at a busy intersection, with high pedestrian density and clear visibility.
+Description: Dense Crosswalk + Multiple Groups (22 people)
+Detailed Description: Several groups of people are at a busy intersection, with high pedestrian density and clear visibility. 22 clearly visible people with additional faint figures in background.
 
 Test Input:
-    [IMAGE: DT-006.jpg from images folder]
+    [IMAGE: DT-006.jpg from images folder - 22 people]
 
 Expected Result:
-- GROUP detection mode activated
-- Count within tolerance: 15-25 people (±20% acceptable)
+- CROWD detection mode activated (22 people)
+- Count within tolerance: ±20% acceptable for crowd
 - Multiple groups identified (3-5 distinct clusters)
 - STANDARD processing (good visibility)
 - DENSE CROSSWALK classification
 - MEDIUM-HIGH alert
 
 Pass Criteria:
-    Detect 15-25 people (±20% tolerance for large group), detection rate ≥85%, GROUP detection mode for dense crosswalk
+    Detect 22 people (±20% tolerance for crowd), detection rate ≥85%, CROWD detection mode for dense crosswalk
 
 Actual Result: [Generated during test execution]
 Pass/Fail: [Determined by comparing actual vs expected results using functional requirements]
@@ -41,7 +41,7 @@ from test_utils import (
 def test_dt_006():
     """
     Test Case: DT-006
-    Description: Dense Crosswalk + Multiple Groups
+    Description: Dense Crosswalk + Multiple Groups (22 people)
     """
 
     # Record start time
@@ -50,9 +50,9 @@ def test_dt_006():
 
     # Test configuration
     test_id = "DT-006"
-    actual_people = 18
+    actual_people = 22  # Ground truth: 22 clearly visible people (more faint in background but uncountable)
     detection_threshold = 85
-    group_size_category = 'large'
+    group_size_category = 'crowd'  # 22 people is crowd (>20)
 
     # Setup paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -140,18 +140,18 @@ def test_dt_006():
     test_config = {
         'test_id': test_id,
         'category': 'Decision Table',
-        'description': 'Dense Crosswalk + Multiple Groups',
-        'detailed_description': 'Several groups of people are at a busy intersection, with high pedestrian density and clear visibility.',
+        'description': 'Dense Crosswalk + Multiple Groups (22 people)',
+        'detailed_description': 'Several groups of people are at a busy intersection, with high pedestrian density and clear visibility. 22 clearly visible people with additional faint figures in background.',
         'actual_people': actual_people,
         'detection_threshold': detection_threshold,
         'group_size_category': group_size_category,
-        'expected_results': """- GROUP detection mode activated
-- Count within tolerance: 15-25 people (±20% acceptable)
+        'expected_results': """- CROWD detection mode activated (22 people)
+- Count within tolerance: ±20% acceptable for crowd
 - Multiple groups identified (3-5 distinct clusters)
 - STANDARD processing (good visibility)
 - DENSE CROSSWALK classification
 - MEDIUM-HIGH alert""",
-        'pass_criteria': 'Detect 15-25 people (±20% tolerance for large group), detection rate ≥85%, GROUP detection mode for dense crosswalk'
+        'pass_criteria': 'Detect 22 people (±20% tolerance for crowd), detection rate ≥85%, CROWD detection mode for dense crosswalk'
     }
 
     # Record end time and calculate duration

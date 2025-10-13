@@ -1,25 +1,26 @@
 """
 Test Case ID: EP-004
 Category: Equivalence Partition
-Description: Extreme Glare/Blinding Light Class. Scene with sun glare or bright reflections affecting visibility, direct sunlight into the camera.
+Description: Extreme Glare/Blinding Light Class. Scene with sun glare or bright reflections affecting visibility, direct sunlight into the camera. 19 clearly visible people with additional faint figures obscured by glare.
 
 Test Input:
-[IMAGE: Street scene with intense sun glare, golden lighting]
+[IMAGE: Street scene with 19 people, intense sun glare, golden lighting]
 
 Input Categories:
 - Environmental Conditions: Extreme glare/blinding light
 - Distance Range: Close to Medium
 - Occlusion Level: Visual degradation from glare
-- Group Size: Small Group (2-3 people)
+- Group Size: Large Group (19 people)
 
 Expected Result:
-- Degraded detection performance
+- Detection count = 19 (clearly visible people)
+- Degraded detection performance due to glare
 - Lower confidence acceptable (0.55-0.75)
 - Some missed detections acceptable (especially for silhouetted/washed-out figures)
 - Bounding boxes may be less precise
 
 Success Criteria:
-- PASS: ≥60% detection rate (glare challenge), count within ±1 tolerance
+- PASS: ≥60% detection rate (glare challenge), count within ±20% tolerance for large group
 - FAIL: <60% detection rate or count error exceeds tolerance
 
 Actual Result: [To be filled during testing]
@@ -49,9 +50,9 @@ from tests.test_utils import (
 
 def test_ep_004():
     """
-    Test EP-004: Extreme Glare/Blinding Light Class
+    Test EP-004: Extreme Glare/Blinding Light Class (19 people)
 
-    This test verifies detection with extreme glare/blinding light conditions.
+    This test verifies detection with extreme glare/blinding light conditions affecting 19 people.
     """
     TEST_ID = 'EP-004'
 
@@ -84,10 +85,10 @@ def test_ep_004():
     people_detected = filter_people(objects)
 
     # Calculate metrics
-    actual_people = 2  # Ground truth
+    actual_people = 19  # Ground truth: 19 clearly visible people (more faint in background but uncountable due to glare)
     detected_people = len(people_detected)
 
-    metrics = calculate_metrics(actual_people, detected_people, 'small')
+    metrics = calculate_metrics(actual_people, detected_people, 'large')
 
     # Determine pass/fail based on criteria
     test_passed = True
@@ -121,17 +122,17 @@ def test_ep_004():
     # Prepare test configuration for JSON output
     test_config = {
         'test_id': TEST_ID,
-        'test_name': 'Extreme Glare/Blinding Light Class',
+        'test_name': 'Extreme Glare/Blinding Light Class (19 people)',
         'category': 'Equivalence Partition',
         'actual_people': actual_people,
         'input_categories': {
             'environmental_conditions': 'Extreme glare/blinding light',
             'distance_range': 'Close to Medium',
             'occlusion_level': 'Visual degradation from glare',
-            'group_size': 'Small Group (2-3 people)'
+            'group_size': 'Large Group (19 people)'
         },
         'expected_results': {
-            'actual_people_in_scene': 2,
+            'actual_people_in_scene': 19,
             'detection_rate_threshold': 60,
             'count_tolerance': metrics['count_tolerance']
         },
@@ -139,10 +140,10 @@ def test_ep_004():
             'detection_rate_met': metrics['detection_rate'] >= 60,
             'count_within_tolerance': metrics['count_within_tolerance'],
             'expected_vs_actual_count': {
-                'expected': 2,
+                'expected': 19,
                 'actual': detected_people,
                 'difference': metrics['count_error'],
-                'exact_match': detected_people == 2
+                'exact_match': detected_people == 19
             },
             'criteria_checks': {
                 'detection_rate': {
@@ -158,12 +159,12 @@ def test_ep_004():
             }
         },
         'test_reason': (
-            f"Test PASSED: Expected 2 people, detected {detected_people} people. "
+            f"Test PASSED: Expected 19 people, detected {detected_people} people. "
             f"Detection rate: {metrics['detection_rate']:.1f}% (≥60% required). "
-            f"Count error: {metrics['count_error']} (within ±{metrics['count_tolerance']} tolerance). "
+            f"Count error: {metrics['count_error']} (within ±{metrics['count_tolerance']} tolerance for large groups). "
             f"Meets functional requirements for Extreme Glare/Blinding Light Class."
             if test_passed else
-            f"Test FAILED: Expected 2 people, detected {detected_people} people. "
+            f"Test FAILED: Expected 19 people, detected {detected_people} people. "
             + (f"Detection rate: {metrics['detection_rate']:.1f}% (<60% threshold). " if metrics['detection_rate'] < 60 else "")
             + (f"Count error: {metrics['count_error']} (exceeds ±{metrics['count_tolerance']} tolerance). " if not metrics['count_within_tolerance'] else "")
             + "Does not meet functional requirements."

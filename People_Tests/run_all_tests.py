@@ -217,33 +217,49 @@ class ReportGenerator:
         challenging_lighting = 0
         adverse_weather = 0
         high_occlusion = 0
+        normal_conditions = 0
+        categorized_tests = set()
 
         for test_id, data in self.json_results.items():
             test_name = data.get('test_name', '').lower()
             description = data.get('description', '').lower()
             combined = test_name + ' ' + description
+            is_categorized = False
 
             # Ideal conditions
             if 'ideal' in combined or 'perfect' in combined or 'optimal' in combined:
                 ideal += 1
+                is_categorized = True
 
             # Challenging lighting
             if any(keyword in combined for keyword in ['night', 'low light', 'backlighting', 'glare', 'silhouette']):
                 challenging_lighting += 1
+                is_categorized = True
 
             # Adverse weather
             if any(keyword in combined for keyword in ['rain', 'snow', 'weather', 'wet']):
                 adverse_weather += 1
+                is_categorized = True
 
             # High occlusion
             if any(keyword in combined for keyword in ['occlusion', 'hidden', 'crowd', 'dense']):
                 high_occlusion += 1
+                is_categorized = True
+
+            # Normal/Standard conditions (everything else)
+            if not is_categorized:
+                normal_conditions += 1
+
+            if is_categorized:
+                categorized_tests.add(test_id)
 
         return {
             'ideal': ideal,
             'challenging_lighting': challenging_lighting,
             'adverse_weather': adverse_weather,
-            'high_occlusion': high_occlusion
+            'high_occlusion': high_occlusion,
+            'normal_conditions': normal_conditions,
+            'categorized_tests': categorized_tests
         }
 
     def analyze_bugs(self):
@@ -430,10 +446,13 @@ class ReportGenerator:
         report.append(f"  Complex (crowds/groups, multiple factors): {complexity['complex']} tests ({complexity['complex_pct']:.1f}%)")
         report.append("")
         report.append("Environmental Complexity (People Detection):")
+        report.append(f"  Normal/Standard conditions: {env_coverage['normal_conditions']} tests")
         report.append(f"  Ideal conditions: {env_coverage['ideal']} tests")
         report.append(f"  Challenging lighting: {env_coverage['challenging_lighting']} tests")
         report.append(f"  Adverse weather: {env_coverage['adverse_weather']} tests")
         report.append(f"  High occlusion: {env_coverage['high_occlusion']} tests")
+        env_total = env_coverage['normal_conditions'] + env_coverage['ideal'] + env_coverage['challenging_lighting'] + env_coverage['adverse_weather'] + env_coverage['high_occlusion']
+        report.append(f"  Total: {env_total} tests (Note: Some tests may be in multiple categories)")
         report.append("")
 
         # Test Coverage Analysis

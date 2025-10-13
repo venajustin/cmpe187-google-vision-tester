@@ -1,24 +1,24 @@
 """
 Test Case ID: BVA-020
 Category: Boundary Value Analysis
-Description: Partial Visibility at Frame Edge. Scene contains person(s) where at least one person is partially cut off by the frame boundary.
+Description: Partial Visibility at Frame Edge. Scene contains 3 people: 1 clear person in frame, 1 faint person in background, and 1 person partially cut off by the frame boundary.
 
 Test Input:
-[IMAGE: Person at crosswalk with right side of body cut off by frame edge]
+[IMAGE: 3 people at crosswalk - 1 clear, 1 faint background, 1 cut off by frame edge]
 
 Input Categories:
 - Environmental Conditions: Daylight
 - Distance Range: Close to Medium
-- Occlusion Level: Frame edge cropping
-- Group Size: Small Group (2 people)
+- Occlusion Level: Frame edge cropping, background occlusion
+- Group Size: Small Group (3 people)
 
 Expected Result:
-- Detection count = 2
-- Detection rate: ≥85% (at least 2/2 detected)
+- Detection count = 3
+- Detection rate: ≥85% (at least 3/3 detected)
 - Count accuracy: Within ±1 tolerance for small group
 - Bounding box on fully visible person (center): Confidence >0.8
-- Bounding box on partially visible person (right edge): Confidence >0.5
-- System successfully detects person despite incomplete body in frame
+- Bounding box on partially visible person (frame edge): Confidence >0.5
+- System successfully detects people despite incomplete body in frame and background occlusion
 
 Success Criteria:
 - PASS: ≥85% detection rate, count within tolerance
@@ -51,9 +51,9 @@ from tests.test_utils import (
 
 def test_bva_020():
     """
-    Test BVA-020: Exact Count of 1 Pedestrian (Frame Edge)
+    Test BVA-020: 3 Pedestrians (Frame Edge + Background)
 
-    This test verifies detection of people at frame edges with partial visibility.
+    This test verifies detection of 3 people: 1 clear, 1 faint in background, 1 at frame edge with partial visibility.
     """
     TEST_ID = 'BVA-020'
 
@@ -86,7 +86,7 @@ def test_bva_020():
     people_detected = filter_people(objects)
 
     # Calculate metrics
-    actual_people = 2  # Ground truth
+    actual_people = 3  # Ground truth: 1 clear person, 1 faint in background, 1 cut off by frame
     detected_people = len(people_detected)
 
     metrics = calculate_metrics(actual_people, detected_people, 'small')
@@ -122,17 +122,17 @@ def test_bva_020():
     # Prepare test configuration for JSON output
     test_config = {
         'test_id': TEST_ID,
-        'test_name': 'Exact Count of 1 Pedestrian (Frame Edge)',
+        'test_name': '3 Pedestrians (Frame Edge + Background)',
         'category': 'Boundary Value Analysis',
         'actual_people': actual_people,
         'input_categories': {
             'environmental_conditions': 'Daylight',
             'distance_range': 'Close to Medium',
-            'occlusion_level': 'Frame edge cropping',
-            'group_size': 'Small Group (2 people)'
+            'occlusion_level': 'Frame edge cropping, background occlusion',
+            'group_size': 'Small Group (3 people)'
         },
         'expected_results': {
-            'actual_people_in_scene': 2,
+            'actual_people_in_scene': 3,
             'detection_rate_threshold': 85,
             'count_tolerance': metrics['count_tolerance']
         },
@@ -140,10 +140,10 @@ def test_bva_020():
             'detection_rate_met': metrics['detection_rate'] >= 85,
             'count_within_tolerance': metrics['count_within_tolerance'],
             'expected_vs_actual_count': {
-                'expected': 2,
+                'expected': 3,
                 'actual': detected_people,
                 'difference': metrics['count_error'],
-                'exact_match': detected_people == 2
+                'exact_match': detected_people == 3
             },
             'criteria_checks': {
                 'detection_rate': {
@@ -159,12 +159,12 @@ def test_bva_020():
             }
         },
         'test_reason': (
-            f"Test PASSED: Expected 2 people, detected {detected_people} people. "
+            f"Test PASSED: Expected 3 people, detected {detected_people} people. "
             f"Detection rate: {metrics['detection_rate']:.1f}% (≥85% required). "
             f"Count error: {metrics['count_error']} (within ±{metrics['count_tolerance']} tolerance for small groups). "
             f"Meets functional requirements."
             if test_passed else
-            f"Test FAILED: Expected 2 people, detected {detected_people} people. "
+            f"Test FAILED: Expected 3 people, detected {detected_people} people. "
             + (f"Detection rate: {metrics['detection_rate']:.1f}% (<85% threshold). " if metrics['detection_rate'] < 85 else "")
             + (f"Count error: {metrics['count_error']} (exceeds ±{metrics['count_tolerance']} tolerance). " if not metrics['count_within_tolerance'] else "")
             + "Does not meet functional requirements."

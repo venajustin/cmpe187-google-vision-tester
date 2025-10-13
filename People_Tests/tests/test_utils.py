@@ -106,6 +106,35 @@ def filter_people(objects):
     return [obj for obj in objects if obj.name.lower() in ['person', 'people', 'pedestrian']]
 
 
+def get_group_size_category(people_count):
+    """
+    Determine the group size category based on people count.
+
+    Categories:
+    - individual: 0-1 people
+    - small: 2-5 people
+    - medium: 6-10 people
+    - large: 11-20 people
+    - crowd: >20 people
+
+    Args:
+        people_count: Number of people (int)
+
+    Returns:
+        str: Group size category
+    """
+    if people_count <= 1:
+        return 'individual'
+    elif 2 <= people_count <= 5:
+        return 'small'
+    elif 6 <= people_count <= 10:
+        return 'medium'
+    elif 11 <= people_count <= 20:
+        return 'large'
+    else:  # > 20
+        return 'crowd'
+
+
 def calculate_metrics(actual_people, detected_people, group_size_category='small'):
     """
     Calculate detection metrics based on actual and detected counts.
@@ -167,6 +196,43 @@ def format_duration(duration_seconds):
         return f"{minutes}m {seconds:.2f}s"
 
 
+def _standardize_expected_results(test_config, metrics):
+    """
+    Standardize the expected_results section to have consistent fields across all tests.
+
+    Args:
+        test_config: Dictionary containing test configuration
+        metrics: Dictionary of calculated metrics
+
+    Returns:
+        dict: Standardized expected_results dictionary
+    """
+    # Build standardized expected_results with all fields
+    expected_results = {
+        "actual_people_in_scene": test_config['actual_people'],
+        "detection_rate_threshold": test_config.get('detection_threshold', 85),
+        "count_tolerance": metrics.get('count_tolerance', 0),
+        "group_size_category": test_config.get('group_size_category', get_group_size_category(test_config['actual_people'])),
+        "false_positives": 0,
+        "false_negatives": 0
+    }
+
+    # Add confidence_threshold if specified in test config
+    if 'confidence_threshold' in test_config:
+        expected_results['confidence_threshold'] = test_config['confidence_threshold']
+
+    # Add special notes for DT tests or other descriptive information
+    # If test_config has 'expected_results' as a string (DT format), include it as 'test_expectations'
+    if 'expected_results' in test_config and isinstance(test_config['expected_results'], str):
+        expected_results['test_expectations'] = test_config['expected_results']
+
+    # Add pass_criteria if specified
+    if 'pass_criteria' in test_config:
+        expected_results['pass_criteria'] = test_config['pass_criteria']
+
+    return expected_results
+
+
 def create_json_output(test_config, people_detected, metrics, test_passed, failure_reasons, output_files, timing_info=None):
     """
     Create standardized JSON output for test results.
@@ -192,10 +258,10 @@ def create_json_output(test_config, people_detected, metrics, test_passed, failu
         "test_configuration": {
             "expected_people_count": test_config['actual_people'],
             "detection_threshold": test_config.get('detection_threshold', 85),
-            "group_size_category": test_config.get('group_size_category', 'small')
+            "group_size_category": test_config.get('group_size_category', get_group_size_category(test_config['actual_people']))
         },
         "description": test_config.get('detailed_description', test_config.get('test_name', '')),
-        "expected_results": test_config['expected_results'],
+        "expected_results": _standardize_expected_results(test_config, metrics),
         "actual_results": {
             "actual_people_in_scene": test_config['actual_people'],
             "detected_people": len(people_detected),

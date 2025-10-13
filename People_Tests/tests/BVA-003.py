@@ -132,6 +132,7 @@ def test_bva_003():
         'test_name': 'Exact Count of 2 Pedestrians',
         'category': 'Boundary Value Analysis',
         'actual_people': actual_people,
+        'confidence_threshold': 0.75,
         'input_categories': {
             'environmental_conditions': 'Daylight (backlighting)',
             'distance_range': 'Close to Medium',
@@ -141,8 +142,7 @@ def test_bva_003():
         'expected_results': {
             'actual_people_in_scene': 2,
             'detection_rate_threshold': 85,
-            'count_tolerance': metrics['count_tolerance'],
-            'confidence_threshold': 0.75
+            'count_tolerance': metrics['count_tolerance']
         },
         'comparison': {
             'detection_rate_met': metrics['detection_rate'] >= 85,

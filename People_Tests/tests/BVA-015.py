@@ -1,21 +1,21 @@
 """
 Test Case ID: BVA-015
 Category: Boundary Value Analysis
-Description: 21+ Pedestrians (Above Large Group Maximum). Very dense crowd with more than 20 people, extreme crowd density, heavy occlusions.
+Description: 21 Pedestrians (Above Large Group Maximum). Dense crowd with 21 clearly visible people, with additional faint figures in background that are difficult to count. Extreme crowd density, heavy occlusions.
 
 Test Input:
-[IMAGE: Crowded plaza/street with 20+ people, backlighting]
+[IMAGE: Crowded plaza/street with 21 clearly visible people, backlighting]
 
 Input Categories:
 - Environmental Conditions: Daylight (backlighting)
 - Distance Range: Mixed (close to far)
 - Occlusion Level: Heavy (extreme crowd density)
-- Group Size: Crowd (21+ people)
+- Group Size: Crowd (21 people)
 
 Expected Result:
-- Detection count = 21+
+- Detection count = 21 (clearly visible people)
 - Detection rate: ≥85% detection of visible people
-- Count accuracy: Within ±±20% tolerance for crowd group
+- Count accuracy: Within ±20% tolerance for crowd group
 - Crowd classification
 - Confidence variable across individuals (>0.40 minimum)
 - Focus on crowd presence detection rather than exact count
@@ -51,9 +51,9 @@ from tests.test_utils import (
 
 def test_bva_015():
     """
-    Test BVA-015: 21+ Pedestrians (Above Large Group Maximum)
+    Test BVA-015: 21 Pedestrians (Above Large Group Maximum)
 
-    This test verifies crowd detection with 21+ people, focusing on presence over exact count.
+    This test verifies crowd detection with 21 clearly visible people, focusing on presence over exact count.
     """
     TEST_ID = 'BVA-015'
 
@@ -86,7 +86,7 @@ def test_bva_015():
     people_detected = filter_people(objects)
 
     # Calculate metrics
-    actual_people = 25  # Ground truth
+    actual_people = 21  # Ground truth: 21 clearly visible people (more faint in background but uncountable)
     detected_people = len(people_detected)
 
     metrics = calculate_metrics(actual_people, detected_people, 'large')
@@ -122,17 +122,17 @@ def test_bva_015():
     # Prepare test configuration for JSON output
     test_config = {
         'test_id': TEST_ID,
-        'test_name': '21+ Pedestrians (Above Large Group Maximum)',
+        'test_name': '21 Pedestrians (Above Large Group Maximum)',
         'category': 'Boundary Value Analysis',
         'actual_people': actual_people,
         'input_categories': {
             'environmental_conditions': 'Daylight (backlighting)',
             'distance_range': 'Mixed (close to far)',
             'occlusion_level': 'Heavy (extreme crowd density)',
-            'group_size': 'Crowd (21+ people)'
+            'group_size': 'Crowd (21 people)'
         },
         'expected_results': {
-            'actual_people_in_scene': 25,
+            'actual_people_in_scene': 21,
             'detection_rate_threshold': 85,
             'count_tolerance': metrics['count_tolerance']
         },
@@ -140,10 +140,10 @@ def test_bva_015():
             'detection_rate_met': metrics['detection_rate'] >= 85,
             'count_within_tolerance': metrics['count_within_tolerance'],
             'expected_vs_actual_count': {
-                'expected': 25,
+                'expected': 21,
                 'actual': detected_people,
                 'difference': metrics['count_error'],
-                'exact_match': detected_people == 25
+                'exact_match': detected_people == 21
             },
             'criteria_checks': {
                 'detection_rate': {
@@ -159,12 +159,12 @@ def test_bva_015():
             }
         },
         'test_reason': (
-            f"Test PASSED: Expected 25 people, detected {detected_people} people. "
+            f"Test PASSED: Expected 21 people, detected {detected_people} people. "
             f"Detection rate: {metrics['detection_rate']:.1f}% (≥85% required). "
             f"Count error: {metrics['count_error']} (within ±{metrics['count_tolerance']} tolerance for crowd groups). "
             f"Meets functional requirements."
             if test_passed else
-            f"Test FAILED: Expected 25 people, detected {detected_people} people. "
+            f"Test FAILED: Expected 21 people, detected {detected_people} people. "
             + (f"Detection rate: {metrics['detection_rate']:.1f}% (<85% threshold). " if metrics['detection_rate'] < 85 else "")
             + (f"Count error: {metrics['count_error']} (exceeds ±{metrics['count_tolerance']} tolerance). " if not metrics['count_within_tolerance'] else "")
             + "Does not meet functional requirements."
