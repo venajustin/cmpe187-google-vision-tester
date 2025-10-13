@@ -39,7 +39,14 @@ def img_display(parent, title):
     return img_w_label
 
 
-def set_photo(imgframe, path):
+def set_photo(imgframe, img):
+    scaled = img.resize((imgframe.frame.winfo_width(), imgframe.frame.winfo_height()), Image.LANCZOS)
+    photo = ImageTk.PhotoImage(scaled)
+    imgframe.label.config(image=photo)
+    imgframe.photo = photo
+    imgframe.orig_img = img
+
+def set_photo_by_path(imgframe, path):
 
     img = Image.open(path)
     scaled = img.resize((imgframe.frame.winfo_width(), imgframe.frame.winfo_height()), Image.LANCZOS)

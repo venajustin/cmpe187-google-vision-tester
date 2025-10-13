@@ -15,8 +15,8 @@ google-cloud-vision==3.10.2
 google-crc32c==1.7.1
 google-resumable-media==2.7.2
 googleapis-common-protos==1.70.0
-grpcio==1.75.0
-grpcio-status==1.75.0
+# grpcio==1.75.0
+# grpcio-status==1.75.0
 httplib2==0.31.0
 idna==3.10
 kiwisolver==1.4.9
