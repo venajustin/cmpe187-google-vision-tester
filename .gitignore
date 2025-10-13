@@ -3,8 +3,6 @@ input/
 output/
 
 # Test results - generated output from People_Tests
-People_Tests/results/
-results/
 People_Tests/TEST_REPORT.txt
 
 

@@ -1,0 +1,153 @@
+{
+  "test_case_id": "BVA-003",
+  "test_name": "Exact Count of 2 Pedestrians",
+  "category": "Boundary Value Analysis",
+  "timestamp": "2025-10-12T18:13:11.693794",
+  "test_configuration": {
+    "expected_people_count": 2,
+    "detection_threshold": 85,
+    "group_size_category": "small"
+  },
+  "description": "Exact Count of 2 Pedestrians",
+  "expected_results": {
+    "actual_people_in_scene": 2,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "confidence_threshold": 0.75
+  },
+  "actual_results": {
+    "actual_people_in_scene": 2,
+    "detected_people": 3,
+    "detection_rate": 150.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 3,
+    "maximum_confidence": 0.8191
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8191,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4062,
+            "y": 0.4141
+          },
+          {
+            "x": 0.5234,
+            "y": 0.4141
+          },
+          {
+            "x": 0.5234,
+            "y": 0.7383
+          },
+          {
+            "x": 0.4062,
+            "y": 0.7383
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.7361,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4062,
+            "y": 0.4141
+          },
+          {
+            "x": 0.5234,
+            "y": 0.4141
+          },
+          {
+            "x": 0.5234,
+            "y": 0.7383
+          },
+          {
+            "x": 0.4062,
+            "y": 0.7383
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.6308,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.543,
+            "y": 0.4688
+          },
+          {
+            "x": 0.6289,
+            "y": 0.4688
+          },
+          {
+            "x": 0.6289,
+            "y": 0.6914
+          },
+          {
+            "x": 0.543,
+            "y": 0.6914
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": [],
+    "reason": "Test PASSED: Expected 2 people, detected 3 people. Detection rate: 150.0% (\u226585% required). Count error: 1 (within \u00b11 tolerance for small groups). Meets functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-003_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-003_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight (backlighting)",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "None (100% visible)",
+    "group_size": "Small Group (2 people)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 2,
+      "actual": 3,
+      "difference": 1,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 150.0,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 1,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 18:13:09",
+    "end_time": "2025-10-12 18:13:11",
+    "duration_seconds": 2.252,
+    "duration_formatted": "2.25s"
+  }
+}

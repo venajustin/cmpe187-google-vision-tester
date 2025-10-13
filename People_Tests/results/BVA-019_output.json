@@ -1,0 +1,78 @@
+{
+  "test_case_id": "BVA-019",
+  "test_name": "75% Occlusion (Mostly Hidden)",
+  "category": "Boundary Value Analysis",
+  "timestamp": "2025-10-12T18:13:45.326513",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 85,
+    "group_size_category": "individual"
+  },
+  "description": "75% Occlusion (Mostly Hidden)",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "individual",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 0,
+    "detection_rate": 0.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "bounding_boxes_drawn": 0,
+    "maximum_confidence": 0
+  },
+  "detected_people_details": [],
+  "test_result": {
+    "status": "FAIL",
+    "meets_functional_requirements": false,
+    "failure_reasons": [
+      "Detection rate 0.0% below 85% threshold"
+    ],
+    "reason": "Test FAILED: Expected 1 people, detected 0 people. Detection rate: 0.0% (<85% threshold). Does not meet functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-019_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-019_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "Heavy (75% occluded, 25% visible)",
+    "group_size": "Individual (1 person)"
+  },
+  "comparison": {
+    "detection_rate_met": false,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 1,
+      "actual": 0,
+      "difference": 1,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 0.0,
+        "passed": false
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 1,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 18:13:43",
+    "end_time": "2025-10-12 18:13:45",
+    "duration_seconds": 2.156,
+    "duration_formatted": "2.16s"
+  }
+}

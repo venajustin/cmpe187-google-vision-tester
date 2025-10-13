@@ -1,0 +1,177 @@
+{
+  "test_case_id": "BVA-021",
+  "test_name": "Group at Night (4-5 people boundary in low light)",
+  "category": "Boundary Value Analysis",
+  "timestamp": "2025-10-12T18:13:48.094348",
+  "test_configuration": {
+    "expected_people_count": 4,
+    "detection_threshold": 85,
+    "group_size_category": "small"
+  },
+  "description": "Group at Night (4-5 people boundary in low light)",
+  "expected_results": {
+    "actual_people_in_scene": 4,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 4,
+    "detected_people": 4,
+    "detection_rate": 100.0,
+    "count_error": 0,
+    "count_within_tolerance": true,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 4,
+    "maximum_confidence": 0.8548
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8548,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4375,
+            "y": 0.3574
+          },
+          {
+            "x": 0.5898,
+            "y": 0.3574
+          },
+          {
+            "x": 0.5898,
+            "y": 0.9883
+          },
+          {
+            "x": 0.4375,
+            "y": 0.9883
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.8518,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5742,
+            "y": 0.334
+          },
+          {
+            "x": 0.7148,
+            "y": 0.334
+          },
+          {
+            "x": 0.7148,
+            "y": 0.9883
+          },
+          {
+            "x": 0.5742,
+            "y": 0.9883
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.8478,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2432,
+            "y": 0.3906
+          },
+          {
+            "x": 0.3711,
+            "y": 0.3906
+          },
+          {
+            "x": 0.3711,
+            "y": 0.9805
+          },
+          {
+            "x": 0.2432,
+            "y": 0.9805
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.7352,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3535,
+            "y": 0.3457
+          },
+          {
+            "x": 0.4805,
+            "y": 0.3457
+          },
+          {
+            "x": 0.4805,
+            "y": 0.9805
+          },
+          {
+            "x": 0.3535,
+            "y": 0.9805
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": [],
+    "reason": "Test PASSED: Expected 4 people, detected 4 people. Detection rate: 100.0% (\u226585% required). Count error: 0 (within \u00b11 tolerance for small groups). Meets functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-021_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-021_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Night (street lighting)",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "None (100% visible)",
+    "group_size": "Small Group (4 people)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 4,
+      "actual": 4,
+      "difference": 0,
+      "exact_match": true
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 100.0,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 0,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 18:13:47",
+    "end_time": "2025-10-12 18:13:48",
+    "duration_seconds": 0.858,
+    "duration_formatted": "858.05ms"
+  }
+}

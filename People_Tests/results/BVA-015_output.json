@@ -1,0 +1,230 @@
+{
+  "test_case_id": "BVA-015",
+  "test_name": "21 Pedestrians (Above Large Group Maximum)",
+  "category": "Boundary Value Analysis",
+  "timestamp": "2025-10-12T18:13:36.720794",
+  "test_configuration": {
+    "expected_people_count": 21,
+    "detection_threshold": 85,
+    "group_size_category": "crowd"
+  },
+  "description": "21 Pedestrians (Above Large Group Maximum)",
+  "expected_results": {
+    "actual_people_in_scene": 21,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 4,
+    "group_size_category": "crowd",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 21,
+    "detected_people": 6,
+    "detection_rate": 28.57,
+    "count_error": 15,
+    "count_within_tolerance": false,
+    "false_positives": 0,
+    "false_negatives": 15,
+    "bounding_boxes_drawn": 6,
+    "maximum_confidence": 0.8269
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8269,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6094,
+            "y": 0.4062
+          },
+          {
+            "x": 0.7031,
+            "y": 0.4062
+          },
+          {
+            "x": 0.7031,
+            "y": 0.75
+          },
+          {
+            "x": 0.6094,
+            "y": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.7783,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3457,
+            "y": 0.4316
+          },
+          {
+            "x": 0.4102,
+            "y": 0.4316
+          },
+          {
+            "x": 0.4102,
+            "y": 0.7109
+          },
+          {
+            "x": 0.3457,
+            "y": 0.7109
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.7439,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5273,
+            "y": 0.4531
+          },
+          {
+            "x": 0.5898,
+            "y": 0.4531
+          },
+          {
+            "x": 0.5898,
+            "y": 0.6914
+          },
+          {
+            "x": 0.5273,
+            "y": 0.6914
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.7421,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.7539,
+            "y": 0.4336
+          },
+          {
+            "x": 0.8281,
+            "y": 0.4336
+          },
+          {
+            "x": 0.8281,
+            "y": 0.6992
+          },
+          {
+            "x": 0.7539,
+            "y": 0.6992
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Person",
+      "confidence": 0.7234,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.8359,
+            "y": 0.4551
+          },
+          {
+            "x": 0.8828,
+            "y": 0.4551
+          },
+          {
+            "x": 0.8828,
+            "y": 0.6484
+          },
+          {
+            "x": 0.8359,
+            "y": 0.6484
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 6,
+      "name": "Person",
+      "confidence": 0.7013,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.7539,
+            "y": 0.4336
+          },
+          {
+            "x": 0.8281,
+            "y": 0.4336
+          },
+          {
+            "x": 0.8281,
+            "y": 0.6992
+          },
+          {
+            "x": 0.7539,
+            "y": 0.6992
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "FAIL",
+    "meets_functional_requirements": false,
+    "failure_reasons": [
+      "Detection rate 28.6% below 85% threshold",
+      "Count error 15 exceeds \u00b14 tolerance"
+    ],
+    "reason": "Test FAILED: Expected 21 people, detected 6 people. Detection rate: 28.6% (<85% threshold). Count error: 15 (exceeds \u00b14 tolerance). Does not meet functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-015_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-015_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight (backlighting)",
+    "distance_range": "Mixed (close to far)",
+    "occlusion_level": "Heavy (extreme crowd density)",
+    "group_size": "Crowd (21 people)"
+  },
+  "comparison": {
+    "detection_rate_met": false,
+    "count_within_tolerance": false,
+    "expected_vs_actual_count": {
+      "expected": 21,
+      "actual": 6,
+      "difference": 15,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 28.57,
+        "passed": false
+      },
+      "count_accuracy": {
+        "tolerance": 4,
+        "error": 15,
+        "passed": false
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 18:13:35",
+    "end_time": "2025-10-12 18:13:36",
+    "duration_seconds": 1.021,
+    "duration_formatted": "1.02s"
+  }
+}

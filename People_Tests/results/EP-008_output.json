@@ -1,0 +1,305 @@
+{
+  "test_case_id": "EP-008",
+  "test_name": "Dense Crowd Class (Golden Hour)",
+  "category": "Equivalence Partition",
+  "timestamp": "2025-10-12T18:14:14.437153",
+  "test_configuration": {
+    "expected_people_count": 12,
+    "detection_threshold": 85,
+    "group_size_category": "large"
+  },
+  "description": "Dense Crowd Class (Golden Hour)",
+  "expected_results": {
+    "actual_people_in_scene": 12,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 2,
+    "group_size_category": "large",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 12,
+    "detected_people": 9,
+    "detection_rate": 75.0,
+    "count_error": 3,
+    "count_within_tolerance": false,
+    "false_positives": 0,
+    "false_negatives": 3,
+    "bounding_boxes_drawn": 9,
+    "maximum_confidence": 0.8783
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8783,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5312,
+            "y": 0.1963
+          },
+          {
+            "x": 0.9961,
+            "y": 0.1963
+          },
+          {
+            "x": 0.9961,
+            "y": 1.0
+          },
+          {
+            "x": 0.5312,
+            "y": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.7993,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.0,
+            "y": 0.4551
+          },
+          {
+            "x": 0.1924,
+            "y": 0.4551
+          },
+          {
+            "x": 0.1924,
+            "y": 0.9922
+          },
+          {
+            "x": 0.0,
+            "y": 0.9922
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.7372,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2617,
+            "y": 0.4277
+          },
+          {
+            "x": 0.3301,
+            "y": 0.4277
+          },
+          {
+            "x": 0.3301,
+            "y": 0.7305
+          },
+          {
+            "x": 0.2617,
+            "y": 0.7305
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.7303,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4629,
+            "y": 0.4414
+          },
+          {
+            "x": 0.5352,
+            "y": 0.4414
+          },
+          {
+            "x": 0.5352,
+            "y": 0.793
+          },
+          {
+            "x": 0.4629,
+            "y": 0.793
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Person",
+      "confidence": 0.7283,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3828,
+            "y": 0.4297
+          },
+          {
+            "x": 0.4707,
+            "y": 0.4297
+          },
+          {
+            "x": 0.4707,
+            "y": 0.793
+          },
+          {
+            "x": 0.3828,
+            "y": 0.793
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 6,
+      "name": "Person",
+      "confidence": 0.7249,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2559,
+            "y": 0.418
+          },
+          {
+            "x": 0.3359,
+            "y": 0.418
+          },
+          {
+            "x": 0.3359,
+            "y": 0.7344
+          },
+          {
+            "x": 0.2559,
+            "y": 0.7344
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 7,
+      "name": "Person",
+      "confidence": 0.7236,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3828,
+            "y": 0.4297
+          },
+          {
+            "x": 0.4707,
+            "y": 0.4297
+          },
+          {
+            "x": 0.4707,
+            "y": 0.793
+          },
+          {
+            "x": 0.3828,
+            "y": 0.793
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 8,
+      "name": "Person",
+      "confidence": 0.7219,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1396,
+            "y": 0.4492
+          },
+          {
+            "x": 0.2109,
+            "y": 0.4492
+          },
+          {
+            "x": 0.2109,
+            "y": 0.7969
+          },
+          {
+            "x": 0.1396,
+            "y": 0.7969
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 9,
+      "name": "Person",
+      "confidence": 0.7071,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5312,
+            "y": 0.1963
+          },
+          {
+            "x": 0.9961,
+            "y": 0.1963
+          },
+          {
+            "x": 0.9961,
+            "y": 1.0
+          },
+          {
+            "x": 0.5312,
+            "y": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "FAIL",
+    "meets_functional_requirements": false,
+    "failure_reasons": [
+      "Detection rate 75.0% below 85% threshold",
+      "Count error 3 exceeds \u00b12 tolerance"
+    ],
+    "reason": "Test FAILED: Expected 12 people, detected 9 people. Detection rate: 75.0% (<85% threshold). Count error: 3 (exceeds \u00b12 tolerance). Does not meet functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-008_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-008_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Golden hour (warm backlighting)",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "Moderate (natural crowd occlusions)",
+    "group_size": "Medium to Large Group (10-14 people)"
+  },
+  "comparison": {
+    "detection_rate_met": false,
+    "count_within_tolerance": false,
+    "expected_vs_actual_count": {
+      "expected": 12,
+      "actual": 9,
+      "difference": 3,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 75.0,
+        "passed": false
+      },
+      "count_accuracy": {
+        "tolerance": 2,
+        "error": 3,
+        "passed": false
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 18:14:12",
+    "end_time": "2025-10-12 18:14:14",
+    "duration_seconds": 2.022,
+    "duration_formatted": "2.02s"
+  }
+}

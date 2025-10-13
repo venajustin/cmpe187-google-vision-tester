@@ -1,0 +1,76 @@
+{
+  "test_case_id": "DT-007",
+  "test_name": "Weather + Visibility + Pedestrian Detection",
+  "category": "Decision Table",
+  "timestamp": "2025-10-12T18:13:58.231564",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 60,
+    "group_size_category": "small"
+  },
+  "description": "A person with an umbrella crossing in rain, wet pavement with active rainfall, and vehicles present.",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 60,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "test_expectations": "- ENHANCED SENSITIVITY mode activated\n- Detect 1 pedestrian crossing\n- Medium confidence acceptable (0.55-0.75)\n- HIGH alert (elevated risk)\n- EXTENDED STOPPING alert (weather-aware safety)\n- Active rainfall recognized\n- Wet pavement conditions identified",
+    "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (weather conditions), HIGH alert with ENHANCED SENSITIVITY mode"
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 1,
+    "detection_rate": 100.0,
+    "count_error": 0,
+    "count_within_tolerance": true,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 1,
+    "maximum_confidence": 0.7337
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.7337,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5469,
+            "y": 0.3672
+          },
+          {
+            "x": 0.6289,
+            "y": 0.3672
+          },
+          {
+            "x": 0.6289,
+            "y": 0.7148
+          },
+          {
+            "x": 0.5469,
+            "y": 0.7148
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": []
+  },
+  "output_files": {
+    "annotated_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-007_result.jpg",
+    "json_output": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-007_output.json"
+  },
+  "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (weather conditions), HIGH alert with ENHANCED SENSITIVITY mode",
+  "timing": {
+    "start_time": "2025-10-12 18:13:56",
+    "end_time": "2025-10-12 18:13:58",
+    "duration_seconds": 1.266,
+    "duration_formatted": "1.27s"
+  }
+}

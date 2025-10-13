@@ -1,0 +1,101 @@
+{
+  "test_case_id": "DT-003",
+  "test_name": "Night + Separated Path + Traffic",
+  "category": "Decision Table",
+  "timestamp": "2025-10-12T18:13:51.878901",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 60,
+    "group_size_category": "small"
+  },
+  "description": "Person on sidewalk at night with vehicles on road, low light conditions.",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 60,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "test_expectations": "- ENHANCED processing activated\n- Detection with lower confidence (0.5-0.7)\n- HIGH alert\n- System recognizes complex/high-risk scenario\n- Adaptive algorithms engaged for nighttime + traffic",
+    "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (nighttime + traffic), HIGH alert for complex scenario"
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 2,
+    "detection_rate": 200.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 2,
+    "maximum_confidence": 0.9183
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.9183,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3789,
+            "y": 0.1387
+          },
+          {
+            "x": 0.7578,
+            "y": 0.1387
+          },
+          {
+            "x": 0.7578,
+            "y": 1.0
+          },
+          {
+            "x": 0.3789,
+            "y": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.5871,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3789,
+            "y": 0.1387
+          },
+          {
+            "x": 0.7578,
+            "y": 0.1387
+          },
+          {
+            "x": 0.7578,
+            "y": 1.0
+          },
+          {
+            "x": 0.3789,
+            "y": 1.0
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": []
+  },
+  "output_files": {
+    "annotated_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-003_result.jpg",
+    "json_output": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-003_output.json"
+  },
+  "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226560% (nighttime + traffic), HIGH alert for complex scenario",
+  "timing": {
+    "start_time": "2025-10-12 18:13:50",
+    "end_time": "2025-10-12 18:13:51",
+    "duration_seconds": 1.053,
+    "duration_formatted": "1.05s"
+  }
+}
