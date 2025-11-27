@@ -22,12 +22,12 @@ Run with:
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image,ImageTk
-from get_files import *
-from img_display import *
-from file_list import * 
-from log_list import *
-from gvision_interface import *
-from image_labeling import *
+from vision_tester.get_files import *
+from vision_tester.img_display import *
+from vision_tester.file_list import * 
+from vision_tester.log_list import *
+from vision_tester.gvision_interface import *
+from vision_tester.image_labeling import *
 
 root = tk.Tk()
 root.title("Google Cloud Test application")
