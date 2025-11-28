@@ -100,8 +100,6 @@ def apply_filter(event = None):
 send_button = tk.Button(middle_frame, text="Send", command=send_button_press)
 send_button.grid(row=2, column=0, sticky="nsew")
 
-
-
 bottom_frame = ttk.Frame(root)
 bottom_frame.grid(row=1, column=0, sticky="nsew")
 bottom_frame.columnconfigure(0, weight=1);
@@ -120,6 +118,7 @@ def highlight_image_callback(val):
 
 bottom_left = create_file_list(bottom_frame, file_list, change_input_callback)
 bottom_left.grid(row=0, column=0, sticky="nsew", rowspan=2, padx=5, pady=5)
+
 
 # Output list
 bottom_right, output_listbox = create_log_list(bottom_frame, [], highlight_image_callback)
