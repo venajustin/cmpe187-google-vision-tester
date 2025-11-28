@@ -1,30 +1,23 @@
-from io import BytesIO
-def localize_objects(img, text_filter=None): 
 
-    from google.cloud import vision
 
-    client = vision.ImageAnnotatorClient()
-
-    buffer = BytesIO()
-    img.save(buffer, img.format)
-    image = vision.Image(content=buffer.getvalue())
-
-    objects = client.object_localization(image=image).localized_object_annotations
-
+def filter_objects(objects, text_filter=None):
+    
     def apply_filter(obj):
         return text_filter in obj.name
 
     if text_filter is not None:
-        objects = list(filter(apply_filter, objects))
+        output = list(filter(apply_filter, objects))
+    else:
+        output = objects
 
     text_arr = []
     text_arr.append(f"Number of objects found: {len(objects)}")
-    for object_ in objects:
+    for object_ in output:
         text_arr.append(f"{object_.name} ({object_.score})")
 
 
     print(f"Number of objects found: {len(objects)}")
-    for i, object_ in enumerate(objects):
+    for i, object_ in enumerate(output):
         print(f"\n{i} : {object_.name} (confidence: {object_.score})")
         print("Normalized bounding polygon vertices: ")
         coords = []
@@ -32,4 +25,6 @@ def localize_objects(img, text_filter=None):
             coords.append((vertex.x,vertex.y))
             print(f" - ({vertex.x}, {vertex.y})")
     
-    return objects, text_arr
+    return output, text_arr
+
+

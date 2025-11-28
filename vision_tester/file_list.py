@@ -22,6 +22,7 @@ def create_file_list(parent, items, callback):
             callback(value)
             # print(f"Double-clicked on item at index {index}: {value}")
     listbox.bind("<Double-Button-1>", double_click_handler)
+    listbox.bind("<Return>", double_click_handler)
 
     listbox.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")

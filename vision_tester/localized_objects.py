@@ -1,3 +1,8 @@
+"""
+ Test script to localize a local image, not used in the vision testing app
+
+"""
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib.image as mpimg

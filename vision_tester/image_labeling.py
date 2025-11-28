@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib.image as mpimg
+from matplotlib.figure import Figure
 
 from io import BytesIO
 from PIL import Image
@@ -31,6 +32,8 @@ def label_img(objects, img, highlight_index = -1):
     return Image.open(bio)
     
 def setup_plot():
+#     fig = Figure(figsize=(5, 4), dpi=100)
+#     ax = fig.add_subplot()
     fig, ax = plt.subplots()
     ax.set_xticks([])
     ax.set_yticks([])
