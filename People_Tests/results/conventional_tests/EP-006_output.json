@@ -1,0 +1,179 @@
+{
+  "test_case_id": "EP-006",
+  "test_name": "False Positive Prevention - Billboard with Human Image",
+  "category": "Equivalence Partition",
+  "timestamp": "2025-10-12T21:07:24.168489",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 85,
+    "group_size_category": "individual"
+  },
+  "description": "False Positive Prevention - Billboard with Human Image",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "individual",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 4,
+    "detection_rate": 400.0,
+    "count_error": 3,
+    "count_within_tolerance": false,
+    "false_positives": 3,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 4,
+    "maximum_confidence": 0.8497
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8497,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1992,
+            "y": 0.5352
+          },
+          {
+            "x": 0.5039,
+            "y": 0.5352
+          },
+          {
+            "x": 0.5039,
+            "y": 1.0
+          },
+          {
+            "x": 0.1992,
+            "y": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.7036,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1777,
+            "y": 0.0403
+          },
+          {
+            "x": 0.8203,
+            "y": 0.0403
+          },
+          {
+            "x": 0.8203,
+            "y": 0.8203
+          },
+          {
+            "x": 0.1777,
+            "y": 0.8203
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.6777,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1992,
+            "y": 0.5352
+          },
+          {
+            "x": 0.5039,
+            "y": 0.5352
+          },
+          {
+            "x": 0.5039,
+            "y": 1.0
+          },
+          {
+            "x": 0.1992,
+            "y": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.6159,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1777,
+            "y": 0.0403
+          },
+          {
+            "x": 0.8203,
+            "y": 0.0403
+          },
+          {
+            "x": 0.8203,
+            "y": 0.8203
+          },
+          {
+            "x": 0.1777,
+            "y": 0.8203
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "FAIL",
+    "meets_functional_requirements": false,
+    "failure_reasons": [
+      "Count error 3 exceeds \u00b11 tolerance"
+    ],
+    "reason": "Test FAILED: Expected 1 people, detected 4 people. Count error: 3 (exceeds \u00b11 tolerance). Does not meet functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-006_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-006_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "None (100% visible)",
+    "group_size": "Individual (1 person)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": false,
+    "expected_vs_actual_count": {
+      "expected": 1,
+      "actual": 4,
+      "difference": 3,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 400.0,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 3,
+        "passed": false
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 21:07:23",
+    "end_time": "2025-10-12 21:07:24",
+    "duration_seconds": 1.016,
+    "duration_formatted": "1.02s"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "test_case_id": "DT-001",
+  "test_name": "Pedestrian Crossing + Vehicle Yielding",
+  "category": "Decision Table",
+  "timestamp": "2025-10-12T21:07:02.064057",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 85,
+    "group_size_category": "small"
+  },
+  "description": "Person at marked crosswalk with vehicle stopped/yielding, clear visibility.",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "test_expectations": "- Detect 1 pedestrian\n- HIGH PRIORITY alert (safety-critical scenario)\n- SAFETY scenario classification\n- Crosswalk location identified\n- Vehicle presence noted\n- Detection confidence: >0.85 (good visibility)",
+    "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226585%, HIGH PRIORITY alert for safety-critical crosswalk scenario"
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 2,
+    "detection_rate": 200.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 2,
+    "maximum_confidence": 0.7923
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.7923,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1875,
+            "y": 0.2119
+          },
+          {
+            "x": 0.5078,
+            "y": 0.2119
+          },
+          {
+            "x": 0.5078,
+            "y": 0.9727
+          },
+          {
+            "x": 0.1875,
+            "y": 0.9727
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.7413,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1875,
+            "y": 0.2119
+          },
+          {
+            "x": 0.5078,
+            "y": 0.2119
+          },
+          {
+            "x": 0.5078,
+            "y": 0.9727
+          },
+          {
+            "x": 0.1875,
+            "y": 0.9727
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": []
+  },
+  "output_files": {
+    "annotated_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-001_result.jpg",
+    "json_output": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-001_output.json"
+  },
+  "pass_criteria": "Detect 1 person (\u00b11 tolerance), detection rate \u226585%, HIGH PRIORITY alert for safety-critical crosswalk scenario",
+  "timing": {
+    "start_time": "2025-10-12 21:07:00",
+    "end_time": "2025-10-12 21:07:02",
+    "duration_seconds": 1.069,
+    "duration_formatted": "1.07s"
+  }
+}

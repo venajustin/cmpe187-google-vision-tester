@@ -1,0 +1,226 @@
+{
+  "test_case_id": "PT-10",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:22.400742",
+  "detection_results": {
+    "expected_count": 12,
+    "detected_count": 8,
+    "count_difference": -4,
+    "maximum_confidence": 0.8771
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8771,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.8359,
+            "y": 0.2354
+          },
+          {
+            "x": 0.9492,
+            "y": 0.2354
+          },
+          {
+            "x": 0.9492,
+            "y": 0.8672
+          },
+          {
+            "x": 0.8359,
+            "y": 0.8672
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.8652,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3711,
+            "y": 0.2832
+          },
+          {
+            "x": 0.5,
+            "y": 0.2832
+          },
+          {
+            "x": 0.5,
+            "y": 0.8594
+          },
+          {
+            "x": 0.3711,
+            "y": 0.8594
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.8517,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4863,
+            "y": 0.3496
+          },
+          {
+            "x": 0.5977,
+            "y": 0.3496
+          },
+          {
+            "x": 0.5977,
+            "y": 0.8906
+          },
+          {
+            "x": 0.4863,
+            "y": 0.8906
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.8435,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.0061,
+            "y": 0.0121
+          },
+          {
+            "x": 0.1094,
+            "y": 0.0121
+          },
+          {
+            "x": 0.1094,
+            "y": 0.4941
+          },
+          {
+            "x": 0.0061,
+            "y": 0.4941
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Person",
+      "confidence": 0.8386,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.0518,
+            "y": 0.4355
+          },
+          {
+            "x": 0.1787,
+            "y": 0.4355
+          },
+          {
+            "x": 0.1787,
+            "y": 0.9766
+          },
+          {
+            "x": 0.0518,
+            "y": 0.9766
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 6,
+      "name": "Person",
+      "confidence": 0.8084,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6289,
+            "y": 0.033
+          },
+          {
+            "x": 0.7656,
+            "y": 0.033
+          },
+          {
+            "x": 0.7656,
+            "y": 0.4824
+          },
+          {
+            "x": 0.6289,
+            "y": 0.4824
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 7,
+      "name": "Person",
+      "confidence": 0.7911,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.209,
+            "y": 0.3828
+          },
+          {
+            "x": 0.3398,
+            "y": 0.3828
+          },
+          {
+            "x": 0.3398,
+            "y": 1.0
+          },
+          {
+            "x": 0.209,
+            "y": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 8,
+      "name": "Person",
+      "confidence": 0.7745,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6758,
+            "y": 0.3125
+          },
+          {
+            "x": 0.8008,
+            "y": 0.3125
+          },
+          {
+            "x": 0.8008,
+            "y": 0.9609
+          },
+          {
+            "x": 0.6758,
+            "y": 0.9609
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-10_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-10_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:21",
+    "end_time": "2025-11-27 20:44:22",
+    "duration_seconds": 0.929
+  }
+}

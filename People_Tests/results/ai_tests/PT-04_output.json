@@ -1,0 +1,101 @@
+{
+  "test_case_id": "PT-04",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:10.980365",
+  "detection_results": {
+    "expected_count": 3,
+    "detected_count": 3,
+    "count_difference": 0,
+    "maximum_confidence": 0.6843
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.6843,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2832,
+            "y": 0.2871
+          },
+          {
+            "x": 0.5625,
+            "y": 0.2871
+          },
+          {
+            "x": 0.5625,
+            "y": 0.8867
+          },
+          {
+            "x": 0.2832,
+            "y": 0.8867
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.6535,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.0028,
+            "y": 0.3027
+          },
+          {
+            "x": 0.2012,
+            "y": 0.3027
+          },
+          {
+            "x": 0.2012,
+            "y": 0.8867
+          },
+          {
+            "x": 0.0028,
+            "y": 0.8867
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.64,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6523,
+            "y": 0.3066
+          },
+          {
+            "x": 0.8711,
+            "y": 0.3066
+          },
+          {
+            "x": 0.8711,
+            "y": 0.8867
+          },
+          {
+            "x": 0.6523,
+            "y": 0.8867
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-04_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-04_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:09",
+    "end_time": "2025-11-27 20:44:10",
+    "duration_seconds": 1.243
+  }
+}

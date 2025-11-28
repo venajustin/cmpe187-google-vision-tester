@@ -1,0 +1,76 @@
+{
+  "test_case_id": "P-01",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:06.085795",
+  "detection_results": {
+    "expected_count": 1,
+    "detected_count": 2,
+    "count_difference": 1,
+    "maximum_confidence": 0.902
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.902,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4707,
+            "y": 0.1855
+          },
+          {
+            "x": 0.6016,
+            "y": 0.1855
+          },
+          {
+            "x": 0.6016,
+            "y": 0.7305
+          },
+          {
+            "x": 0.4707,
+            "y": 0.7305
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.569,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4707,
+            "y": 0.1855
+          },
+          {
+            "x": 0.6016,
+            "y": 0.1855
+          },
+          {
+            "x": 0.6016,
+            "y": 0.7305
+          },
+          {
+            "x": 0.4707,
+            "y": 0.7305
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-01_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-01_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:00",
+    "end_time": "2025-11-27 20:44:06",
+    "duration_seconds": 5.82
+  }
+}

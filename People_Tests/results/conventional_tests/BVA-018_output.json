@@ -1,0 +1,127 @@
+{
+  "test_case_id": "BVA-018",
+  "test_name": "50% Occlusion (Half Hidden)",
+  "category": "Boundary Value Analysis",
+  "timestamp": "2025-10-12T21:06:55.597178",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 85,
+    "group_size_category": "individual"
+  },
+  "description": "50% Occlusion (Half Hidden)",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "individual",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 2,
+    "detection_rate": 200.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 2,
+    "maximum_confidence": 0.7157
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.7157,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1099,
+            "y": 0.1396
+          },
+          {
+            "x": 0.4805,
+            "y": 0.1396
+          },
+          {
+            "x": 0.4805,
+            "y": 0.6914
+          },
+          {
+            "x": 0.1099,
+            "y": 0.6914
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.5723,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1099,
+            "y": 0.1396
+          },
+          {
+            "x": 0.4805,
+            "y": 0.1396
+          },
+          {
+            "x": 0.4805,
+            "y": 0.6914
+          },
+          {
+            "x": 0.1099,
+            "y": 0.6914
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": [],
+    "reason": "Test PASSED: Expected 1 people, detected 2 people. Detection rate: 200.0% (\u226585% required). Count error: 1 (within \u00b11 tolerance for individual groups). Meets functional requirements."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-018_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/BVA-018_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "Moderate (50% occluded, 50% visible)",
+    "group_size": "Individual (1 person)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 1,
+      "actual": 2,
+      "difference": 1,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 200.0,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 1,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 21:06:54",
+    "end_time": "2025-10-12 21:06:55",
+    "duration_seconds": 0.841,
+    "duration_formatted": "840.52ms"
+  }
+}

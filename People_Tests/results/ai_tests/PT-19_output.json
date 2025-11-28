@@ -1,0 +1,25 @@
+{
+  "test_case_id": "PT-19",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:38.439436",
+  "detection_results": {
+    "expected_count": 0,
+    "detected_count": 0,
+    "count_difference": 0,
+    "maximum_confidence": 0
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-19_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-19_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:36",
+    "end_time": "2025-11-27 20:44:38",
+    "duration_seconds": 1.544
+  }
+}

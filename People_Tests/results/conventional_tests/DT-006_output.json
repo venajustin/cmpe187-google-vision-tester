@@ -1,0 +1,229 @@
+{
+  "test_case_id": "DT-006",
+  "test_name": "Dense Crosswalk + Multiple Groups (22 people)",
+  "category": "Decision Table",
+  "timestamp": "2025-10-12T21:07:09.557485",
+  "test_configuration": {
+    "expected_people_count": 22,
+    "detection_threshold": 85,
+    "group_size_category": "crowd"
+  },
+  "description": "Several groups of people are at a busy intersection, with high pedestrian density and clear visibility. 22 clearly visible people with additional faint figures in background.",
+  "expected_results": {
+    "actual_people_in_scene": 22,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "crowd",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "test_expectations": "- CROWD detection mode activated (22 people)\n- Count within tolerance: \u00b120% acceptable for crowd\n- Multiple groups identified (3-5 distinct clusters)\n- STANDARD processing (good visibility)\n- DENSE CROSSWALK classification\n- MEDIUM-HIGH alert",
+    "pass_criteria": "Detect 22 people (\u00b120% tolerance for crowd), detection rate \u226585%, CROWD detection mode for dense crosswalk"
+  },
+  "actual_results": {
+    "actual_people_in_scene": 22,
+    "detected_people": 7,
+    "detection_rate": 31.82,
+    "count_error": 15,
+    "count_within_tolerance": false,
+    "false_positives": 0,
+    "false_negatives": 15,
+    "bounding_boxes_drawn": 7,
+    "maximum_confidence": 0.8962
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8962,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5039,
+            "y": 0.3359
+          },
+          {
+            "x": 0.6211,
+            "y": 0.3359
+          },
+          {
+            "x": 0.6211,
+            "y": 0.8711
+          },
+          {
+            "x": 0.5039,
+            "y": 0.8711
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.8806,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.373,
+            "y": 0.373
+          },
+          {
+            "x": 0.4766,
+            "y": 0.373
+          },
+          {
+            "x": 0.4766,
+            "y": 0.9492
+          },
+          {
+            "x": 0.373,
+            "y": 0.9492
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.8499,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1104,
+            "y": 0.2715
+          },
+          {
+            "x": 0.2617,
+            "y": 0.2715
+          },
+          {
+            "x": 0.2617,
+            "y": 0.8945
+          },
+          {
+            "x": 0.1104,
+            "y": 0.8945
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.7427,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6055,
+            "y": 0.3652
+          },
+          {
+            "x": 0.6953,
+            "y": 0.3652
+          },
+          {
+            "x": 0.6953,
+            "y": 0.8789
+          },
+          {
+            "x": 0.6055,
+            "y": 0.8789
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Person",
+      "confidence": 0.7415,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4707,
+            "y": 0.3535
+          },
+          {
+            "x": 0.5352,
+            "y": 0.3535
+          },
+          {
+            "x": 0.5352,
+            "y": 0.8008
+          },
+          {
+            "x": 0.4707,
+            "y": 0.8008
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 6,
+      "name": "Person",
+      "confidence": 0.7089,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2305,
+            "y": 0.3809
+          },
+          {
+            "x": 0.3125,
+            "y": 0.3809
+          },
+          {
+            "x": 0.3125,
+            "y": 0.8672
+          },
+          {
+            "x": 0.2305,
+            "y": 0.8672
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 7,
+      "name": "Person",
+      "confidence": 0.705,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.707,
+            "y": 0.4023
+          },
+          {
+            "x": 0.7969,
+            "y": 0.4023
+          },
+          {
+            "x": 0.7969,
+            "y": 0.8203
+          },
+          {
+            "x": 0.707,
+            "y": 0.8203
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "FAIL",
+    "meets_functional_requirements": false,
+    "failure_reasons": [
+      "Detection rate 31.8% below threshold 85%",
+      "Count error 15 exceeds tolerance 1 (Expected: 22, Detected: 7)"
+    ]
+  },
+  "output_files": {
+    "annotated_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-006_result.jpg",
+    "json_output": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-006_output.json"
+  },
+  "pass_criteria": "Detect 22 people (\u00b120% tolerance for crowd), detection rate \u226585%, CROWD detection mode for dense crosswalk",
+  "timing": {
+    "start_time": "2025-10-12 21:07:08",
+    "end_time": "2025-10-12 21:07:09",
+    "duration_seconds": 0.9,
+    "duration_formatted": "900.15ms"
+  }
+}

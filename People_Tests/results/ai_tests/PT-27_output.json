@@ -1,0 +1,51 @@
+{
+  "test_case_id": "PT-27",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:52.595977",
+  "detection_results": {
+    "expected_count": 1,
+    "detected_count": 1,
+    "count_difference": 0,
+    "maximum_confidence": 0.7503
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.7503,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4961,
+            "y": 0.6055
+          },
+          {
+            "x": 0.6367,
+            "y": 0.6055
+          },
+          {
+            "x": 0.6367,
+            "y": 0.7695
+          },
+          {
+            "x": 0.4961,
+            "y": 0.7695
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-27_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-27_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:51",
+    "end_time": "2025-11-27 20:44:52",
+    "duration_seconds": 1.325
+  }
+}

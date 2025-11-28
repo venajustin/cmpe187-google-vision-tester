@@ -1,0 +1,101 @@
+{
+  "test_case_id": "DT-002",
+  "test_name": "Post-Accident Scene + Multiple Pedestrians",
+  "category": "Decision Table",
+  "timestamp": "2025-10-12T21:07:03.322963",
+  "test_configuration": {
+    "expected_people_count": 2,
+    "detection_threshold": 85,
+    "group_size_category": "small"
+  },
+  "description": "Several people gathered around the incident area, no moving vehicles, an emergency scenario.",
+  "expected_results": {
+    "actual_people_in_scene": 2,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "test_expectations": "- Detect 2 pedestrians (accurate count)\n- MEDIUM PRIORITY alert (emergency but stable)\n- ACCIDENT/EMERGENCY scene classification\n- Vehicle damage/situation recognized\n- Appropriate decision logic applied",
+    "pass_criteria": "Detect 2 people (\u00b11 tolerance), detection rate \u226585%, MEDIUM PRIORITY alert for emergency scene"
+  },
+  "actual_results": {
+    "actual_people_in_scene": 2,
+    "detected_people": 2,
+    "detection_rate": 100.0,
+    "count_error": 0,
+    "count_within_tolerance": true,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 2,
+    "maximum_confidence": 0.9052
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.9052,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6172,
+            "y": 0.1621
+          },
+          {
+            "x": 0.8359,
+            "y": 0.1621
+          },
+          {
+            "x": 0.8359,
+            "y": 0.4902
+          },
+          {
+            "x": 0.6172,
+            "y": 0.4902
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.8618,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2793,
+            "y": 0.1162
+          },
+          {
+            "x": 0.4609,
+            "y": 0.1162
+          },
+          {
+            "x": 0.4609,
+            "y": 0.9219
+          },
+          {
+            "x": 0.2793,
+            "y": 0.9219
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": []
+  },
+  "output_files": {
+    "annotated_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-002_result.jpg",
+    "json_output": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/DT-002_output.json"
+  },
+  "pass_criteria": "Detect 2 people (\u00b11 tolerance), detection rate \u226585%, MEDIUM PRIORITY alert for emergency scene",
+  "timing": {
+    "start_time": "2025-10-12 21:07:02",
+    "end_time": "2025-10-12 21:07:03",
+    "duration_seconds": 0.957,
+    "duration_formatted": "956.53ms"
+  }
+}

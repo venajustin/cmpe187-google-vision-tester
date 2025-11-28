@@ -1,0 +1,127 @@
+{
+  "test_case_id": "EP-002",
+  "test_name": "Nighttime/Low-Light Conditions Class",
+  "category": "Equivalence Partition",
+  "timestamp": "2025-10-12T21:07:17.444237",
+  "test_configuration": {
+    "expected_people_count": 1,
+    "detection_threshold": 85,
+    "group_size_category": "individual"
+  },
+  "description": "Nighttime/Low-Light Conditions Class",
+  "expected_results": {
+    "actual_people_in_scene": 1,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "individual",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 1,
+    "detected_people": 2,
+    "detection_rate": 200.0,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 2,
+    "maximum_confidence": 0.8798
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8798,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3184,
+            "y": 0.4492
+          },
+          {
+            "x": 0.543,
+            "y": 0.4492
+          },
+          {
+            "x": 0.543,
+            "y": 0.8633
+          },
+          {
+            "x": 0.3184,
+            "y": 0.8633
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.608,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3184,
+            "y": 0.4492
+          },
+          {
+            "x": 0.543,
+            "y": 0.4492
+          },
+          {
+            "x": 0.543,
+            "y": 0.8633
+          },
+          {
+            "x": 0.3184,
+            "y": 0.8633
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": [],
+    "reason": "Test PASSED: Expected 1 people, detected 2 people. Detection rate: 200.0% (\u226560% required). Count error: 1 (within \u00b11 tolerance). Meets functional requirements for Nighttime/Low-Light Conditions Class."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-002_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-002_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Night (street lighting only)",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "None (100% visible)",
+    "group_size": "Individual (1 person)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 1,
+      "actual": 2,
+      "difference": 1,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 60,
+        "actual": 200.0,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 1,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 21:07:13",
+    "end_time": "2025-10-12 21:07:17",
+    "duration_seconds": 3.879,
+    "duration_formatted": "3.88s"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "test_case_id": "PT-09",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:21.166244",
+  "detection_results": {
+    "expected_count": 6,
+    "detected_count": 7,
+    "count_difference": 1,
+    "maximum_confidence": 0.8554
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8554,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2949,
+            "y": 0.4395
+          },
+          {
+            "x": 0.4609,
+            "y": 0.4395
+          },
+          {
+            "x": 0.4609,
+            "y": 0.7695
+          },
+          {
+            "x": 0.2949,
+            "y": 0.7695
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.806,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.7969,
+            "y": 0.459
+          },
+          {
+            "x": 0.9102,
+            "y": 0.459
+          },
+          {
+            "x": 0.9102,
+            "y": 0.7969
+          },
+          {
+            "x": 0.7969,
+            "y": 0.7969
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.7757,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6367,
+            "y": 0.4707
+          },
+          {
+            "x": 0.7344,
+            "y": 0.4707
+          },
+          {
+            "x": 0.7344,
+            "y": 0.7617
+          },
+          {
+            "x": 0.6367,
+            "y": 0.7617
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.7509,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.6367,
+            "y": 0.4707
+          },
+          {
+            "x": 0.7344,
+            "y": 0.4707
+          },
+          {
+            "x": 0.7344,
+            "y": 0.7617
+          },
+          {
+            "x": 0.6367,
+            "y": 0.7617
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Person",
+      "confidence": 0.7443,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5391,
+            "y": 0.4844
+          },
+          {
+            "x": 0.6445,
+            "y": 0.4844
+          },
+          {
+            "x": 0.6445,
+            "y": 0.793
+          },
+          {
+            "x": 0.5391,
+            "y": 0.793
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 6,
+      "name": "Person",
+      "confidence": 0.7233,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1099,
+            "y": 0.4551
+          },
+          {
+            "x": 0.2539,
+            "y": 0.4551
+          },
+          {
+            "x": 0.2539,
+            "y": 0.7852
+          },
+          {
+            "x": 0.1099,
+            "y": 0.7852
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 7,
+      "name": "Person",
+      "confidence": 0.711,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.2949,
+            "y": 0.4395
+          },
+          {
+            "x": 0.4609,
+            "y": 0.4395
+          },
+          {
+            "x": 0.4609,
+            "y": 0.7695
+          },
+          {
+            "x": 0.2949,
+            "y": 0.7695
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-09_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-09_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:18",
+    "end_time": "2025-11-27 20:44:21",
+    "duration_seconds": 2.432
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "test_case_id": "EP-003",
+  "test_name": "Standard Urban Daylight Class",
+  "category": "Equivalence Partition",
+  "timestamp": "2025-10-12T21:07:19.019427",
+  "test_configuration": {
+    "expected_people_count": 3,
+    "detection_threshold": 85,
+    "group_size_category": "small"
+  },
+  "description": "Standard Urban Daylight Class",
+  "expected_results": {
+    "actual_people_in_scene": 3,
+    "detection_rate_threshold": 85,
+    "count_tolerance": 1,
+    "group_size_category": "small",
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "actual_results": {
+    "actual_people_in_scene": 3,
+    "detected_people": 4,
+    "detection_rate": 133.33,
+    "count_error": 1,
+    "count_within_tolerance": true,
+    "false_positives": 1,
+    "false_negatives": 0,
+    "bounding_boxes_drawn": 4,
+    "maximum_confidence": 0.8577
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Person",
+      "confidence": 0.8577,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4844,
+            "y": 0.2734
+          },
+          {
+            "x": 0.5938,
+            "y": 0.2734
+          },
+          {
+            "x": 0.5938,
+            "y": 0.6758
+          },
+          {
+            "x": 0.4844,
+            "y": 0.6758
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Person",
+      "confidence": 0.668,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4844,
+            "y": 0.2734
+          },
+          {
+            "x": 0.5938,
+            "y": 0.2734
+          },
+          {
+            "x": 0.5938,
+            "y": 0.6758
+          },
+          {
+            "x": 0.4844,
+            "y": 0.6758
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Person",
+      "confidence": 0.651,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3848,
+            "y": 0.3457
+          },
+          {
+            "x": 0.4316,
+            "y": 0.3457
+          },
+          {
+            "x": 0.4316,
+            "y": 0.4883
+          },
+          {
+            "x": 0.3848,
+            "y": 0.4883
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Person",
+      "confidence": 0.5522,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3379,
+            "y": 0.2812
+          },
+          {
+            "x": 0.3789,
+            "y": 0.2812
+          },
+          {
+            "x": 0.3789,
+            "y": 0.4043
+          },
+          {
+            "x": 0.3379,
+            "y": 0.4043
+          }
+        ]
+      }
+    }
+  ],
+  "test_result": {
+    "status": "PASS",
+    "meets_functional_requirements": true,
+    "failure_reasons": [],
+    "reason": "Test PASSED: Expected 3 people, detected 4 people. Detection rate: 133.3% (\u226585% required). Count error: 1 (within \u00b11 tolerance). Meets functional requirements for Standard Urban Daylight Class."
+  },
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-003_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/EP-003_output.json"
+  },
+  "input_categories": {
+    "environmental_conditions": "Daylight (optimal)",
+    "distance_range": "Close to Medium",
+    "occlusion_level": "None (100% visible)",
+    "group_size": "Small Group (2-3 people)"
+  },
+  "comparison": {
+    "detection_rate_met": true,
+    "count_within_tolerance": true,
+    "expected_vs_actual_count": {
+      "expected": 3,
+      "actual": 4,
+      "difference": 1,
+      "exact_match": false
+    },
+    "criteria_checks": {
+      "detection_rate": {
+        "threshold": 85,
+        "actual": 133.33,
+        "passed": true
+      },
+      "count_accuracy": {
+        "tolerance": 1,
+        "error": 1,
+        "passed": true
+      }
+    }
+  },
+  "timing": {
+    "start_time": "2025-10-12 21:07:17",
+    "end_time": "2025-10-12 21:07:19",
+    "duration_seconds": 1.257,
+    "duration_formatted": "1.26s"
+  }
+}

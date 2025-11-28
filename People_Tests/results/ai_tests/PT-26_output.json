@@ -1,0 +1,25 @@
+{
+  "test_case_id": "PT-26",
+  "category": "AI Generated Test",
+  "timestamp": "2025-11-27T20:44:50.965134",
+  "detection_results": {
+    "expected_count": 4,
+    "detected_count": 0,
+    "count_difference": -4,
+    "maximum_confidence": 0
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [],
+  "output_files": {
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-26_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-26_output.json"
+  },
+  "timing": {
+    "start_time": "2025-11-27 20:44:49",
+    "end_time": "2025-11-27 20:44:50",
+    "duration_seconds": 1.485
+  }
+}

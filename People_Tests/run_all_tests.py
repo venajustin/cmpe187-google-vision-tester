@@ -113,8 +113,8 @@ def main():
     """Main function"""
     # Setup paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    tests_dir = os.path.join(script_dir, 'tests')
-    results_dir = os.path.join(script_dir, 'results')
+    tests_dir = os.path.join(script_dir, 'tests', 'conventional_tests')
+    results_dir = os.path.join(script_dir, 'results', 'conventional_tests')
 
     print()
     print("="*80)
