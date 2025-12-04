@@ -1,0 +1,127 @@
+{
+  "test_case_id": "S-15",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:52:21.479588",
+  "detection_results": {
+    "expected_count": 10,
+    "detected_count": 4,
+    "count_difference": -6,
+    "maximum_confidence": 0.7255,
+    "expected_description": "2 signs, 8 stoplights, 1 regulatory sign classified, 1 street sign classified"
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Traffic light",
+      "confidence": 0.7255,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.9492,
+            "y": 0.1807
+          },
+          {
+            "x": 0.9922,
+            "y": 0.1807
+          },
+          {
+            "x": 0.9922,
+            "y": 0.3633
+          },
+          {
+            "x": 0.9492,
+            "y": 0.3633
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Traffic light",
+      "confidence": 0.6095,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3398,
+            "y": 0.2441
+          },
+          {
+            "x": 0.3711,
+            "y": 0.2441
+          },
+          {
+            "x": 0.3711,
+            "y": 0.3594
+          },
+          {
+            "x": 0.3398,
+            "y": 0.3594
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Traffic light",
+      "confidence": 0.5465,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.7305,
+            "y": 0.4961
+          },
+          {
+            "x": 0.7812,
+            "y": 0.4961
+          },
+          {
+            "x": 0.7812,
+            "y": 0.6016
+          },
+          {
+            "x": 0.7305,
+            "y": 0.6016
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Traffic light",
+      "confidence": 0.5078,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.875,
+            "y": 0.1318
+          },
+          {
+            "x": 0.9609,
+            "y": 0.1318
+          },
+          {
+            "x": 0.9609,
+            "y": 0.3789
+          },
+          {
+            "x": 0.875,
+            "y": 0.3789
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-15_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-15_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:52:18.680875",
+    "end_time": "2025-12-04T14:52:21.479550",
+    "duration_seconds": 2.799
+  }
+}

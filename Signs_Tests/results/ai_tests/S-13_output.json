@@ -1,0 +1,77 @@
+{
+  "test_case_id": "S-13",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:52:07.311284",
+  "detection_results": {
+    "expected_count": 4,
+    "detected_count": 2,
+    "count_difference": -2,
+    "maximum_confidence": 0.7995,
+    "expected_description": "4 signs, 0 stoplights, 1 stop sign classified, 2 street signs classified, 1 speed limit sign classified"
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Stop sign",
+      "confidence": 0.7995,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4492,
+            "y": 0.0442
+          },
+          {
+            "x": 0.5898,
+            "y": 0.0442
+          },
+          {
+            "x": 0.5898,
+            "y": 0.3418
+          },
+          {
+            "x": 0.4492,
+            "y": 0.3418
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Traffic sign",
+      "confidence": 0.5165,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4902,
+            "y": 0.4688
+          },
+          {
+            "x": 0.5703,
+            "y": 0.4688
+          },
+          {
+            "x": 0.5703,
+            "y": 0.668
+          },
+          {
+            "x": 0.4902,
+            "y": 0.668
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-13_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-13_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:52:04.117190",
+    "end_time": "2025-12-04T14:52:07.311244",
+    "duration_seconds": 3.194
+  }
+}

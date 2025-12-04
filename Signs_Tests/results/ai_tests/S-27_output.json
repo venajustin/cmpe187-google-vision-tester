@@ -1,0 +1,52 @@
+{
+  "test_case_id": "S-27",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:53:46.457008",
+  "detection_results": {
+    "expected_count": 1,
+    "detected_count": 1,
+    "count_difference": 0,
+    "maximum_confidence": 0.8416,
+    "expected_description": "1 sign, 0 stoplights, 1 stop sign classified"
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Stop sign",
+      "confidence": 0.8416,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5547,
+            "y": 0.0179
+          },
+          {
+            "x": 0.8672,
+            "y": 0.0179
+          },
+          {
+            "x": 0.8672,
+            "y": 0.5938
+          },
+          {
+            "x": 0.5547,
+            "y": 0.5938
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-27_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-27_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:53:43.634359",
+    "end_time": "2025-12-04T14:53:46.456974",
+    "duration_seconds": 2.823
+  }
+}

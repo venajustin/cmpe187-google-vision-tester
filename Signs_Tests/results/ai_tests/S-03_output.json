@@ -1,0 +1,77 @@
+{
+  "test_case_id": "S-03",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:50:54.761501",
+  "detection_results": {
+    "expected_count": 10,
+    "detected_count": 2,
+    "count_difference": -8,
+    "maximum_confidence": 0.6656,
+    "expected_description": "2 signs, 8 stoplights, 1 regulatory sign classified, 1 street sign classified"
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Traffic light",
+      "confidence": 0.6656,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.582,
+            "y": 0.2949
+          },
+          {
+            "x": 0.6172,
+            "y": 0.2949
+          },
+          {
+            "x": 0.6172,
+            "y": 0.4102
+          },
+          {
+            "x": 0.582,
+            "y": 0.4102
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Traffic light",
+      "confidence": 0.5697,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3926,
+            "y": 0.2461
+          },
+          {
+            "x": 0.4238,
+            "y": 0.2461
+          },
+          {
+            "x": 0.4238,
+            "y": 0.3594
+          },
+          {
+            "x": 0.3926,
+            "y": 0.3594
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-03_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-03_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:50:51.723413",
+    "end_time": "2025-12-04T14:50:54.761466",
+    "duration_seconds": 3.038
+  }
+}

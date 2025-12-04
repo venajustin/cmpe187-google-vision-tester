@@ -1,0 +1,26 @@
+{
+  "test_case_id": "S-18",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:52:43.093646",
+  "detection_results": {
+    "expected_count": 0,
+    "detected_count": 0,
+    "count_difference": 0,
+    "maximum_confidence": 0,
+    "expected_description": "0 signs, 0 stoplights"
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-18_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-18_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:52:39.985861",
+    "end_time": "2025-12-04T14:52:43.093616",
+    "duration_seconds": 3.108
+  }
+}

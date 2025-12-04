@@ -1,0 +1,102 @@
+{
+  "test_case_id": "S-16",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:52:28.606723",
+  "detection_results": {
+    "expected_count": 10,
+    "detected_count": 3,
+    "count_difference": -7,
+    "maximum_confidence": 0.781,
+    "expected_description": "2 signs, 8 stoplights, 1 regulatory sign classified, 1 street sign classified"
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Traffic light",
+      "confidence": 0.781,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.582,
+            "y": 0.3105
+          },
+          {
+            "x": 0.6133,
+            "y": 0.3105
+          },
+          {
+            "x": 0.6133,
+            "y": 0.4375
+          },
+          {
+            "x": 0.582,
+            "y": 0.4375
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Traffic light",
+      "confidence": 0.6059,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3887,
+            "y": 0.2598
+          },
+          {
+            "x": 0.4199,
+            "y": 0.2598
+          },
+          {
+            "x": 0.4199,
+            "y": 0.3848
+          },
+          {
+            "x": 0.3887,
+            "y": 0.3848
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Traffic light",
+      "confidence": 0.5538,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1533,
+            "y": 0.25
+          },
+          {
+            "x": 0.1865,
+            "y": 0.25
+          },
+          {
+            "x": 0.1865,
+            "y": 0.375
+          },
+          {
+            "x": 0.1533,
+            "y": 0.375
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-16_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-16_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:52:25.648025",
+    "end_time": "2025-12-04T14:52:28.606682",
+    "duration_seconds": 2.959
+  }
+}

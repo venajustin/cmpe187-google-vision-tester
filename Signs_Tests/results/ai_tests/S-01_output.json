@@ -1,0 +1,26 @@
+{
+  "test_case_id": "S-01",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:50:40.465742",
+  "detection_results": {
+    "expected_count": 2,
+    "detected_count": 0,
+    "count_difference": -2,
+    "maximum_confidence": 0,
+    "expected_description": "1 sign, 1 stoplight, 1 regulatory sign classified"
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-01_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-01_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:50:36.499910",
+    "end_time": "2025-12-04T14:50:40.465699",
+    "duration_seconds": 3.966
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "test_case_id": "S-08",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T14:51:31.401197",
+  "detection_results": {
+    "expected_count": 1,
+    "detected_count": 1,
+    "count_difference": 0,
+    "maximum_confidence": 0.5634,
+    "expected_description": "1 sign, 0 stoplights, 1 regulatory sign classified"
+  },
+  "test_result": {
+    "status": "PASS",
+    "passed": true
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Traffic sign",
+      "confidence": 0.5634,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5859,
+            "y": 0.2471
+          },
+          {
+            "x": 0.75,
+            "y": 0.2471
+          },
+          {
+            "x": 0.75,
+            "y": 0.4629
+          },
+          {
+            "x": 0.5859,
+            "y": 0.4629
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-08_result.jpg",
+    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-08_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T14:51:28.403999",
+    "end_time": "2025-12-04T14:51:31.401159",
+    "duration_seconds": 2.997
+  }
+}
