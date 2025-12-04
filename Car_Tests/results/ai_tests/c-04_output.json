@@ -1,0 +1,51 @@
+{
+  "test_case_id": "c-04",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T15:02:17.165110",
+  "detection_results": {
+    "expected_count": 2,
+    "detected_count": 1,
+    "count_difference": -1,
+    "maximum_confidence": 0.5062
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Car",
+      "confidence": 0.5062,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.3535,
+            "y": 0.5
+          },
+          {
+            "x": 0.4512,
+            "y": 0.5
+          },
+          {
+            "x": 0.4512,
+            "y": 0.6133
+          },
+          {
+            "x": 0.3535,
+            "y": 0.6133
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-04_result.jpg",
+    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-04_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T15:02:13.975061",
+    "end_time": "2025-12-04T15:02:17.165053",
+    "duration_seconds": 3.19
+  }
+}
