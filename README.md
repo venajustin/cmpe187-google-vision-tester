@@ -24,3 +24,13 @@ source ./.venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Running Individual Testing Tool
+
+```bash
+python3 main.py
+```
+
+## Running automated testing
+
+In each of the testing directories, (i.e. Car_Tests) run the file `demo_ai_tests.py`.
+
