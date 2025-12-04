@@ -1,0 +1,151 @@
+{
+  "test_case_id": "c-15",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T15:03:34.438209",
+  "detection_results": {
+    "expected_count": 14,
+    "detected_count": 5,
+    "count_difference": -9,
+    "maximum_confidence": 0.9398
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Car",
+      "confidence": 0.9398,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1807,
+            "y": 0.4766
+          },
+          {
+            "x": 0.3711,
+            "y": 0.4766
+          },
+          {
+            "x": 0.3711,
+            "y": 0.6797
+          },
+          {
+            "x": 0.1807,
+            "y": 0.6797
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Car",
+      "confidence": 0.7263,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.377,
+            "y": 0.4805
+          },
+          {
+            "x": 0.4336,
+            "y": 0.4805
+          },
+          {
+            "x": 0.4336,
+            "y": 0.5625
+          },
+          {
+            "x": 0.377,
+            "y": 0.5625
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 3,
+      "name": "Car",
+      "confidence": 0.7109,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4629,
+            "y": 0.4805
+          },
+          {
+            "x": 0.5312,
+            "y": 0.4805
+          },
+          {
+            "x": 0.5312,
+            "y": 0.5547
+          },
+          {
+            "x": 0.4629,
+            "y": 0.5547
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 4,
+      "name": "Car",
+      "confidence": 0.6651,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.5508,
+            "y": 0.4629
+          },
+          {
+            "x": 0.6172,
+            "y": 0.4629
+          },
+          {
+            "x": 0.6172,
+            "y": 0.5312
+          },
+          {
+            "x": 0.5508,
+            "y": 0.5312
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 5,
+      "name": "Car",
+      "confidence": 0.5602,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.0,
+            "y": 0.4121
+          },
+          {
+            "x": 0.0957,
+            "y": 0.4121
+          },
+          {
+            "x": 0.0957,
+            "y": 0.5391
+          },
+          {
+            "x": 0.0,
+            "y": 0.5391
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_result.jpg",
+    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T15:03:31.715917",
+    "end_time": "2025-12-04T15:03:34.438170",
+    "duration_seconds": 2.722
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "test_case_id": "c-09",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T15:02:52.192901",
+  "detection_results": {
+    "expected_count": 3,
+    "detected_count": 2,
+    "count_difference": -1,
+    "maximum_confidence": 0.8044
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [
+    {
+      "person_id": 1,
+      "name": "Truck",
+      "confidence": 0.8044,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.4473,
+            "y": 0.2969
+          },
+          {
+            "x": 0.7617,
+            "y": 0.2969
+          },
+          {
+            "x": 0.7617,
+            "y": 0.7773
+          },
+          {
+            "x": 0.4473,
+            "y": 0.7773
+          }
+        ]
+      }
+    },
+    {
+      "person_id": 2,
+      "name": "Car",
+      "confidence": 0.5423,
+      "bounding_box": {
+        "normalized_vertices": [
+          {
+            "x": 0.1084,
+            "y": 0.5352
+          },
+          {
+            "x": 0.3555,
+            "y": 0.5352
+          },
+          {
+            "x": 0.3555,
+            "y": 0.793
+          },
+          {
+            "x": 0.1084,
+            "y": 0.793
+          }
+        ]
+      }
+    }
+  ],
+  "output_files": {
+    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-09_result.jpg",
+    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-09_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T15:02:49.449400",
+    "end_time": "2025-12-04T15:02:52.192865",
+    "duration_seconds": 2.743
+  }
+}

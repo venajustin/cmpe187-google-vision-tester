@@ -1,0 +1,25 @@
+{
+  "test_case_id": "c-10",
+  "category": "AI Generated Test",
+  "timestamp": "2025-12-04T15:02:59.286785",
+  "detection_results": {
+    "expected_count": 3,
+    "detected_count": 0,
+    "count_difference": -3,
+    "maximum_confidence": 0
+  },
+  "test_result": {
+    "status": "FAIL",
+    "passed": false
+  },
+  "detected_people_details": [],
+  "output_files": {
+    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-10_result.jpg",
+    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-10_output.json"
+  },
+  "timing": {
+    "start_time": "2025-12-04T15:02:56.345502",
+    "end_time": "2025-12-04T15:02:59.286736",
+    "duration_seconds": 2.941
+  }
+}
