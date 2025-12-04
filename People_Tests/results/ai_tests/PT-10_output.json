@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-10",
   "category": "AI Generated Test",
-  "timestamp": "2025-11-27T20:44:22.400742",
+  "timestamp": "2025-12-04T01:32:36.505830",
   "detection_results": {
     "expected_count": 12,
     "detected_count": 8,
@@ -219,8 +219,8 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-10_output.json"
   },
   "timing": {
-    "start_time": "2025-11-27 20:44:21",
-    "end_time": "2025-11-27 20:44:22",
-    "duration_seconds": 0.929
+    "start_time": "2025-12-04T01:32:34.033300",
+    "end_time": "2025-12-04T01:32:36.505821",
+    "duration_seconds": 2.473
   }
 }
