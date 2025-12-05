@@ -1,7 +1,5 @@
 {
   "description": "Expected bounding box localizations for Signs_Tests AI test cases",
-  "created": "2025-12-05",
-  "notes": "Coordinates extracted from test outputs. Tests with 0 detections have empty localizations.",
   "test_cases": {
     "S-01": {
       "expected_count": 2,
@@ -799,10 +797,5 @@
         }
       ]
     }
-  },
-  "summary": {
-    "total_test_cases": 27,
-    "tests_with_localizations": ["S-01", "S-07", "S-08", "S-12", "S-14", "S-20", "S-21", "S-27"],
-    "tests_with_zero_expected": ["S-04", "S-05", "S-06", "S-17", "S-18", "S-19", "S-23"]
   }
 }
