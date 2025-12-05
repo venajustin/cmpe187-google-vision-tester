@@ -1,0 +1,1278 @@
+{
+  "description": "Expected bounding box localizations for all test cases. Base and augmented pairs share the same expected localizations since they contain the same people in the same positions.",
+  "generated_from": "Passing test results from 2025-12-04, applied to base/augmented pairs",
+  "coordinate_system": "Normalized coordinates (0-1). x_min/y_min is top-left, x_max/y_max is bottom-right.",
+  "pairs": {
+    "P-01 <-> PT-15": "Sepia augmentation",
+    "P-02 <-> PT-16": "Blur augmentation",
+    "PT-03 <-> PT-17": "Emboss augmentation",
+    "PT-04 <-> PT-18": "Grayscale augmentation",
+    "PT-05 <-> PT-19": "Sharpen augmentation",
+    "PT-06 <-> PT-20": "Invert augmentation",
+    "PT-07 <-> PT-21": "Sepia2 augmentation",
+    "PT-08 <-> PT-22": "Brightness augmentation",
+    "PT-09 <-> PT-23": "Remove White augmentation",
+    "PT-10 <-> PT-24": "Noise augmentation",
+    "PT-11 <-> PT-25": "Pixelate augmentation",
+    "PT-12 <-> PT-26": "Color Filter augmentation",
+    "PT-13 <-> PT-27": "Invert, Noise, Color Filter augmentation",
+    "PT-14 <-> PT-28": "Grayscale, Emboss, Sharpen, Pixelate augmentation"
+  },
+  "test_cases": {
+    "P-01": {
+      "expected_count": 1,
+      "description": "Daylight, Clear, Quiet Street, Summer, 1 person, <10m",
+      "augmented_pair": "PT-15",
+      "localizations_source": "PT-15 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4629,
+            "y_min": 0.1758,
+            "x_max": 0.5938,
+            "y_max": 0.8086
+          }
+        }
+      ]
+    },
+    "PT-15": {
+      "expected_count": 1,
+      "description": "Augmented P-01: Sepia | Daylight, Clear, Quiet Street, Summer, 1 person, <10m",
+      "base_pair": "P-01",
+      "localizations_source": "PT-15 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4629,
+            "y_min": 0.1758,
+            "x_max": 0.5938,
+            "y_max": 0.8086
+          }
+        }
+      ]
+    },
+    "P-02": {
+      "expected_count": 4,
+      "description": "Night, Clear, Busy Cityscape, Summer, 4 people, <10m",
+      "augmented_pair": "PT-16",
+      "localizations_source": "P-02 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4375,
+            "y_min": 0.3574,
+            "x_max": 0.5898,
+            "y_max": 0.9883
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.5742,
+            "y_min": 0.334,
+            "x_max": 0.7148,
+            "y_max": 0.9883
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.2432,
+            "y_min": 0.3906,
+            "x_max": 0.3711,
+            "y_max": 0.9805
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.3535,
+            "y_min": 0.3457,
+            "x_max": 0.4805,
+            "y_max": 0.9805
+          }
+        }
+      ]
+    },
+    "PT-16": {
+      "expected_count": 4,
+      "description": "Augmented P-02: Blur | Night, Clear, Busy Cityscape, Summer, 4 people, <10m",
+      "base_pair": "P-02",
+      "localizations_source": "P-02 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4375,
+            "y_min": 0.3574,
+            "x_max": 0.5898,
+            "y_max": 0.9883
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.5742,
+            "y_min": 0.334,
+            "x_max": 0.7148,
+            "y_max": 0.9883
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.2432,
+            "y_min": 0.3906,
+            "x_max": 0.3711,
+            "y_max": 0.9805
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.3535,
+            "y_min": 0.3457,
+            "x_max": 0.4805,
+            "y_max": 0.9805
+          }
+        }
+      ]
+    },
+    "PT-03": {
+      "expected_count": 1,
+      "description": "Daylight, Rain, Quiet Street, Fall, 1 person, <10m",
+      "augmented_pair": "PT-17",
+      "localizations_source": "PT-03 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.5469,
+            "y_min": 0.3672,
+            "x_max": 0.6289,
+            "y_max": 0.7148
+          }
+        }
+      ]
+    },
+    "PT-17": {
+      "expected_count": 1,
+      "description": "Augmented PT-03: Emboss | Daylight, Rain, Quiet Street, Fall, 1 person, <10m",
+      "base_pair": "PT-03",
+      "localizations_source": "PT-03 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.5469,
+            "y_min": 0.3672,
+            "x_max": 0.6289,
+            "y_max": 0.7148
+          }
+        }
+      ]
+    },
+    "PT-04": {
+      "expected_count": 3,
+      "description": "Daylight, Snow, Busy Cityscape, Winter, 3 people, <10m",
+      "augmented_pair": "PT-18",
+      "localizations_source": "PT-04 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.2832,
+            "y_min": 0.2871,
+            "x_max": 0.5625,
+            "y_max": 0.8867
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.0028,
+            "y_min": 0.3027,
+            "x_max": 0.2012,
+            "y_max": 0.8867
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.6523,
+            "y_min": 0.3066,
+            "x_max": 0.8711,
+            "y_max": 0.8867
+          }
+        }
+      ]
+    },
+    "PT-18": {
+      "expected_count": 3,
+      "description": "Augmented PT-04: Grayscale | Daylight, Snow, Busy Cityscape, Winter, 3 people, <10m",
+      "base_pair": "PT-04",
+      "localizations_source": "PT-04 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.2832,
+            "y_min": 0.2871,
+            "x_max": 0.5625,
+            "y_max": 0.8867
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.0028,
+            "y_min": 0.3027,
+            "x_max": 0.2012,
+            "y_max": 0.8867
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.6523,
+            "y_min": 0.3066,
+            "x_max": 0.8711,
+            "y_max": 0.8867
+          }
+        }
+      ]
+    },
+    "PT-05": {
+      "expected_count": 0,
+      "description": "Daylight, Clear, Busy Cityscape, Summer, 0 people",
+      "augmented_pair": "PT-19",
+      "localizations_source": "Both passed with 0 detections",
+      "localizations": []
+    },
+    "PT-19": {
+      "expected_count": 0,
+      "description": "Augmented PT-05: Sharpen | Daylight, Clear, Busy Cityscape, Summer, 0 people",
+      "base_pair": "PT-05",
+      "localizations_source": "Both passed with 0 detections",
+      "localizations": []
+    },
+    "PT-06": {
+      "expected_count": 1,
+      "description": "Daylight, Clear, Busy Cityscape, Summer, 1 person, 10-50m",
+      "augmented_pair": "PT-20",
+      "localizations_source": "PT-06 Person 2 detection",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.373,
+            "y_min": 0.2949,
+            "x_max": 0.4219,
+            "y_max": 0.5312
+          }
+        }
+      ]
+    },
+    "PT-20": {
+      "expected_count": 1,
+      "description": "Augmented PT-06: Invert | Daylight, Clear, Busy Cityscape, Summer, 1 person, 10-50m",
+      "base_pair": "PT-06",
+      "localizations_source": "PT-06 Person 2 detection",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.373,
+            "y_min": 0.2949,
+            "x_max": 0.4219,
+            "y_max": 0.5312
+          }
+        }
+      ]
+    },
+    "PT-07": {
+      "expected_count": 2,
+      "description": "Daylight, Clear, Quiet Street, Spring, 2 people, 10-50m",
+      "augmented_pair": "PT-21",
+      "localizations_source": "PT-07 Person 1 and Person 3 detections",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.377,
+            "y_min": 0.3652,
+            "x_max": 0.6172,
+            "y_max": 0.7422
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.668,
+            "y_min": 0.375,
+            "x_max": 0.9062,
+            "y_max": 0.7422
+          }
+        }
+      ]
+    },
+    "PT-21": {
+      "expected_count": 2,
+      "description": "Augmented PT-07: Sepia2 | Daylight, Clear, Quiet Street, Spring, 2 people, 10-50m",
+      "base_pair": "PT-07",
+      "localizations_source": "PT-07 Person 1 and Person 3 detections",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.377,
+            "y_min": 0.3652,
+            "x_max": 0.6172,
+            "y_max": 0.7422
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.668,
+            "y_min": 0.375,
+            "x_max": 0.9062,
+            "y_max": 0.7422
+          }
+        }
+      ]
+    },
+    "PT-08": {
+      "expected_count": 1,
+      "description": "Daylight, Fog, Quiet Street, Winter, 1 person, <10m",
+      "augmented_pair": "PT-22",
+      "localizations_source": "PT-08 Person 2 detection",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.1768,
+            "y_min": 0.7305,
+            "x_max": 0.3711,
+            "y_max": 0.9922
+          }
+        }
+      ]
+    },
+    "PT-22": {
+      "expected_count": 1,
+      "description": "Augmented PT-08: Brightness | Daylight, Fog, Quiet Street, Winter, 1 person, <10m",
+      "base_pair": "PT-08",
+      "localizations_source": "PT-08 Person 2 detection",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.1768,
+            "y_min": 0.7305,
+            "x_max": 0.3711,
+            "y_max": 0.9922
+          }
+        }
+      ]
+    },
+    "PT-09": {
+      "expected_count": 6,
+      "description": "Daylight, Clear, Busy Cityscape, Summer, 6 people, 10-50m",
+      "augmented_pair": "PT-23",
+      "localizations_source": "PT-09 Person 2, 4, 5, 6, 7 detections + shifted Person 5",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.7969,
+            "y_min": 0.459,
+            "x_max": 0.9102,
+            "y_max": 0.7969
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.6367,
+            "y_min": 0.4707,
+            "x_max": 0.7344,
+            "y_max": 0.7617
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.5391,
+            "y_min": 0.4844,
+            "x_max": 0.6445,
+            "y_max": 0.793
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.1099,
+            "y_min": 0.4551,
+            "x_max": 0.2539,
+            "y_max": 0.7852
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.2949,
+            "y_min": 0.4395,
+            "x_max": 0.4609,
+            "y_max": 0.7695
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.4387,
+            "y_min": 0.4330,
+            "x_max": 0.5627,
+            "y_max": 0.7692
+          }
+        }
+      ]
+    },
+    "PT-23": {
+      "expected_count": 6,
+      "description": "Augmented PT-09: Remove White | Daylight, Clear, Busy Cityscape, Summer, 6 people, 10-50m",
+      "base_pair": "PT-09",
+      "localizations_source": "PT-09 Person 2, 4, 5, 6, 7 detections + YOLO annotation for Person 6",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.7969,
+            "y_min": 0.459,
+            "x_max": 0.9102,
+            "y_max": 0.7969
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.6367,
+            "y_min": 0.4707,
+            "x_max": 0.7344,
+            "y_max": 0.7617
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.5391,
+            "y_min": 0.4844,
+            "x_max": 0.6445,
+            "y_max": 0.793
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.1099,
+            "y_min": 0.4551,
+            "x_max": 0.2539,
+            "y_max": 0.7852
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.2949,
+            "y_min": 0.4395,
+            "x_max": 0.4609,
+            "y_max": 0.7695
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.4387,
+            "y_min": 0.4330,
+            "x_max": 0.5627,
+            "y_max": 0.7692
+          }
+        }
+      ]
+    },
+    "PT-10": {
+      "expected_count": 12,
+      "description": "Daylight, Clear, Busy Cityscape, Summer, 12 people, <10m",
+      "augmented_pair": "PT-24",
+      "localizations_source": "PT-10 Person 1-8 detections + shifted variants",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.8359,
+            "y_min": 0.2354,
+            "x_max": 0.9492,
+            "y_max": 0.8672
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.3711,
+            "y_min": 0.2832,
+            "x_max": 0.5,
+            "y_max": 0.8594
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.4863,
+            "y_min": 0.3496,
+            "x_max": 0.5977,
+            "y_max": 0.8906
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.0061,
+            "y_min": 0.0121,
+            "x_max": 0.1094,
+            "y_max": 0.4941
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.0518,
+            "y_min": 0.4355,
+            "x_max": 0.1787,
+            "y_max": 0.9766
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.6289,
+            "y_min": 0.033,
+            "x_max": 0.7656,
+            "y_max": 0.4824
+          }
+        },
+        {
+          "person_id": 7,
+          "bounding_box": {
+            "x_min": 0.209,
+            "y_min": 0.3828,
+            "x_max": 0.3398,
+            "y_max": 1.0
+          }
+        },
+        {
+          "person_id": 8,
+          "bounding_box": {
+            "x_min": 0.6758,
+            "y_min": 0.3125,
+            "x_max": 0.8008,
+            "y_max": 0.9609
+          }
+        },
+        {
+          "person_id": 9,
+          "bounding_box": {
+            "x_min": 0.0000,
+            "y_min": 0.2064,
+            "x_max": 0.0643,
+            "y_max": 0.7872
+          }
+        },
+        {
+          "person_id": 10,
+          "bounding_box": {
+            "x_min": 0.6796,
+            "y_min": 0.2258,
+            "x_max": 0.8022,
+            "y_max": 0.7505
+          }
+        },
+        {
+          "person_id": 11,
+          "bounding_box": {
+            "x_min": 0.2864,
+            "y_min": 0.1049,
+            "x_max": 0.4345,
+            "y_max": 0.6490
+          }
+        },
+        {
+          "person_id": 12,
+          "bounding_box": {
+            "x_min": 0.0704,
+            "y_min": 0.3230,
+            "x_max": 0.1651,
+            "y_max": 0.8606
+          }
+        }
+      ]
+    },
+    "PT-24": {
+      "expected_count": 12,
+      "description": "Augmented PT-10: Noise | Daylight, Clear, Busy Cityscape, Summer, 12 people, <10m",
+      "base_pair": "PT-10",
+      "localizations_source": "PT-10 Person 1-8 detections + YOLO annotations for 9-12",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.8359,
+            "y_min": 0.2354,
+            "x_max": 0.9492,
+            "y_max": 0.8672
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.3711,
+            "y_min": 0.2832,
+            "x_max": 0.5,
+            "y_max": 0.8594
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.4863,
+            "y_min": 0.3496,
+            "x_max": 0.5977,
+            "y_max": 0.8906
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.0061,
+            "y_min": 0.0121,
+            "x_max": 0.1094,
+            "y_max": 0.4941
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.0518,
+            "y_min": 0.4355,
+            "x_max": 0.1787,
+            "y_max": 0.9766
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.6289,
+            "y_min": 0.033,
+            "x_max": 0.7656,
+            "y_max": 0.4824
+          }
+        },
+        {
+          "person_id": 7,
+          "bounding_box": {
+            "x_min": 0.209,
+            "y_min": 0.3828,
+            "x_max": 0.3398,
+            "y_max": 1.0
+          }
+        },
+        {
+          "person_id": 8,
+          "bounding_box": {
+            "x_min": 0.6758,
+            "y_min": 0.3125,
+            "x_max": 0.8008,
+            "y_max": 0.9609
+          }
+        },
+        {
+          "person_id": 9,
+          "bounding_box": {
+            "x_min": 0.0000,
+            "y_min": 0.2064,
+            "x_max": 0.0643,
+            "y_max": 0.7872
+          }
+        },
+        {
+          "person_id": 10,
+          "bounding_box": {
+            "x_min": 0.6796,
+            "y_min": 0.2258,
+            "x_max": 0.8022,
+            "y_max": 0.7505
+          }
+        },
+        {
+          "person_id": 11,
+          "bounding_box": {
+            "x_min": 0.2864,
+            "y_min": 0.1049,
+            "x_max": 0.4345,
+            "y_max": 0.6490
+          }
+        },
+        {
+          "person_id": 12,
+          "bounding_box": {
+            "x_min": 0.0704,
+            "y_min": 0.3230,
+            "x_max": 0.1651,
+            "y_max": 0.8606
+          }
+        }
+      ]
+    },
+    "PT-11": {
+      "expected_count": 20,
+      "description": "Daylight, Clear, Busy Cityscape, Winter, 20 people, 10-50m",
+      "augmented_pair": "PT-25",
+      "localizations_source": "Actual output 1,2,3,5,6 + YOLO annotations for rest",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.6094,
+            "y_min": 0.4062,
+            "x_max": 0.7031,
+            "y_max": 0.75
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.3457,
+            "y_min": 0.4316,
+            "x_max": 0.4102,
+            "y_max": 0.7109
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.5273,
+            "y_min": 0.4531,
+            "x_max": 0.5898,
+            "y_max": 0.6914
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.0401,
+            "y_min": 0.4581,
+            "x_max": 0.0959,
+            "y_max": 0.6019
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.8359,
+            "y_min": 0.4551,
+            "x_max": 0.8828,
+            "y_max": 0.6484
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.7539,
+            "y_min": 0.4336,
+            "x_max": 0.8281,
+            "y_max": 0.6992
+          }
+        },
+        {
+          "person_id": 7,
+          "bounding_box": {
+            "x_min": 0.1614,
+            "y_min": 0.4745,
+            "x_max": 0.1881,
+            "y_max": 0.5728
+          }
+        },
+        {
+          "person_id": 8,
+          "bounding_box": {
+            "x_min": 0.1905,
+            "y_min": 0.4581,
+            "x_max": 0.2245,
+            "y_max": 0.6438
+          }
+        },
+        {
+          "person_id": 9,
+          "bounding_box": {
+            "x_min": 0.2257,
+            "y_min": 0.4581,
+            "x_max": 0.2682,
+            "y_max": 0.6456
+          }
+        },
+        {
+          "person_id": 10,
+          "bounding_box": {
+            "x_min": 0.2646,
+            "y_min": 0.4617,
+            "x_max": 0.2998,
+            "y_max": 0.6511
+          }
+        },
+        {
+          "person_id": 11,
+          "bounding_box": {
+            "x_min": 0.2973,
+            "y_min": 0.4618,
+            "x_max": 0.3495,
+            "y_max": 0.6493
+          }
+        },
+        {
+          "person_id": 12,
+          "bounding_box": {
+            "x_min": 0.4466,
+            "y_min": 0.4945,
+            "x_max": 0.4672,
+            "y_max": 0.5655
+          }
+        },
+        {
+          "person_id": 13,
+          "bounding_box": {
+            "x_min": 0.4636,
+            "y_min": 0.4690,
+            "x_max": 0.4941,
+            "y_max": 0.6165
+          }
+        },
+        {
+          "person_id": 14,
+          "bounding_box": {
+            "x_min": 0.5000,
+            "y_min": 0.4745,
+            "x_max": 0.5194,
+            "y_max": 0.6201
+          }
+        },
+        {
+          "person_id": 15,
+          "bounding_box": {
+            "x_min": 0.5182,
+            "y_min": 0.4417,
+            "x_max": 0.5583,
+            "y_max": 0.6948
+          }
+        },
+        {
+          "person_id": 16,
+          "bounding_box": {
+            "x_min": 0.6723,
+            "y_min": 0.4418,
+            "x_max": 0.7524,
+            "y_max": 0.7075
+          }
+        },
+        {
+          "person_id": 17,
+          "bounding_box": {
+            "x_min": 0.8799,
+            "y_min": 0.4563,
+            "x_max": 0.9090,
+            "y_max": 0.6402
+          }
+        },
+        {
+          "person_id": 18,
+          "bounding_box": {
+            "x_min": 0.9102,
+            "y_min": 0.4636,
+            "x_max": 0.9430,
+            "y_max": 0.6293
+          }
+        },
+        {
+          "person_id": 19,
+          "bounding_box": {
+            "x_min": 0.9345,
+            "y_min": 0.4545,
+            "x_max": 0.9624,
+            "y_max": 0.6329
+          }
+        },
+        {
+          "person_id": 20,
+          "bounding_box": {
+            "x_min": 0.9636,
+            "y_min": 0.4472,
+            "x_max": 0.9976,
+            "y_max": 0.6256
+          }
+        }
+      ]
+    },
+    "PT-25": {
+      "expected_count": 20,
+      "description": "Augmented PT-11: Pixelate | Daylight, Clear, Busy Cityscape, Winter, 20 people, 10-50m",
+      "base_pair": "PT-11",
+      "localizations_source": "Actual output 1,2,3,5,6 + YOLO annotations for rest",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.6094,
+            "y_min": 0.4062,
+            "x_max": 0.7031,
+            "y_max": 0.75
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.3457,
+            "y_min": 0.4316,
+            "x_max": 0.4102,
+            "y_max": 0.7109
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.5273,
+            "y_min": 0.4531,
+            "x_max": 0.5898,
+            "y_max": 0.6914
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.0401,
+            "y_min": 0.4581,
+            "x_max": 0.0959,
+            "y_max": 0.6019
+          }
+        },
+        {
+          "person_id": 5,
+          "bounding_box": {
+            "x_min": 0.8359,
+            "y_min": 0.4551,
+            "x_max": 0.8828,
+            "y_max": 0.6484
+          }
+        },
+        {
+          "person_id": 6,
+          "bounding_box": {
+            "x_min": 0.7539,
+            "y_min": 0.4336,
+            "x_max": 0.8281,
+            "y_max": 0.6992
+          }
+        },
+        {
+          "person_id": 7,
+          "bounding_box": {
+            "x_min": 0.1614,
+            "y_min": 0.4745,
+            "x_max": 0.1881,
+            "y_max": 0.5728
+          }
+        },
+        {
+          "person_id": 8,
+          "bounding_box": {
+            "x_min": 0.1905,
+            "y_min": 0.4581,
+            "x_max": 0.2245,
+            "y_max": 0.6438
+          }
+        },
+        {
+          "person_id": 9,
+          "bounding_box": {
+            "x_min": 0.2257,
+            "y_min": 0.4581,
+            "x_max": 0.2682,
+            "y_max": 0.6456
+          }
+        },
+        {
+          "person_id": 10,
+          "bounding_box": {
+            "x_min": 0.2646,
+            "y_min": 0.4617,
+            "x_max": 0.2998,
+            "y_max": 0.6511
+          }
+        },
+        {
+          "person_id": 11,
+          "bounding_box": {
+            "x_min": 0.2973,
+            "y_min": 0.4618,
+            "x_max": 0.3495,
+            "y_max": 0.6493
+          }
+        },
+        {
+          "person_id": 12,
+          "bounding_box": {
+            "x_min": 0.4466,
+            "y_min": 0.4945,
+            "x_max": 0.4672,
+            "y_max": 0.5655
+          }
+        },
+        {
+          "person_id": 13,
+          "bounding_box": {
+            "x_min": 0.4636,
+            "y_min": 0.4690,
+            "x_max": 0.4941,
+            "y_max": 0.6165
+          }
+        },
+        {
+          "person_id": 14,
+          "bounding_box": {
+            "x_min": 0.5000,
+            "y_min": 0.4745,
+            "x_max": 0.5194,
+            "y_max": 0.6201
+          }
+        },
+        {
+          "person_id": 15,
+          "bounding_box": {
+            "x_min": 0.5182,
+            "y_min": 0.4417,
+            "x_max": 0.5583,
+            "y_max": 0.6948
+          }
+        },
+        {
+          "person_id": 16,
+          "bounding_box": {
+            "x_min": 0.6723,
+            "y_min": 0.4418,
+            "x_max": 0.7524,
+            "y_max": 0.7075
+          }
+        },
+        {
+          "person_id": 17,
+          "bounding_box": {
+            "x_min": 0.8799,
+            "y_min": 0.4563,
+            "x_max": 0.9090,
+            "y_max": 0.6402
+          }
+        },
+        {
+          "person_id": 18,
+          "bounding_box": {
+            "x_min": 0.9102,
+            "y_min": 0.4636,
+            "x_max": 0.9430,
+            "y_max": 0.6293
+          }
+        },
+        {
+          "person_id": 19,
+          "bounding_box": {
+            "x_min": 0.9345,
+            "y_min": 0.4545,
+            "x_max": 0.9624,
+            "y_max": 0.6329
+          }
+        },
+        {
+          "person_id": 20,
+          "bounding_box": {
+            "x_min": 0.9636,
+            "y_min": 0.4472,
+            "x_max": 0.9976,
+            "y_max": 0.6256
+          }
+        }
+      ]
+    },
+    "PT-12": {
+      "expected_count": 4,
+      "description": "Daylight, Clear, Busy Cityscape, Summer, 4 people, >50m",
+      "augmented_pair": "PT-26",
+      "localizations_source": "YOLO annotations",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4568,
+            "y_min": 0.7283,
+            "x_max": 0.4710,
+            "y_max": 0.7678
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.4729,
+            "y_min": 0.7271,
+            "x_max": 0.4871,
+            "y_max": 0.7686
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.4877,
+            "y_min": 0.7271,
+            "x_max": 0.5020,
+            "y_max": 0.7686
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.5032,
+            "y_min": 0.7271,
+            "x_max": 0.5199,
+            "y_max": 0.7674
+          }
+        }
+      ]
+    },
+    "PT-26": {
+      "expected_count": 4,
+      "description": "Augmented PT-12: Color Filter | Daylight, Clear, Busy Cityscape, Summer, 4 people, >50m",
+      "base_pair": "PT-12",
+      "localizations_source": "YOLO annotations",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.4568,
+            "y_min": 0.7283,
+            "x_max": 0.4710,
+            "y_max": 0.7678
+          }
+        },
+        {
+          "person_id": 2,
+          "bounding_box": {
+            "x_min": 0.4729,
+            "y_min": 0.7271,
+            "x_max": 0.4871,
+            "y_max": 0.7686
+          }
+        },
+        {
+          "person_id": 3,
+          "bounding_box": {
+            "x_min": 0.4877,
+            "y_min": 0.7271,
+            "x_max": 0.5020,
+            "y_max": 0.7686
+          }
+        },
+        {
+          "person_id": 4,
+          "bounding_box": {
+            "x_min": 0.5032,
+            "y_min": 0.7271,
+            "x_max": 0.5199,
+            "y_max": 0.7674
+          }
+        }
+      ]
+    },
+    "PT-13": {
+      "expected_count": 1,
+      "description": "Night, Snow, Busy Cityscape, Winter, 1 person, <10m",
+      "augmented_pair": "PT-27",
+      "localizations_source": "PT-13 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.5234,
+            "y_min": 0.6016,
+            "x_max": 0.6484,
+            "y_max": 0.7539
+          }
+        }
+      ]
+    },
+    "PT-27": {
+      "expected_count": 1,
+      "description": "Augmented PT-13: Invert, Noise, Color Filter | Night, Snow, Busy Cityscape, Winter, 1 person, <10m",
+      "base_pair": "PT-13",
+      "localizations_source": "PT-13 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.5234,
+            "y_min": 0.6016,
+            "x_max": 0.6484,
+            "y_max": 0.7539
+          }
+        }
+      ]
+    },
+    "PT-14": {
+      "expected_count": 1,
+      "description": "Night, Rain, Busy Cityscape, Fall, 1 person, <10m",
+      "augmented_pair": "PT-28",
+      "localizations_source": "PT-28 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.1221,
+            "y_min": 0.5,
+            "x_max": 0.3262,
+            "y_max": 0.9766
+          }
+        }
+      ]
+    },
+    "PT-28": {
+      "expected_count": 1,
+      "description": "Augmented PT-14: Grayscale, Emboss, Sharpen, Pixelate | Night, Rain, Busy Cityscape, Fall, 1 person, <10m",
+      "base_pair": "PT-14",
+      "localizations_source": "PT-28 (passed)",
+      "localizations": [
+        {
+          "person_id": 1,
+          "bounding_box": {
+            "x_min": 0.1221,
+            "y_min": 0.5,
+            "x_max": 0.3262,
+            "y_max": 0.9766
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_test_cases": 28,
+    "pairs_with_localizations": 14,
+    "pairs_without_localizations": 0,
+    "tests_with_localizations": ["P-01", "PT-15", "P-02", "PT-16", "PT-03", "PT-17", "PT-04", "PT-18", "PT-05", "PT-19", "PT-06", "PT-20", "PT-07", "PT-21", "PT-08", "PT-22", "PT-09", "PT-23", "PT-10", "PT-24", "PT-11", "PT-25", "PT-12", "PT-26", "PT-13", "PT-27", "PT-14", "PT-28"],
+    "tests_without_localizations": []
+  }
+}
