@@ -1,7 +1,7 @@
 {
   "test_case_id": "c-01",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T15:01:55.968598",
+  "timestamp": "2025-12-04T17:34:15.144128",
   "detection_results": {
     "expected_count": 6,
     "detected_count": 0,
@@ -18,8 +18,8 @@
     "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-01_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T15:01:52.336223",
-    "end_time": "2025-12-04T15:01:55.968543",
-    "duration_seconds": 3.632
+    "start_time": "2025-12-04T17:34:12.000439",
+    "end_time": "2025-12-04T17:34:15.144073",
+    "duration_seconds": 3.144
   }
 }

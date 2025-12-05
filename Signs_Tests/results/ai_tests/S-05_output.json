@@ -1,7 +1,7 @@
 {
   "test_case_id": "S-05",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:51:09.497203",
+  "timestamp": "2025-12-04T17:33:56.282024",
   "detection_results": {
     "expected_count": 0,
     "detected_count": 0,
@@ -15,12 +15,12 @@
   },
   "detected_people_details": [],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-05_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-05_output.json"
+    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-05_result.jpg",
+    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-05_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:51:06.249199",
-    "end_time": "2025-12-04T14:51:09.497166",
-    "duration_seconds": 3.248
+    "start_time": "2025-12-04T17:33:52.307096",
+    "end_time": "2025-12-04T17:33:56.281982",
+    "duration_seconds": 3.975
   }
 }
