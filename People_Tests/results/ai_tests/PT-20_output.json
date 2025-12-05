@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-20",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:33:44.757134",
+  "timestamp": "2025-12-05T01:14:51.537820",
   "detection_results": {
     "expected_count": 1,
     "detected_count": 2,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.7133,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.5476,
       "bounding_box": {
@@ -69,8 +69,22 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-20_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:33:42.175385",
-    "end_time": "2025-12-04T01:33:44.757125",
-    "duration_seconds": 2.582
+    "start_time": "2025-12-05T01:14:49.001666",
+    "end_time": "2025-12-05T01:14:51.537746",
+    "duration_seconds": 2.536
+  },
+  "localization_results": {
+    "expected_boxes": 1,
+    "matched_boxes": 1,
+    "average_iou": 0.8238,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.8238157603077467,
+        "matched": true
+      }
+    ]
   }
 }

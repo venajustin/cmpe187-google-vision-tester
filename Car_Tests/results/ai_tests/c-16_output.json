@@ -1,7 +1,7 @@
 {
   "test_case_id": "c-16",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T15:03:41.286988",
+  "timestamp": "2025-12-05T01:17:28.160792",
   "detection_results": {
     "expected_count": 6,
     "detected_count": 2,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Car",
       "confidence": 0.881,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Car",
       "confidence": 0.5387,
       "bounding_box": {
@@ -65,12 +65,56 @@
     }
   ],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-16_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-16_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-16_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-16_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T15:03:38.578842",
-    "end_time": "2025-12-04T15:03:41.286960",
-    "duration_seconds": 2.708
+    "start_time": "2025-12-05T01:17:25.828565",
+    "end_time": "2025-12-05T01:17:28.160707",
+    "duration_seconds": 2.332
+  },
+  "localization_results": {
+    "expected_boxes": 6,
+    "matched_boxes": 2,
+    "average_iou": 0.9992,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.9993929083029455,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.9990934240510618,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 4,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 5,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 6,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

@@ -162,15 +162,15 @@
       "expected_count": 1,
       "description": "Augmented PT-03: Emboss | Daylight, Rain, Quiet Street, Fall, 1 person, <10m",
       "base_pair": "PT-03",
-      "localizations_source": "PT-03 (passed)",
+      "localizations_source": "PT-17 Person 1 detection",
       "localizations": [
         {
           "person_id": 1,
           "bounding_box": {
-            "x_min": 0.5469,
-            "y_min": 0.3672,
-            "x_max": 0.6289,
-            "y_max": 0.7148
+            "x_min": 0.5508,
+            "y_min": 0.4004,
+            "x_max": 0.6406,
+            "y_max": 0.8164
           }
         }
       ]
@@ -366,15 +366,15 @@
       "expected_count": 1,
       "description": "Augmented PT-08: Brightness | Daylight, Fog, Quiet Street, Winter, 1 person, <10m",
       "base_pair": "PT-08",
-      "localizations_source": "PT-08 Person 2 detection",
+      "localizations_source": "PT-22 Person 1 detection",
       "localizations": [
         {
           "person_id": 1,
           "bounding_box": {
-            "x_min": 0.1768,
-            "y_min": 0.7305,
-            "x_max": 0.3711,
-            "y_max": 0.9922
+            "x_min": 0.106,
+            "y_min": 0.6328,
+            "x_max": 0.3301,
+            "y_max": 0.9961
           }
         }
       ]

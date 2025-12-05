@@ -1,0 +1,714 @@
+{
+  "description": "Expected bounding box localizations for Car_Tests AI test cases",
+  "created": "2025-12-04",
+  "notes": "Coordinates extracted from test outputs. Tests with 0 detections have empty localizations.",
+  "test_cases": {
+    "c-01": {
+      "expected_count": 6,
+      "description": "1 to 5 cars, far distance, overlapping, car type: vehicles",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1304,
+            "y_min": 0.5183,
+            "x_max": 0.2137,
+            "y_max": 0.629
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1972,
+            "y_min": 0.5271,
+            "x_max": 0.2685,
+            "y_max": 0.6005
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3835,
+            "y_min": 0.5019,
+            "x_max": 0.4394,
+            "y_max": 0.5479
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.2718,
+            "y_min": 0.5139,
+            "x_max": 0.3057,
+            "y_max": 0.5731
+          }
+        },
+        {
+          "vehicle_id": 5,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5117,
+            "y_min": 0.5019,
+            "x_max": 0.5939,
+            "y_max": 0.6005
+          }
+        },
+        {
+          "vehicle_id": 6,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4745,
+            "y_min": 0.4975,
+            "x_max": 0.5413,
+            "y_max": 0.5742
+          }
+        }
+      ]
+    },
+    "c-02": {
+      "expected_count": 6,
+      "description": "Augmented C-01: Heavy Pixelation, 1 to 5 cars, far distance, overlapping, car type: vehicles",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1304,
+            "y_min": 0.5183,
+            "x_max": 0.2137,
+            "y_max": 0.629
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1972,
+            "y_min": 0.5271,
+            "x_max": 0.2685,
+            "y_max": 0.6005
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3835,
+            "y_min": 0.5019,
+            "x_max": 0.4394,
+            "y_max": 0.5479
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.2718,
+            "y_min": 0.5139,
+            "x_max": 0.3057,
+            "y_max": 0.5731
+          }
+        },
+        {
+          "vehicle_id": 5,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5117,
+            "y_min": 0.5019,
+            "x_max": 0.5939,
+            "y_max": 0.6005
+          }
+        },
+        {
+          "vehicle_id": 6,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4745,
+            "y_min": 0.4975,
+            "x_max": 0.5413,
+            "y_max": 0.5742
+          }
+        }
+      ]
+    },
+    "c-03": {
+      "expected_count": 2,
+      "description": "2 cars, medium distance, overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3638,
+            "y_min": 0.5051,
+            "x_max": 0.4624,
+            "y_max": 0.6103
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.32,
+            "y_min": 0.4898,
+            "x_max": 0.3769,
+            "y_max": 0.5687
+          }
+        }
+      ]
+    },
+    "c-04": {
+      "expected_count": 2,
+      "description": "Augmented C-03: Sepia2, 2 cars, medium distance, overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3638,
+            "y_min": 0.5051,
+            "x_max": 0.4624,
+            "y_max": 0.6103
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.32,
+            "y_min": 0.4898,
+            "x_max": 0.3769,
+            "y_max": 0.5687
+          }
+        }
+      ]
+    },
+    "c-05": {
+      "expected_count": 1,
+      "description": "1 truck, medium distance, fall, clear weather, bright lighting, no overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.1151,
+            "y_min": 0.481,
+            "x_max": 0.2356,
+            "y_max": 0.6158
+          }
+        }
+      ]
+    },
+    "c-06": {
+      "expected_count": 1,
+      "description": "1 truck, 1 car, medium distance, fall, dim lighting, clear weather, no overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.3203,
+            "y_min": 0.4043,
+            "x_max": 0.8555,
+            "y_max": 0.7148
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.0854,
+            "y_min": 0.5273,
+            "x_max": 0.2139,
+            "y_max": 0.6289
+          }
+        }
+      ]
+    },
+    "c-07": {
+      "expected_count": 1,
+      "description": "1 truck, close distance, fall, dim lighting, rainy weather, no overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.4238,
+            "y_min": 0.2051,
+            "x_max": 0.8906,
+            "y_max": 0.7891
+          }
+        }
+      ]
+    },
+    "c-08": {
+      "expected_count": 2,
+      "description": "2 trucks, far distance, winter, bright lighting, snowy weather, no overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.3301,
+            "y_min": 0.2451,
+            "x_max": 0.4746,
+            "y_max": 0.5312
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.5039,
+            "y_min": 0.2793,
+            "x_max": 0.5938,
+            "y_max": 0.5078
+          }
+        }
+      ]
+    },
+    "c-09": {
+      "expected_count": 4,
+      "description": "3 cars and 1 truck, snowy weather, dim lighting, overlapping, medium distance",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.4473,
+            "y_min": 0.2969,
+            "x_max": 0.7617,
+            "y_max": 0.7773
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1084,
+            "y_min": 0.5352,
+            "x_max": 0.3555,
+            "y_max": 0.793
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.2278,
+            "y_min": 0.4309,
+            "x_max": 0.3855,
+            "y_max": 0.7914
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3585,
+            "y_min": 0.5431,
+            "x_max": 0.449,
+            "y_max": 0.7746
+          }
+        }
+      ]
+    },
+    "c-10": {
+      "expected_count": 3,
+      "description": "3 cars, rainy weather, winter season, close distance",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3174,
+            "y_min": 0.4112,
+            "x_max": 0.6124,
+            "y_max": 0.9223
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.6553,
+            "y_min": 0.6136,
+            "x_max": 0.9056,
+            "y_max": 1.0
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.0112,
+            "y_min": 0.5074,
+            "x_max": 0.3071,
+            "y_max": 0.9057
+          }
+        }
+      ]
+    },
+    "c-11": {
+      "expected_count": 4,
+      "description": "4 cars, close distance, rainy weather, fall season, overlapping",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.337,
+            "y_min": 0.5092,
+            "x_max": 0.7263,
+            "y_max": 0.8857
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.0,
+            "y_min": 0.512,
+            "x_max": 0.2017,
+            "y_max": 0.8941
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1494,
+            "y_min": 0.554,
+            "x_max": 0.3165,
+            "y_max": 0.8437
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.73,
+            "y_min": 0.5778,
+            "x_max": 0.8898,
+            "y_max": 0.8367
+          }
+        }
+      ]
+    },
+    "c-12": {
+      "expected_count": 1,
+      "description": "1 car, winter season, dim lighting, clear weather",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4785,
+            "y_min": 0.4258,
+            "x_max": 0.7578,
+            "y_max": 0.6602
+          }
+        }
+      ]
+    },
+    "c-13": {
+      "expected_count": 2,
+      "description": "2 cars, fall season, blurry image, medium distance",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.625,
+            "y_min": 0.4316,
+            "x_max": 0.793,
+            "y_max": 0.6016
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.7891,
+            "y_min": 0.4258,
+            "x_max": 0.9336,
+            "y_max": 0.5625
+          }
+        }
+      ]
+    },
+    "c-14": {
+      "expected_count": 2,
+      "description": "Augmented C13: monochromatic (black/white), 2 cars, fall season, blurry image, medium distance",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.6289,
+            "y_min": 0.4238,
+            "x_max": 0.7891,
+            "y_max": 0.5938
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.7891,
+            "y_min": 0.418,
+            "x_max": 0.9414,
+            "y_max": 0.5625
+          }
+        }
+      ]
+    },
+    "c-15": {
+      "expected_count": 14,
+      "description": "5+ cars, far distance, overlapping, spring season, clear weather, bright lighting",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.1807,
+            "y_min": 0.4766,
+            "x_max": 0.3711,
+            "y_max": 0.6797
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.377,
+            "y_min": 0.4805,
+            "x_max": 0.4336,
+            "y_max": 0.5625
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4629,
+            "y_min": 0.4805,
+            "x_max": 0.5312,
+            "y_max": 0.5547
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5508,
+            "y_min": 0.4629,
+            "x_max": 0.6172,
+            "y_max": 0.5312
+          }
+        },
+        {
+          "vehicle_id": 5,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.0,
+            "y_min": 0.4121,
+            "x_max": 0.0957,
+            "y_max": 0.5391
+          }
+        },
+        {
+          "vehicle_id": 6,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3445,
+            "y_min": 0.5066,
+            "x_max": 0.3967,
+            "y_max": 0.6286
+          }
+        },
+        {
+          "vehicle_id": 7,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5461,
+            "y_min": 0.4618,
+            "x_max": 0.5825,
+            "y_max": 0.5203
+          }
+        },
+        {
+          "vehicle_id": 8,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.534,
+            "y_min": 0.3908,
+            "x_max": 0.5639,
+            "y_max": 0.4319
+          }
+        },
+        {
+          "vehicle_id": 9,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4948,
+            "y_min": 0.3722,
+            "x_max": 0.5219,
+            "y_max": 0.4083
+          }
+        },
+        {
+          "vehicle_id": 10,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4873,
+            "y_min": 0.4282,
+            "x_max": 0.5265,
+            "y_max": 0.4879
+          }
+        },
+        {
+          "vehicle_id": 11,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5284,
+            "y_min": 0.3522,
+            "x_max": 0.5573,
+            "y_max": 0.3834
+          }
+        },
+        {
+          "vehicle_id": 12,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.3865,
+            "y_min": 0.4655,
+            "x_max": 0.4593,
+            "y_max": 0.5402
+          }
+        },
+        {
+          "vehicle_id": 13,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4556,
+            "y_min": 0.3585,
+            "x_max": 0.4892,
+            "y_max": 0.4145
+          }
+        },
+        {
+          "vehicle_id": 14,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4434,
+            "y_min": 0.4182,
+            "x_max": 0.477,
+            "y_max": 0.4419
+          }
+        }
+      ]
+    },
+    "c-16": {
+      "expected_count": 6,
+      "description": "6 cars, overlapping, far distance, dim lighting, summer season, clear weather",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.6172,
+            "y_min": 0.5898,
+            "x_max": 0.7617,
+            "y_max": 0.7656
+          }
+        },
+        {
+          "vehicle_id": 2,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5703,
+            "y_min": 0.5547,
+            "x_max": 0.6367,
+            "y_max": 0.6406
+          }
+        },
+        {
+          "vehicle_id": 3,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4182,
+            "y_min": 0.5176,
+            "x_max": 0.4528,
+            "y_max": 0.589
+          }
+        },
+        {
+          "vehicle_id": 4,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5573,
+            "y_min": 0.5326,
+            "x_max": 0.6087,
+            "y_max": 0.6107
+          }
+        },
+        {
+          "vehicle_id": 5,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.5265,
+            "y_min": 0.5176,
+            "x_max": 0.5564,
+            "y_max": 0.5758
+          }
+        },
+        {
+          "vehicle_id": 6,
+          "type": "Car",
+          "bounding_box": {
+            "x_min": 0.4416,
+            "y_min": 0.4993,
+            "x_max": 0.4733,
+            "y_max": 0.5575
+          }
+        }
+      ]
+    },
+    "c-17": {
+      "expected_count": 1,
+      "description": "1 truck, far distance, bright lighting, summer season, clear weather",
+      "localizations": [
+        {
+          "vehicle_id": 1,
+          "type": "Truck",
+          "bounding_box": {
+            "x_min": 0.5014,
+            "y_min": 0.3857,
+            "x_max": 0.5413,
+            "y_max": 0.423
+          }
+        }
+      ]
+    },
+    "c-18": {
+      "expected_count": 0,
+      "description": "No cars, dim lighting, fall, clear weather",
+      "localizations": []
+    },
+    "c-19": {
+      "expected_count": 0,
+      "description": "Augmentation C-18: Blur, No cars, dim lighting, summer weather",
+      "localizations": []
+    }
+  },
+  "summary": {
+    "total_test_cases": 19,
+    "tests_with_localizations": ["c-01", "c-02", "c-03", "c-04", "c-05", "c-06", "c-07", "c-08", "c-09", "c-10", "c-11", "c-12", "c-13", "c-14", "c-15", "c-16", "c-17"],
+    "tests_without_localizations": ["c-18", "c-19"]
+  }
+}

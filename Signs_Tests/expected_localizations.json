@@ -1,0 +1,808 @@
+{
+  "description": "Expected bounding box localizations for Signs_Tests AI test cases",
+  "created": "2025-12-05",
+  "notes": "Coordinates extracted from test outputs. Tests with 0 detections have empty localizations.",
+  "test_cases": {
+    "S-01": {
+      "expected_count": 2,
+      "description": "A stoplight and a regulatory sign on the street in foggy weather during winter in dim lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.6031,
+            "y_min": 0.4332,
+            "x_max": 0.6703,
+            "y_max": 0.5713
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.6012,
+            "y_min": 0.5838,
+            "x_max": 0.6693,
+            "y_max": 0.6896
+          }
+        }
+      ]
+    },
+    "S-02": {
+      "expected_count": 10,
+      "description": "An intersection with 8 stoplights, 1 regulatory sign, and 1 street sign in clear weather during spring in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0131,
+            "y_min": 0.2208,
+            "x_max": 0.0551,
+            "y_max": 0.3556
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0784,
+            "y_min": 0.2430,
+            "x_max": 0.1251,
+            "y_max": 0.3317
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.1410,
+            "y_min": 0.2310,
+            "x_max": 0.1811,
+            "y_max": 0.3522
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.3361,
+            "y_min": 0.2362,
+            "x_max": 0.3799,
+            "y_max": 0.3641
+          }
+        },
+        {
+          "sign_id": 5,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.4938,
+            "y_min": 0.2839,
+            "x_max": 0.5387,
+            "y_max": 0.4102
+          }
+        },
+        {
+          "sign_id": 6,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.5760,
+            "y_min": 0.4239,
+            "x_max": 0.6703,
+            "y_max": 0.4921
+          }
+        },
+        {
+          "sign_id": 7,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.7207,
+            "y_min": 0.4836,
+            "x_max": 0.7627,
+            "y_max": 0.6047
+          }
+        },
+        {
+          "sign_id": 8,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.7658,
+            "y_min": 0.4845,
+            "x_max": 0.8034,
+            "y_max": 0.6087
+          }
+        },
+        {
+          "sign_id": 9,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.8604,
+            "y_min": 0.1162,
+            "x_max": 0.9551,
+            "y_max": 0.3780
+          }
+        },
+        {
+          "sign_id": 10,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.9478,
+            "y_min": 0.1606,
+            "x_max": 0.9964,
+            "y_max": 0.3869
+          }
+        }
+      ]
+    },
+    "S-03": {
+      "expected_count": 8,
+      "description": "An intersection with 8 stoplights, 1 regulatory sign, and 1 street sign in clear weather during winter in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.6723,
+            "y_min": 0.4284,
+            "x_max": 0.7828,
+            "y_max": 0.4962
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0752,
+            "y_min": 0.2475,
+            "x_max": 0.1299,
+            "y_max": 0.3304
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0024,
+            "y_min": 0.2306,
+            "x_max": 0.0425,
+            "y_max": 0.3568
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.1468,
+            "y_min": 0.2343,
+            "x_max": 0.1978,
+            "y_max": 0.3568
+          }
+        },
+        {
+          "sign_id": 5,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.3871,
+            "y_min": 0.2419,
+            "x_max": 0.4296,
+            "y_max": 0.3643
+          }
+        },
+        {
+          "sign_id": 6,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.5740,
+            "y_min": 0.2890,
+            "x_max": 0.6214,
+            "y_max": 0.4171
+          }
+        },
+        {
+          "sign_id": 7,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.8507,
+            "y_min": 0.4849,
+            "x_max": 0.8956,
+            "y_max": 0.6206
+          }
+        },
+        {
+          "sign_id": 8,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.9029,
+            "y_min": 0.4925,
+            "x_max": 0.9418,
+            "y_max": 0.6149
+          }
+        }
+      ]
+    },
+    "S-04": {
+      "expected_count": 0,
+      "description": "A street with no stoplights or signs in foggy weather during winter in normal lighting.",
+      "localizations": []
+    },
+    "S-05": {
+      "expected_count": 0,
+      "description": "A street with no stoplights or signs in clear weather during summer in normal lighting.",
+      "localizations": []
+    },
+    "S-06": {
+      "expected_count": 0,
+      "description": "A street with no stoplights or signs in clear weather during fall in normal lighting.",
+      "localizations": []
+    },
+    "S-07": {
+      "expected_count": 1,
+      "description": "A street with 1 stop sign in clear weather during spring in dim lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.3574,
+            "y_min": 0.3809,
+            "x_max": 0.5664,
+            "y_max": 0.5312
+          }
+        }
+      ]
+    },
+    "S-08": {
+      "expected_count": 1,
+      "description": "A street with 1 regulatory sign in clear weather during summer in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic sign",
+          "bounding_box": {
+            "x_min": 0.5859,
+            "y_min": 0.2471,
+            "x_max": 0.75,
+            "y_max": 0.4629
+          }
+        }
+      ]
+    },
+    "S-09": {
+      "expected_count": 1,
+      "description": "A street with 1 warning sign in clear weather during summer in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Warning sign",
+          "bounding_box": {
+            "x_min": 0.1347,
+            "y_min": 0.0085,
+            "x_max": 0.7002,
+            "y_max": 0.8345
+          }
+        }
+      ]
+    },
+    "S-10": {
+      "expected_count": 1,
+      "description": "A street with 1 street sign in clear weather during winter in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.6893,
+            "y_min": 0.1336,
+            "x_max": 0.9600,
+            "y_max": 0.2720
+          }
+        }
+      ]
+    },
+    "S-11": {
+      "expected_count": 1,
+      "description": "A street with 1 speed limit sign in clear weather during fall in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Speed limit sign",
+          "bounding_box": {
+            "x_min": 0.4223,
+            "y_min": 0.1629,
+            "x_max": 0.5425,
+            "y_max": 0.3736
+          }
+        }
+      ]
+    },
+    "S-12": {
+      "expected_count": 3,
+      "description": "An image of 3 stoplights in clear weather during summer in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.6484,
+            "y_min": 0.4512,
+            "x_max": 0.7227,
+            "y_max": 0.7539
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.4648,
+            "y_min": 0.377,
+            "x_max": 0.5391,
+            "y_max": 0.6602
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.5586,
+            "y_min": 0.293,
+            "x_max": 0.668,
+            "y_max": 0.5898
+          }
+        }
+      ]
+    },
+    "S-13": {
+      "expected_count": 4,
+      "description": "A street with 1 stop sign, 2 street signs, and 1 speed limit sign in clear weather during summer in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.4393,
+            "y_min": 0.0295,
+            "x_max": 0.6104,
+            "y_max": 0.3267
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.4636,
+            "y_min": 0.3286,
+            "x_max": 0.6019,
+            "y_max": 0.4010
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.4418,
+            "y_min": 0.3990,
+            "x_max": 0.5934,
+            "y_max": 0.4790
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Speed limit sign",
+          "bounding_box": {
+            "x_min": 0.4854,
+            "y_min": 0.4695,
+            "x_max": 0.5898,
+            "y_max": 0.6810
+          }
+        }
+      ]
+    },
+    "S-14": {
+      "expected_count": 1,
+      "description": "A street with 1 stop sign in rainy weather during fall in normal lighting.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.5547,
+            "y_min": 0.0238,
+            "x_max": 0.8672,
+            "y_max": 0.5078
+          }
+        }
+      ]
+    },
+    "S-15": {
+      "expected_count": 10,
+      "description": "Augmented S-02: Sepia at normal brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0131,
+            "y_min": 0.2208,
+            "x_max": 0.0551,
+            "y_max": 0.3556
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0784,
+            "y_min": 0.2430,
+            "x_max": 0.1251,
+            "y_max": 0.3317
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.1410,
+            "y_min": 0.2310,
+            "x_max": 0.1811,
+            "y_max": 0.3522
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.3361,
+            "y_min": 0.2362,
+            "x_max": 0.3799,
+            "y_max": 0.3641
+          }
+        },
+        {
+          "sign_id": 5,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.4938,
+            "y_min": 0.2839,
+            "x_max": 0.5387,
+            "y_max": 0.4102
+          }
+        },
+        {
+          "sign_id": 6,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.5760,
+            "y_min": 0.4239,
+            "x_max": 0.6703,
+            "y_max": 0.4921
+          }
+        },
+        {
+          "sign_id": 7,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.7207,
+            "y_min": 0.4836,
+            "x_max": 0.7627,
+            "y_max": 0.6047
+          }
+        },
+        {
+          "sign_id": 8,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.7658,
+            "y_min": 0.4845,
+            "x_max": 0.8034,
+            "y_max": 0.6087
+          }
+        },
+        {
+          "sign_id": 9,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.8604,
+            "y_min": 0.1162,
+            "x_max": 0.9551,
+            "y_max": 0.3780
+          }
+        },
+        {
+          "sign_id": 10,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.9478,
+            "y_min": 0.1606,
+            "x_max": 0.9964,
+            "y_max": 0.3869
+          }
+        }
+      ]
+    },
+    "S-16": {
+      "expected_count": 8,
+      "description": "Augmented S-03: Sharpen at low brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Sign",
+          "bounding_box": {
+            "x_min": 0.6723,
+            "y_min": 0.4284,
+            "x_max": 0.7828,
+            "y_max": 0.4962
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0752,
+            "y_min": 0.2475,
+            "x_max": 0.1299,
+            "y_max": 0.3304
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.0024,
+            "y_min": 0.2306,
+            "x_max": 0.0425,
+            "y_max": 0.3568
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.1468,
+            "y_min": 0.2343,
+            "x_max": 0.1978,
+            "y_max": 0.3568
+          }
+        },
+        {
+          "sign_id": 5,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.3871,
+            "y_min": 0.2419,
+            "x_max": 0.4296,
+            "y_max": 0.3643
+          }
+        },
+        {
+          "sign_id": 6,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.5740,
+            "y_min": 0.2890,
+            "x_max": 0.6214,
+            "y_max": 0.4171
+          }
+        },
+        {
+          "sign_id": 7,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.8507,
+            "y_min": 0.4849,
+            "x_max": 0.8956,
+            "y_max": 0.6206
+          }
+        },
+        {
+          "sign_id": 8,
+          "type": "Traffic Light",
+          "bounding_box": {
+            "x_min": 0.9029,
+            "y_min": 0.4925,
+            "x_max": 0.9418,
+            "y_max": 0.6149
+          }
+        }
+      ]
+    },
+    "S-17": {
+      "expected_count": 0,
+      "description": "Augmented S-04: Low noise with bright lighting.",
+      "localizations": []
+    },
+    "S-18": {
+      "expected_count": 0,
+      "description": "Augmented S-05: Emboss at normal brightness.",
+      "localizations": []
+    },
+    "S-19": {
+      "expected_count": 0,
+      "description": "Augmented S-06: Low blurriness at normal brightness.",
+      "localizations": []
+    },
+    "S-20": {
+      "expected_count": 1,
+      "description": "Augmented S-07: Low brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.3496,
+            "y_min": 0.4473,
+            "x_max": 0.5703,
+            "y_max": 0.6367
+          }
+        }
+      ]
+    },
+    "S-21": {
+      "expected_count": 1,
+      "description": "Augmented S-08: Grayscale at normal brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic sign",
+          "bounding_box": {
+            "x_min": 0.5938,
+            "y_min": 0.2988,
+            "x_max": 0.7578,
+            "y_max": 0.5664
+          }
+        }
+      ]
+    },
+    "S-22": {
+      "expected_count": 1,
+      "description": "Augmented S-09: High noise.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Warning sign",
+          "bounding_box": {
+            "x_min": 0.1347,
+            "y_min": 0.0085,
+            "x_max": 0.7002,
+            "y_max": 0.8345
+          }
+        }
+      ]
+    },
+    "S-23": {
+      "expected_count": 1,
+      "description": "Augmented S-10: High pixelation",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.6893,
+            "y_min": 0.1336,
+            "x_max": 0.9600,
+            "y_max": 0.2720
+          }
+        }
+      ]
+    },
+    "S-24": {
+      "expected_count": 1,
+      "description": "Augmented S-11: Emboss and high brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Speed limit sign",
+          "bounding_box": {
+            "x_min": 0.4223,
+            "y_min": 0.1629,
+            "x_max": 0.5425,
+            "y_max": 0.3736
+          }
+        }
+      ]
+    },
+    "S-25": {
+      "expected_count": 3,
+      "description": "Augmented S-12: Invert at normal brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.6484,
+            "y_min": 0.4512,
+            "x_max": 0.7227,
+            "y_max": 0.7539
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.4648,
+            "y_min": 0.377,
+            "x_max": 0.5391,
+            "y_max": 0.6602
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Traffic light",
+          "bounding_box": {
+            "x_min": 0.5586,
+            "y_min": 0.293,
+            "x_max": 0.668,
+            "y_max": 0.5898
+          }
+        }
+      ]
+    },
+    "S-26": {
+      "expected_count": 4,
+      "description": "Augmented S-13: Grayscale with low pixelation at normal brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.4393,
+            "y_min": 0.0295,
+            "x_max": 0.6104,
+            "y_max": 0.3267
+          }
+        },
+        {
+          "sign_id": 2,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.4636,
+            "y_min": 0.3286,
+            "x_max": 0.6019,
+            "y_max": 0.4010
+          }
+        },
+        {
+          "sign_id": 3,
+          "type": "Street sign",
+          "bounding_box": {
+            "x_min": 0.4418,
+            "y_min": 0.3990,
+            "x_max": 0.5934,
+            "y_max": 0.4790
+          }
+        },
+        {
+          "sign_id": 4,
+          "type": "Speed limit sign",
+          "bounding_box": {
+            "x_min": 0.4854,
+            "y_min": 0.4695,
+            "x_max": 0.5898,
+            "y_max": 0.6810
+          }
+        }
+      ]
+    },
+    "S-27": {
+      "expected_count": 1,
+      "description": "Augmented S-14: Blur at normal brightness.",
+      "localizations": [
+        {
+          "sign_id": 1,
+          "type": "Stop sign",
+          "bounding_box": {
+            "x_min": 0.5547,
+            "y_min": 0.0179,
+            "x_max": 0.8672,
+            "y_max": 0.5938
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_test_cases": 27,
+    "tests_with_localizations": ["S-01", "S-07", "S-08", "S-12", "S-14", "S-20", "S-21", "S-27"],
+    "tests_with_zero_expected": ["S-04", "S-05", "S-06", "S-17", "S-18", "S-19", "S-23"]
+  }
+}

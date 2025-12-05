@@ -1,7 +1,7 @@
 {
   "test_case_id": "c-15",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T15:03:34.438209",
+  "timestamp": "2025-12-05T01:17:21.766272",
   "detection_results": {
     "expected_count": 14,
     "detected_count": 5,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Car",
       "confidence": 0.9398,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Car",
       "confidence": 0.7263,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Car",
       "confidence": 0.7109,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Car",
       "confidence": 0.6651,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Car",
       "confidence": 0.5602,
       "bounding_box": {
@@ -140,12 +140,104 @@
     }
   ],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-15_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T15:03:31.715917",
-    "end_time": "2025-12-04T15:03:34.438170",
-    "duration_seconds": 2.722
+    "start_time": "2025-12-05T01:17:19.342474",
+    "end_time": "2025-12-05T01:17:21.766125",
+    "duration_seconds": 2.424
+  },
+  "localization_results": {
+    "expected_boxes": 14,
+    "matched_boxes": 5,
+    "average_iou": 0.999,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.9995324023001244,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.998681619312696,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 3,
+        "iou": 0.9985427121119989,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 4,
+        "iou": 0.9986615008095813,
+        "matched": true
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 5,
+        "iou": 0.9995982765498748,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 7,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 8,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 9,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 10,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 11,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 12,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 13,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 14,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

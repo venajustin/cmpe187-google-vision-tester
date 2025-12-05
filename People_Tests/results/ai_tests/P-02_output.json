@@ -1,7 +1,7 @@
 {
   "test_case_id": "P-02",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T17:33:09.745068",
+  "timestamp": "2025-12-05T01:12:49.775416",
   "detection_results": {
     "expected_count": 4,
     "detected_count": 4,
@@ -12,9 +12,9 @@
     "status": "PASS",
     "passed": true
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.8548,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.8518,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.8478,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.7352,
       "bounding_box": {
@@ -115,12 +115,44 @@
     }
   ],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-02_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-02_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-02_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/P-02_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T17:33:06.839408",
-    "end_time": "2025-12-04T17:33:09.745017",
-    "duration_seconds": 2.906
+    "start_time": "2025-12-05T01:12:47.371282",
+    "end_time": "2025-12-05T01:12:49.775303",
+    "duration_seconds": 2.404
+  },
+  "localization_results": {
+    "expected_boxes": 4,
+    "matched_boxes": 4,
+    "average_iou": 0.9996,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.9996484653523069,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.9995031144366526,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 3,
+        "iou": 0.9995749481907755,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 4,
+        "iou": 0.999576774584941,
+        "matched": true
+      }
+    ]
   }
 }

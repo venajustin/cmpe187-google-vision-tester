@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-16",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:33:16.625392",
+  "timestamp": "2025-12-05T01:14:24.782829",
   "detection_results": {
     "expected_count": 4,
     "detected_count": 5,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.7434,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.7423,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.7266,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.7184,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Person",
       "confidence": 0.6466,
       "bounding_box": {
@@ -144,8 +144,40 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-16_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:33:14.037236",
-    "end_time": "2025-12-04T01:33:16.625381",
-    "duration_seconds": 2.588
+    "start_time": "2025-12-05T01:14:22.138780",
+    "end_time": "2025-12-05T01:14:24.782700",
+    "duration_seconds": 2.644
+  },
+  "localization_results": {
+    "expected_boxes": 4,
+    "matched_boxes": 4,
+    "average_iou": 0.8886,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 4,
+        "iou": 0.9142126427874564,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.8516321590129797,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 1,
+        "iou": 0.9107844810320167,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 3,
+        "iou": 0.8776192866906267,
+        "matched": true
+      }
+    ]
   }
 }

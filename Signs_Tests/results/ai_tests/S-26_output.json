@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-26",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:53:39.454450",
+  "timestamp": "2025-12-05T01:20:42.046108",
   "detection_results": {
     "expected_count": 4,
     "detected_count": 3,
     "count_difference": -1,
-    "maximum_confidence": 0.7945,
-    "expected_description": "4 signs, 0 stoplights, 1 stop sign classified, 2 street signs classified, 1 speed limit sign classified"
+    "maximum_confidence": 0.7945
   },
   "test_result": {
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Stop sign",
       "confidence": 0.7945,
       "bounding_box": {
@@ -40,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Traffic sign",
       "confidence": 0.5677,
       "bounding_box": {
@@ -65,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Traffic sign",
       "confidence": 0.5038,
       "bounding_box": {
@@ -91,12 +90,44 @@
     }
   ],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-26_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-26_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-26_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-26_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:53:36.583804",
-    "end_time": "2025-12-04T14:53:39.454410",
-    "duration_seconds": 2.871
+    "start_time": "2025-12-05T01:20:39.244952",
+    "end_time": "2025-12-05T01:20:42.045962",
+    "duration_seconds": 2.8
+  },
+  "localization_results": {
+    "expected_boxes": 4,
+    "matched_boxes": 3,
+    "average_iou": 0.6499,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.7693977606102324,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 3,
+        "iou": 0.5061221167020333,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 2,
+        "iou": 0.6741569924802756,
+        "matched": true
+      }
+    ]
   }
 }

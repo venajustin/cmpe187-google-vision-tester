@@ -1,7 +1,7 @@
 {
   "test_case_id": "c-02",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T17:34:22.207108",
+  "timestamp": "2025-12-05T01:15:57.690027",
   "detection_results": {
     "expected_count": 6,
     "detected_count": 0,
@@ -12,14 +12,21 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [],
+  "detected_sign_details": [],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-02_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-02_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-02_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-02_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T17:34:19.352016",
-    "end_time": "2025-12-04T17:34:22.207062",
-    "duration_seconds": 2.855
+    "start_time": "2025-12-05T01:15:55.310650",
+    "end_time": "2025-12-05T01:15:57.690017",
+    "duration_seconds": 2.379
+  },
+  "localization_results": {
+    "expected_boxes": 6,
+    "matched_boxes": 0,
+    "average_iou": 0.0,
+    "iou_threshold": 0.3,
+    "details": []
   }
 }

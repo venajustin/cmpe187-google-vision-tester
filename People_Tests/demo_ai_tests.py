@@ -178,12 +178,15 @@ def show_input_image(image_path, test_id, description, expected_count):
     """Display the clean input image before processing (no bounding boxes)"""
     img = Image.open(image_path)
 
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(18, 10))  # Match input+output figure size
     ax.imshow(img)
 
-    ax.set_title(f"INPUT IMAGE: {test_id}\n{description}\nExpected People: {expected_count}", fontsize=14, fontweight='bold')
+    ax.set_title(f"Input: {test_id}\n{description}\nExpected: {expected_count} people", fontsize=10, fontweight='bold')
     ax.axis('off')
-    plt.tight_layout()
+
+    plt.suptitle(f"Test Case {test_id}", fontsize=16, fontweight='bold', y=0.98)
+    plt.subplots_adjust(top=0.90)
+    plt.tight_layout(rect=[0, 0, 1, 0.90])
     plt.show(block=False)
     plt.pause(2)  # Show for 2 seconds
     plt.close()
@@ -260,10 +263,10 @@ def show_before_after(input_image_path, output_image_path, test_id, description,
     axes[1].set_title(title, fontsize=10, fontweight='bold', color=color)
     axes[1].axis('off')
 
-    plt.suptitle(f"Test Case {test_id}", fontsize=16, fontweight='bold', y=0.99)
-    plt.figtext(0.5, 0.95, "Blue=Expected, Red=Detected", ha='center', fontsize=10)
-    plt.subplots_adjust(top=0.88)
-    plt.tight_layout(rect=[0, 0, 1, 0.88])
+    plt.suptitle(f"Test Case {test_id}", fontsize=16, fontweight='bold', y=0.98)
+    plt.figtext(0.5, 0.94, "Blue=Expected, Red=Detected", ha='center', fontsize=10)
+    plt.subplots_adjust(top=0.92)
+    plt.tight_layout(rect=[0, 0, 1, 0.92])
     plt.show(block=False)
     plt.pause(4)  # Show for 4 seconds
     plt.close()

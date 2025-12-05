@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-16",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:52:28.606723",
+  "timestamp": "2025-12-05T01:19:35.561146",
   "detection_results": {
     "expected_count": 10,
     "detected_count": 3,
     "count_difference": -7,
-    "maximum_confidence": 0.781,
-    "expected_description": "2 signs, 8 stoplights, 1 regulatory sign classified, 1 street sign classified"
+    "maximum_confidence": 0.781
   },
   "test_result": {
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Traffic light",
       "confidence": 0.781,
       "bounding_box": {
@@ -40,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Traffic light",
       "confidence": 0.6059,
       "bounding_box": {
@@ -65,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Traffic light",
       "confidence": 0.5538,
       "bounding_box": {
@@ -91,12 +90,68 @@
     }
   ],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-16_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-16_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-16_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-16_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:52:25.648025",
-    "end_time": "2025-12-04T14:52:28.606682",
-    "duration_seconds": 2.959
+    "start_time": "2025-12-05T01:19:33.001998",
+    "end_time": "2025-12-05T01:19:35.561056",
+    "duration_seconds": 2.559
+  },
+  "localization_results": {
+    "expected_boxes": 8,
+    "matched_boxes": 3,
+    "average_iou": 0.5243,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 2,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 3,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 3,
+        "iou": 0.5175421593332041,
+        "matched": true
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 2,
+        "iou": 0.5592178072362797,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": 1,
+        "iou": 0.49628361774604146,
+        "matched": true
+      },
+      {
+        "expected_id": 7,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 8,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

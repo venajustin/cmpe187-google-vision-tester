@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-10",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:32:36.505830",
+  "timestamp": "2025-12-05T01:13:43.959665",
   "detection_results": {
     "expected_count": 12,
     "detected_count": 8,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.8771,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.8652,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.8517,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.8435,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Person",
       "confidence": 0.8386,
       "bounding_box": {
@@ -139,7 +139,7 @@
       }
     },
     {
-      "person_id": 6,
+      "sign_id": 6,
       "name": "Person",
       "confidence": 0.8084,
       "bounding_box": {
@@ -164,7 +164,7 @@
       }
     },
     {
-      "person_id": 7,
+      "sign_id": 7,
       "name": "Person",
       "confidence": 0.7911,
       "bounding_box": {
@@ -189,7 +189,7 @@
       }
     },
     {
-      "person_id": 8,
+      "sign_id": 8,
       "name": "Person",
       "confidence": 0.7745,
       "bounding_box": {
@@ -219,8 +219,88 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-10_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:32:34.033300",
-    "end_time": "2025-12-04T01:32:36.505821",
-    "duration_seconds": 2.473
+    "start_time": "2025-12-05T01:13:41.542001",
+    "end_time": "2025-12-05T01:13:43.959496",
+    "duration_seconds": 2.418
+  },
+  "localization_results": {
+    "expected_boxes": 12,
+    "matched_boxes": 8,
+    "average_iou": 0.9995,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.999407245872139,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.999902708707815,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 3,
+        "iou": 0.9992913364946487,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 4,
+        "iou": 0.9995443294827175,
+        "matched": true
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 5,
+        "iou": 0.9994257365674503,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": 6,
+        "iou": 0.9996315534405884,
+        "matched": true
+      },
+      {
+        "expected_id": 7,
+        "detected_id": 7,
+        "iou": 0.9995260342766055,
+        "matched": true
+      },
+      {
+        "expected_id": 8,
+        "detected_id": 8,
+        "iou": 0.9996422396850407,
+        "matched": true
+      },
+      {
+        "expected_id": 9,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 10,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 11,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 12,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

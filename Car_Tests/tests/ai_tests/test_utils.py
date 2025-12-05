@@ -41,7 +41,7 @@ def draw_bounding_boxes(image_path, people_objects, output_path):
         ax.add_patch(poly)
 
         if coords:
-            label = f"Person {i}: {obj.name} ({obj.score:.2f})"
+            label = f"Vehicle {i}: {obj.name} ({obj.score:.2f})"
             min_y = min(coord[1] for coord in coords)
             min_x = min(coord[0] for coord in coords)
             ax.text(min_x, min_y - 10, label,

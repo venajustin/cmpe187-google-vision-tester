@@ -1,26 +1,32 @@
 {
   "test_case_id": "S-01",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T17:33:25.342371",
+  "timestamp": "2025-12-05T01:17:54.780113",
   "detection_results": {
     "expected_count": 2,
     "detected_count": 0,
     "count_difference": -2,
-    "maximum_confidence": 0,
-    "expected_description": "1 sign, 1 stoplight, 1 regulatory sign classified"
+    "maximum_confidence": 0
   },
   "test_result": {
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [],
+  "detected_sign_details": [],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-01_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-01_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-01_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-01_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T17:33:21.637469",
-    "end_time": "2025-12-04T17:33:25.342314",
-    "duration_seconds": 3.705
+    "start_time": "2025-12-05T01:17:52.116162",
+    "end_time": "2025-12-05T01:17:54.780095",
+    "duration_seconds": 2.664
+  },
+  "localization_results": {
+    "expected_boxes": 2,
+    "matched_boxes": 0,
+    "average_iou": 0.0,
+    "iou_threshold": 0.3,
+    "details": []
   }
 }

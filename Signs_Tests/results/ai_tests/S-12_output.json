@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-12",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:51:59.946600",
+  "timestamp": "2025-12-05T01:19:08.888487",
   "detection_results": {
     "expected_count": 3,
     "detected_count": 3,
     "count_difference": 0,
-    "maximum_confidence": 0.8502,
-    "expected_description": "0 signs, 3 stoplights"
+    "maximum_confidence": 0.8502
   },
   "test_result": {
     "status": "PASS",
     "passed": true
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Traffic light",
       "confidence": 0.8502,
       "bounding_box": {
@@ -40,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Traffic light",
       "confidence": 0.7978,
       "bounding_box": {
@@ -65,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Traffic light",
       "confidence": 0.7914,
       "bounding_box": {
@@ -91,12 +90,38 @@
     }
   ],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-12_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-12_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-12_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-12_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:51:57.160950",
-    "end_time": "2025-12-04T14:51:59.946566",
-    "duration_seconds": 2.786
+    "start_time": "2025-12-05T01:19:06.397799",
+    "end_time": "2025-12-05T01:19:08.888394",
+    "duration_seconds": 2.491
+  },
+  "localization_results": {
+    "expected_boxes": 3,
+    "matched_boxes": 3,
+    "average_iou": 0.9989,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.9987931600984863,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.998587040317611,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 3,
+        "iou": 0.9994047679180816,
+        "matched": true
+      }
+    ]
   }
 }

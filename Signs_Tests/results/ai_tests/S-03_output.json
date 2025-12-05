@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-03",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T17:33:40.269164",
+  "timestamp": "2025-12-05T01:18:07.987296",
   "detection_results": {
     "expected_count": 10,
     "detected_count": 2,
     "count_difference": -8,
-    "maximum_confidence": 0.6656,
-    "expected_description": "2 signs, 8 stoplights, 1 regulatory sign classified, 1 street sign classified"
+    "maximum_confidence": 0.6656
   },
   "test_result": {
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Traffic light",
       "confidence": 0.6656,
       "bounding_box": {
@@ -40,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Traffic light",
       "confidence": 0.5697,
       "bounding_box": {
@@ -66,12 +65,68 @@
     }
   ],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-03_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-03_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-03_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-03_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T17:33:36.913965",
-    "end_time": "2025-12-04T17:33:40.269129",
-    "duration_seconds": 3.355
+    "start_time": "2025-12-05T01:18:05.318672",
+    "end_time": "2025-12-05T01:18:07.987223",
+    "duration_seconds": 2.669
+  },
+  "localization_results": {
+    "expected_boxes": 8,
+    "matched_boxes": 2,
+    "average_iou": 0.6739,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 2,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 3,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 4,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 2,
+        "iou": 0.6805150062475973,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": 1,
+        "iou": 0.6672016680161117,
+        "matched": true
+      },
+      {
+        "expected_id": 7,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 8,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

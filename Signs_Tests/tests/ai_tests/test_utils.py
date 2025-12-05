@@ -1,5 +1,5 @@
 """
-Shared utilities for AI People Detection Tests
+Shared utilities for AI Signs & Stoplights Detection Tests
 
 This module contains common functions used across all AI test cases including:
 - Bounding box drawing
@@ -15,13 +15,13 @@ import matplotlib.patches as patches
 import matplotlib.image as mpimg
 
 
-def draw_bounding_boxes(image_path, people_objects, output_path):
+def draw_bounding_boxes(image_path, sign_objects, output_path):
     """
-    Draw bounding boxes on the image for detected people/pedestrians only.
+    Draw bounding boxes on the image for detected signs/stoplights only.
 
     Args:
         image_path: Path to the input image
-        people_objects: List of detected people with bounding boxes
+        sign_objects: List of detected signs/stoplights with bounding boxes
         output_path: Path to save the output image with bounding boxes
 
     Returns:
@@ -33,7 +33,7 @@ def draw_bounding_boxes(image_path, people_objects, output_path):
 
     img_height, img_width = img.shape[:2]
 
-    for i, obj in enumerate(people_objects, 1):
+    for i, obj in enumerate(sign_objects, 1):
         vertices = obj.bounding_poly.normalized_vertices
         coords = [(vertex.x * img_width, vertex.y * img_height) for vertex in vertices]
 
@@ -41,7 +41,7 @@ def draw_bounding_boxes(image_path, people_objects, output_path):
         ax.add_patch(poly)
 
         if coords:
-            label = f"Person {i}: {obj.name} ({obj.score:.2f})"
+            label = f"Sign/Stoplight {i}: {obj.name} ({obj.score:.2f})"
             min_y = min(coord[1] for coord in coords)
             min_x = min(coord[0] for coord in coords)
             ax.text(min_x, min_y - 10, label,
@@ -62,7 +62,7 @@ def find_image_path(base_path, test_id):
 
     Args:
         base_path: Base directory path to search
-        test_id: Test case ID (e.g., 'PT-01')
+        test_id: Test case ID (e.g., 'S-01')
 
     Returns:
         str: Full path to the image file, or None if not found
@@ -78,35 +78,41 @@ def find_image_path(base_path, test_id):
     return None
 
 
-def filter_people(objects):
+def filter_signs(objects):
     """
-    Filter detected objects to only include people/pedestrians.
+    Filter detected objects to only include signs and stoplights.
 
     Args:
         objects: List of all detected objects from Vision API
 
     Returns:
-        list: Filtered list containing only people/pedestrian objects
+        list: Filtered list containing only sign/stoplight objects
     """
-    return [obj for obj in objects if obj.name.lower() in ['person', 'people', 'pedestrian']]
+    sign_keywords = ['sign', 'stop', 'traffic light', 'stoplight', 'traffic signal']
+    result = []
+    for obj in objects:
+        name_lower = obj.name.lower()
+        if any(keyword in name_lower for keyword in sign_keywords):
+            result.append(obj)
+    return result
 
 
-def create_json_output(test_id, people_detected, output_files, timing_info=None, expected_count=None, test_passed=None):
+def create_json_output(test_id, signs_detected, output_files, timing_info=None, expected_count=None, test_passed=None):
     """
     Create simplified JSON output for AI test results.
 
     Args:
         test_id: Test case ID
-        people_detected: List of detected people objects
+        signs_detected: List of detected sign/stoplight objects
         output_files: Dictionary of output file paths
         timing_info: Optional dictionary with start_time, end_time, duration
-        expected_count: Expected number of people in the image
+        expected_count: Expected number of signs/stoplights in the image
         test_passed: Boolean indicating if test passed
 
     Returns:
         dict: JSON-serializable dictionary of test results
     """
-    detected_count = len(people_detected)
+    detected_count = len(signs_detected)
 
     json_result = {
         "test_case_id": test_id,
@@ -116,25 +122,25 @@ def create_json_output(test_id, people_detected, output_files, timing_info=None,
             "expected_count": expected_count,
             "detected_count": detected_count,
             "count_difference": detected_count - expected_count if expected_count is not None else None,
-            "maximum_confidence": round(max(person.score for person in people_detected), 4) if people_detected else 0
+            "maximum_confidence": round(max(sign.score for sign in signs_detected), 4) if signs_detected else 0
         },
         "test_result": {
             "status": "PASS" if test_passed else "FAIL",
             "passed": test_passed
         },
-        "detected_people_details": [
+        "detected_sign_details": [
             {
-                "person_id": i,
-                "name": person.name,
-                "confidence": round(person.score, 4),
+                "sign_id": i,
+                "name": sign.name,
+                "confidence": round(sign.score, 4),
                 "bounding_box": {
                     "normalized_vertices": [
                         {"x": round(v.x, 4), "y": round(v.y, 4)}
-                        for v in person.bounding_poly.normalized_vertices
+                        for v in sign.bounding_poly.normalized_vertices
                     ]
                 }
             }
-            for i, person in enumerate(people_detected, 1)
+            for i, sign in enumerate(signs_detected, 1)
         ],
         "output_files": output_files
     }
@@ -171,7 +177,7 @@ def setup_output_directory(base_path):
     Create output directory if it doesn't exist.
 
     Args:
-        base_path: Base path (People_Tests directory)
+        base_path: Base path (Signs_Tests directory)
 
     Returns:
         str: Path to output directory

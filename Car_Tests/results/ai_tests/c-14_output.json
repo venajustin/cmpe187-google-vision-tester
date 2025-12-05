@@ -1,7 +1,7 @@
 {
   "test_case_id": "c-14",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T15:03:27.587876",
+  "timestamp": "2025-12-05T01:17:15.300042",
   "detection_results": {
     "expected_count": 2,
     "detected_count": 2,
@@ -12,9 +12,9 @@
     "status": "PASS",
     "passed": true
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Car",
       "confidence": 0.7757,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Car",
       "confidence": 0.7402,
       "bounding_box": {
@@ -65,12 +65,32 @@
     }
   ],
   "output_files": {
-    "result_image": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-14_result.jpg",
-    "output_json": "/home/justing/Documents/classes/CMPE187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-14_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-14_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Car_Tests/results/ai_tests/c-14_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T15:03:24.243644",
-    "end_time": "2025-12-04T15:03:27.587834",
-    "duration_seconds": 3.344
+    "start_time": "2025-12-05T01:17:12.810704",
+    "end_time": "2025-12-05T01:17:15.299962",
+    "duration_seconds": 2.489
+  },
+  "localization_results": {
+    "expected_boxes": 2,
+    "matched_boxes": 2,
+    "average_iou": 0.9994,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.9992674705503692,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.9994966663894664,
+        "matched": true
+      }
+    ]
   }
 }

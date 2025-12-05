@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-09",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:32:29.981890",
+  "timestamp": "2025-12-05T01:13:37.456921",
   "detection_results": {
     "expected_count": 6,
     "detected_count": 7,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.8554,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.806,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.7757,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.7509,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Person",
       "confidence": 0.7443,
       "bounding_box": {
@@ -139,7 +139,7 @@
       }
     },
     {
-      "person_id": 6,
+      "sign_id": 6,
       "name": "Person",
       "confidence": 0.7233,
       "bounding_box": {
@@ -164,7 +164,7 @@
       }
     },
     {
-      "person_id": 7,
+      "sign_id": 7,
       "name": "Person",
       "confidence": 0.711,
       "bounding_box": {
@@ -194,8 +194,52 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-09_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:32:26.895217",
-    "end_time": "2025-12-04T01:32:29.981880",
-    "duration_seconds": 3.087
+    "start_time": "2025-12-05T01:13:34.156893",
+    "end_time": "2025-12-05T01:13:37.456758",
+    "duration_seconds": 3.3
+  },
+  "localization_results": {
+    "expected_boxes": 6,
+    "matched_boxes": 5,
+    "average_iou": 0.9994,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 2,
+        "iou": 0.999273222508153,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 3,
+        "iou": 0.9994770961318868,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 5,
+        "iou": 0.9991660728789683,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 6,
+        "iou": 0.9995030035096406,
+        "matched": true
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 1,
+        "iou": 0.9994058294730093,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": null,
+        "iou": 0.08224792293063193,
+        "matched": false
+      }
+    ]
   }
 }

@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-13",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:52:07.311284",
+  "timestamp": "2025-12-05T01:19:15.721487",
   "detection_results": {
     "expected_count": 4,
     "detected_count": 2,
     "count_difference": -2,
-    "maximum_confidence": 0.7995,
-    "expected_description": "4 signs, 0 stoplights, 1 stop sign classified, 2 street signs classified, 1 speed limit sign classified"
+    "maximum_confidence": 0.7995
   },
   "test_result": {
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Stop sign",
       "confidence": 0.7995,
       "bounding_box": {
@@ -40,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Traffic sign",
       "confidence": 0.5165,
       "bounding_box": {
@@ -66,12 +65,44 @@
     }
   ],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-13_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-13_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-13_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-13_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:52:04.117190",
-    "end_time": "2025-12-04T14:52:07.311244",
-    "duration_seconds": 3.194
+    "start_time": "2025-12-05T01:19:12.936347",
+    "end_time": "2025-12-05T01:19:15.721411",
+    "duration_seconds": 2.785
+  },
+  "localization_results": {
+    "expected_boxes": 4,
+    "matched_boxes": 2,
+    "average_iou": 0.7339,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.7499548290753709,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 3,
+        "detected_id": null,
+        "iou": 0.03010978931942181,
+        "matched": false
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 2,
+        "iou": 0.7178199015082651,
+        "matched": true
+      }
+    ]
   }
 }

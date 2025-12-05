@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-25",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:34:17.724974",
+  "timestamp": "2025-12-05T01:15:24.866547",
   "detection_results": {
     "expected_count": 21,
     "detected_count": 5,
@@ -12,9 +12,9 @@
     "status": "FAIL",
     "passed": false
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.76,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.7224,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.7105,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.7092,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Person",
       "confidence": 0.6627,
       "bounding_box": {
@@ -144,8 +144,136 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-25_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:34:15.246523",
-    "end_time": "2025-12-04T01:34:17.724965",
-    "duration_seconds": 2.478
+    "start_time": "2025-12-05T01:15:22.323547",
+    "end_time": "2025-12-05T01:15:24.866425",
+    "duration_seconds": 2.543
+  },
+  "localization_results": {
+    "expected_boxes": 20,
+    "matched_boxes": 5,
+    "average_iou": 0.7135,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 2,
+        "iou": 0.8766252460299111,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 3,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 4,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 5,
+        "detected_id": null,
+        "iou": 0.027691254644283646,
+        "matched": false
+      },
+      {
+        "expected_id": 6,
+        "detected_id": 1,
+        "iou": 0.6179374211941355,
+        "matched": true
+      },
+      {
+        "expected_id": 7,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 8,
+        "detected_id": null,
+        "iou": 0.011997747447749587,
+        "matched": false
+      },
+      {
+        "expected_id": 9,
+        "detected_id": 5,
+        "iou": 0.5614937049773595,
+        "matched": true
+      },
+      {
+        "expected_id": 10,
+        "detected_id": 3,
+        "iou": 0.725140787129796,
+        "matched": true
+      },
+      {
+        "expected_id": 11,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 12,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 13,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 14,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 15,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 16,
+        "detected_id": 4,
+        "iou": 0.7861485810703904,
+        "matched": true
+      },
+      {
+        "expected_id": 17,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 18,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 19,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      },
+      {
+        "expected_id": 20,
+        "detected_id": null,
+        "iou": 0.0,
+        "matched": false
+      }
+    ]
   }
 }

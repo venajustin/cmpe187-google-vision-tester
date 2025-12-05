@@ -1,26 +1,32 @@
 {
   "test_case_id": "S-23",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:53:18.363174",
+  "timestamp": "2025-12-05T01:20:22.024836",
   "detection_results": {
-    "expected_count": 0,
+    "expected_count": 1,
     "detected_count": 0,
-    "count_difference": 0,
-    "maximum_confidence": 0,
-    "expected_description": "0 signs, 0 stoplights"
+    "count_difference": -1,
+    "maximum_confidence": 0
   },
   "test_result": {
-    "status": "PASS",
-    "passed": true
+    "status": "FAIL",
+    "passed": false
   },
-  "detected_people_details": [],
+  "detected_sign_details": [],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-23_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-23_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-23_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-23_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:53:15.606477",
-    "end_time": "2025-12-04T14:53:18.363139",
-    "duration_seconds": 2.757
+    "start_time": "2025-12-05T01:20:19.588435",
+    "end_time": "2025-12-05T01:20:22.024826",
+    "duration_seconds": 2.436
+  },
+  "localization_results": {
+    "expected_boxes": 1,
+    "matched_boxes": 0,
+    "average_iou": 0.0,
+    "iou_threshold": 0.3,
+    "details": []
   }
 }

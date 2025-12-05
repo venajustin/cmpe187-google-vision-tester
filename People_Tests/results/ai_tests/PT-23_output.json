@@ -1,7 +1,7 @@
 {
   "test_case_id": "PT-23",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T01:34:04.551215",
+  "timestamp": "2025-12-05T01:15:11.463457",
   "detection_results": {
     "expected_count": 6,
     "detected_count": 6,
@@ -12,9 +12,9 @@
     "status": "PASS",
     "passed": true
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Person",
       "confidence": 0.7675,
       "bounding_box": {
@@ -39,7 +39,7 @@
       }
     },
     {
-      "person_id": 2,
+      "sign_id": 2,
       "name": "Person",
       "confidence": 0.7658,
       "bounding_box": {
@@ -64,7 +64,7 @@
       }
     },
     {
-      "person_id": 3,
+      "sign_id": 3,
       "name": "Person",
       "confidence": 0.7624,
       "bounding_box": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "person_id": 4,
+      "sign_id": 4,
       "name": "Person",
       "confidence": 0.7502,
       "bounding_box": {
@@ -114,7 +114,7 @@
       }
     },
     {
-      "person_id": 5,
+      "sign_id": 5,
       "name": "Person",
       "confidence": 0.7377,
       "bounding_box": {
@@ -139,7 +139,7 @@
       }
     },
     {
-      "person_id": 6,
+      "sign_id": 6,
       "name": "Person",
       "confidence": 0.7367,
       "bounding_box": {
@@ -169,8 +169,52 @@
     "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/People_Tests/results/ai_tests/PT-23_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T01:34:01.934961",
-    "end_time": "2025-12-04T01:34:04.551205",
-    "duration_seconds": 2.616
+    "start_time": "2025-12-05T01:15:08.704980",
+    "end_time": "2025-12-05T01:15:11.463310",
+    "duration_seconds": 2.758
+  },
+  "localization_results": {
+    "expected_boxes": 6,
+    "matched_boxes": 5,
+    "average_iou": 0.7638,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 5,
+        "iou": 0.4552153875369728,
+        "matched": true
+      },
+      {
+        "expected_id": 2,
+        "detected_id": 2,
+        "iou": 0.8088140013032513,
+        "matched": true
+      },
+      {
+        "expected_id": 3,
+        "detected_id": 6,
+        "iou": 0.8544787149218577,
+        "matched": true
+      },
+      {
+        "expected_id": 4,
+        "detected_id": 1,
+        "iou": 0.8626728816369611,
+        "matched": true
+      },
+      {
+        "expected_id": 5,
+        "detected_id": 3,
+        "iou": 0.8376426897772349,
+        "matched": true
+      },
+      {
+        "expected_id": 6,
+        "detected_id": null,
+        "iou": 0.09540793891643319,
+        "matched": false
+      }
+    ]
   }
 }

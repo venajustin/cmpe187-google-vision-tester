@@ -1,21 +1,20 @@
 {
   "test_case_id": "S-09",
   "category": "AI Generated Test",
-  "timestamp": "2025-12-04T14:51:38.564382",
+  "timestamp": "2025-12-05T01:18:48.729411",
   "detection_results": {
     "expected_count": 1,
     "detected_count": 1,
     "count_difference": 0,
-    "maximum_confidence": 0.6208,
-    "expected_description": "1 sign, 0 stoplights, 1 warning sign classified"
+    "maximum_confidence": 0.6208
   },
   "test_result": {
-    "status": "FAIL",
-    "passed": false
+    "status": "PASS",
+    "passed": true
   },
-  "detected_people_details": [
+  "detected_sign_details": [
     {
-      "person_id": 1,
+      "sign_id": 1,
       "name": "Traffic sign",
       "confidence": 0.6208,
       "bounding_box": {
@@ -41,12 +40,26 @@
     }
   ],
   "output_files": {
-    "result_image": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-09_result.jpg",
-    "output_json": "C:\\Users\\Kethya\\OneDrive\\Documents\\Semester7\\CMPE187\\Car AI Vision\\cmpe187-google-vision-tester\\Signs_Tests\\results\\ai_tests\\S-09_output.json"
+    "result_image": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-09_result.jpg",
+    "output_json": "/Users/tanyareuben/Documents/Year 5/Fall 2025/CMPE 187/cmpe187-google-vision-tester/Signs_Tests/results/ai_tests/S-09_output.json"
   },
   "timing": {
-    "start_time": "2025-12-04T14:51:35.568647",
-    "end_time": "2025-12-04T14:51:38.564341",
-    "duration_seconds": 2.996
+    "start_time": "2025-12-05T01:18:46.152622",
+    "end_time": "2025-12-05T01:18:48.729357",
+    "duration_seconds": 2.577
+  },
+  "localization_results": {
+    "expected_boxes": 1,
+    "matched_boxes": 1,
+    "average_iou": 0.8571,
+    "iou_threshold": 0.3,
+    "details": [
+      {
+        "expected_id": 1,
+        "detected_id": 1,
+        "iou": 0.857095503257399,
+        "matched": true
+      }
+    ]
   }
 }
